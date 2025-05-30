@@ -2079,6 +2079,13 @@ textarea.input {
     padding: 0;
     min-height: 0;
   }
+  .menu-btn {
+    background-color: var(--green-color);
+    color: var(--white-color);
+  }
+  .menu-btn svg {
+    color: var(--white-color);
+  }
   .mobile-head {
     position: fixed;
     top: 0;
