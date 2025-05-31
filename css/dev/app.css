@@ -1331,6 +1331,7 @@ textarea.input {
   margin-bottom: 16px;
   overflow: hidden;
   border-radius: 24px;
+  display: grid;
 }
 .popup__sale-img img {
   border-radius: 24px;
