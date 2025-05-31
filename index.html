@@ -9,8 +9,10 @@
 		<link rel="preload" href="./assets/fonts/Inter-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Home Page</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1748611768815"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1748611768815">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1748691257551"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/app.min.js?v=1748691257551">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1748691257551">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1748691257551">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -73,16 +75,16 @@
 									</svg>
 								</button>
 							</div>
-							<nav class="nav-menu__body">
+							<nav class="nav-menu__body" data-menu-parent="">
 								<div class="nav-menu__image">
-									<img class="nav-menu__img" loading="lazy" alt="Image" src="./assets/img/image-1.webp">
+									<img class="nav-menu__img" data-menu-img="" loading="lazy" alt="Image" src="./assets/img/image-1.webp">
 									<div class="nav-menu__logo">
 										<img src="./assets/img/logo-white.svg" alt="Image">
 									</div>
 								</div>
 								<ul class="nav-menu__list">
 									<li class="nav-menu__item">
-										<a href="#" class="nav-menu__link">
+										<a href="#" class="nav-menu__link" data-img-src="assets/img/image-2.webp">
 											<span>Про компанію</span>
 											<span class="nav-menu__link-arrow">
 												<svg width="8" height="12" viewbox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -92,7 +94,7 @@
 										</a>
 									</li>
 									<li class="nav-menu__item">
-										<a href="#" class="nav-menu__link">
+										<a href="#" class="nav-menu__link" data-img-src="assets/img/image-1.webp">
 											<span>Доставка та оплата</span>
 											<span class="nav-menu__link-arrow">
 												<svg width="8" height="12" viewbox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -102,7 +104,7 @@
 										</a>
 									</li>
 									<li class="nav-menu__item">
-										<a href="#" class="nav-menu__link">
+										<a href="#" class="nav-menu__link" data-img-src="assets/img/image-2.webp">
 											<span>Контакти</span>
 											<span class="nav-menu__link-arrow">
 												<svg width="8" height="12" viewbox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -112,7 +114,7 @@
 										</a>
 									</li>
 									<li class="nav-menu__item">
-										<a href="#" class="nav-menu__link">
+										<a href="#" class="nav-menu__link" data-img-src="assets/img/image-sale.webp">
 											<span>Новини</span>
 											<span class="nav-menu__link-arrow">
 												<svg width="8" height="12" viewbox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -122,7 +124,7 @@
 										</a>
 									</li>
 									<li class="nav-menu__item">
-										<a href="#" class="nav-menu__link">
+										<a href="#" class="nav-menu__link" data-img-src="assets/img/image-2.webp">
 											<span>Наші роботи</span>
 											<span class="nav-menu__link-arrow">
 												<svg width="8" height="12" viewbox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -132,7 +134,7 @@
 										</a>
 									</li>
 									<li class="nav-menu__item">
-										<a href="#" class="nav-menu__link">
+										<a href="#" class="nav-menu__link" data-img-src="assets/img/image-1.webp">
 											<span>Галерея</span>
 											<span class="nav-menu__link-arrow">
 												<svg width="8" height="12" viewbox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -156,9 +158,9 @@
 									</svg>
 								</button>
 							</div>
-							<nav class="menu__body">
+							<nav class="menu__body" data-menu-parent="">
 								<div class="menu__image">
-									<img class="menu__img" loading="lazy" alt="Image" src="./assets/img/image-1.webp">
+									<img class="menu__img" data-menu-img="" loading="lazy" alt="Image" src="./assets/img/image-1.webp">
 									<div class="menu__logo">
 										<img src="./assets/img/logo-white.svg" alt="Image">
 									</div>
@@ -182,7 +184,7 @@
 									<div class="menu__columns">
 										<ul class="menu__list">
 											<li class="menu__item">
-												<a href="#" class="menu__link">
+												<a href="#" class="menu__link" data-img-src="assets/img/image-2.webp">
 													<span>Гарячі</span>
 													<span class="menu__link-arrow">
 														<svg width="8" height="12" viewbox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -192,7 +194,7 @@
 												</a>
 											</li>
 											<li class="menu__item">
-												<a href="#" class="menu__link">
+												<a href="#" class="menu__link" data-img-src="assets/img/image-1.webp">
 													<span>Холодні</span>
 													<span class="menu__link-arrow">
 														<svg width="8" height="12" viewbox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -202,7 +204,7 @@
 												</a>
 											</li>
 											<li class="menu__item">
-												<a href="#" class="menu__link">
+												<a href="#" class="menu__link" data-img-src="assets/img/image-sale.webp">
 													<span>Рибні</span>
 													<span class="menu__link-arrow">
 														<svg width="8" height="12" viewbox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -212,7 +214,7 @@
 												</a>
 											</li>
 											<li class="menu__item">
-												<a href="#" class="menu__link">
+												<a href="#" class="menu__link" data-img-src="assets/img/image-2.webp">
 													<span>М’ясні</span>
 													<span class="menu__link-arrow">
 														<svg width="8" height="12" viewbox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -222,7 +224,7 @@
 												</a>
 											</li>
 											<li class="menu__item">
-												<a href="#" class="menu__link">
+												<a href="#" class="menu__link" data-img-src="assets/img/image-1.webp">
 													<span>BBQ</span>
 													<span class="menu__link-arrow">
 														<svg width="8" height="12" viewbox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -232,7 +234,7 @@
 												</a>
 											</li>
 											<li class="menu__item">
-												<a href="#" class="menu__link">
+												<a href="#" class="menu__link" data-img-src="assets/img/image-2.webp">
 													<span>Гострі</span>
 													<span class="menu__link-arrow">
 														<svg width="8" height="12" viewbox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -242,7 +244,7 @@
 												</a>
 											</li>
 											<li class="menu__item">
-												<a href="#" class="menu__link">
+												<a href="#" class="menu__link" data-img-src="assets/img/image-1.webp">
 													<span>Не гострі</span>
 													<span class="menu__link-arrow">
 														<svg width="8" height="12" viewbox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -254,7 +256,7 @@
 										</ul>
 										<ul class="menu__list">
 											<li class="menu__item">
-												<a href="#" class="menu__link">
+												<a href="#" class="menu__link" data-img-src="assets/img/image-1.webp">
 													<span>Солодкі</span>
 													<span class="menu__link-arrow">
 														<svg width="8" height="12" viewbox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -264,7 +266,7 @@
 												</a>
 											</li>
 											<li class="menu__item">
-												<a href="#" class="menu__link">
+												<a href="#" class="menu__link" data-img-src="assets/img/image-2.webp">
 													<span>Солоні</span>
 													<span class="menu__link-arrow">
 														<svg width="8" height="12" viewbox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -274,7 +276,7 @@
 												</a>
 											</li>
 											<li class="menu__item">
-												<a href="#" class="menu__link">
+												<a href="#" class="menu__link" data-img-src="assets/img/image-1.webp">
 													<span>Вегетаріанські</span>
 													<span class="menu__link-arrow">
 														<svg width="8" height="12" viewbox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -284,7 +286,7 @@
 												</a>
 											</li>
 											<li class="menu__item">
-												<a href="#" class="menu__link">
+												<a href="#" class="menu__link" data-img-src="assets/img/image-2.webp">
 													<span>Веганські</span>
 													<span class="menu__link-arrow">
 														<svg width="8" height="12" viewbox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -294,7 +296,7 @@
 												</a>
 											</li>
 											<li class="menu__item">
-												<a href="#" class="menu__link">
+												<a href="#" class="menu__link" data-img-src="assets/img/image-1.webp">
 													<span>Дитячі</span>
 													<span class="menu__link-arrow">
 														<svg width="8" height="12" viewbox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -304,7 +306,7 @@
 												</a>
 											</li>
 											<li class="menu__item">
-												<a href="#" class="menu__link">
+												<a href="#" class="menu__link" data-img-src="assets/img/image-2.webp">
 													<span>Замовлення на завтра</span>
 													<span class="menu__link-arrow">
 														<svg width="8" height="12" viewbox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -318,7 +320,7 @@
 								</div>
 							</nav>
 						</div>
-						<div class="consultation dropdown-menu is-success" data-menu-target="consultation">
+						<div class="consultation dropdown-menu" data-menu-target="consultation">
 							<div class="mobile-head">
 								<a href="#" class="mobile-head__logo">
 									<img src="./assets/img/logo.svg" alt="Image">
@@ -762,11 +764,11 @@
 								<div class="hero__slide swiper-slide">
 									<div class="hero__slide-body">
 										<div class="hero__slide-head">
-											<h1 class="hero__slide-title">
+											<div class="hero__slide-title">
 												Ідеальний
 												<br>
 												варіант
-											</h1>
+											</div>
 											<div class="hero__slide-subtitle">для вашого тімбілдінгу</div>
 										</div>
 										<div class="hero__slide-info">
@@ -911,7 +913,7 @@
 							<div data-fls-slider="" class="products__slider swiper">
 								<div class="products__wrapper swiper-wrapper">
 									<div class="products__slide swiper-slide product-card">
-										<img class="product-card__bg" loading="lazy" alt="Image" src="./assets/img/image-1.webp">
+										<img class="product-card__bg" loading="lazy" alt="Image" src="./assets/img/image-2.webp">
 										<div class="product-card__head">
 											<a href="#" class="product-card__title">
 												Сендвіч
@@ -997,7 +999,7 @@
 										</div>
 									</div>
 									<div class="products__slide swiper-slide product-card out-of-stock">
-										<img class="product-card__bg" loading="lazy" alt="Image" src="./assets/img/image-1.webp">
+										<img class="product-card__bg" loading="lazy" alt="Image" src="./assets/img/image-2.webp">
 										<div class="product-card__head">
 											<a href="#" class="product-card__title">
 												Сендвіч
@@ -1040,7 +1042,7 @@
 										</div>
 									</div>
 									<div class="products__slide swiper-slide product-card">
-										<img class="product-card__bg" loading="lazy" alt="Image" src="./assets/img/image-1.webp">
+										<img class="product-card__bg" src="assets/img/image-3.jpg" loading="lazy" alt="Image">
 										<div class="product-card__head">
 											<a href="#" class="product-card__title">
 												Сендвіч
@@ -1176,7 +1178,7 @@
 							<div data-fls-slider="" class="products__slider swiper">
 								<div class="products__wrapper swiper-wrapper">
 									<div class="products__slide swiper-slide product-card">
-										<img class="product-card__bg" loading="lazy" alt="Image" src="./assets/img/image-1.webp">
+										<img class="product-card__bg" loading="lazy" alt="Image" src="./assets/img/image-2.webp">
 										<div class="product-card__head">
 											<a href="#" class="product-card__title">
 												Сендвіч
@@ -1262,7 +1264,7 @@
 										</div>
 									</div>
 									<div class="products__slide swiper-slide product-card out-of-stock">
-										<img class="product-card__bg" loading="lazy" alt="Image" src="./assets/img/image-1.webp">
+										<img class="product-card__bg" loading="lazy" alt="Image" src="./assets/img/image-2.webp">
 										<div class="product-card__head">
 											<a href="#" class="product-card__title">
 												Сендвіч
@@ -1305,7 +1307,7 @@
 										</div>
 									</div>
 									<div class="products__slide swiper-slide product-card">
-										<img class="product-card__bg" loading="lazy" alt="Image" src="./assets/img/image-1.webp">
+										<img class="product-card__bg" src="assets/img/image-3.jpg" loading="lazy" alt="Image">
 										<div class="product-card__head">
 											<a href="#" class="product-card__title">
 												Сендвіч
@@ -1378,7 +1380,7 @@
 						<div class="willfit__items">
 							<div class="willfit__item willfit__item--accent" style="background-image: url('./assets/img/decors/bow.svg');">
 								<div class="willfit__item-body">
-									<div class="willfit__item-title">Корпоративні заходи</div>
+									<a href="#" class="willfit__item-title">Корпоративні заходи</a>
 									<div class="willfit__item-text">
 										<span>Наприклад:</span>
 										конференції, семінари, тренінги, презентації, обіди в офісі, тімбілдинги
@@ -1391,7 +1393,7 @@
 							</div>
 							<div class="willfit__item">
 								<div class="willfit__item-body">
-									<div class="willfit__item-title">Сімейні свята</div>
+									<a href="" class="willfit__item-title">Сімейні свята</a>
 									<div class="willfit__item-text">
 										<span>Наприклад:</span>
 										дні народження, ювілеї, річниці
@@ -1403,7 +1405,7 @@
 							</div>
 							<div class="willfit__item">
 								<div class="willfit__item-body">
-									<div class="willfit__item-title">Весілля</div>
+									<a href="#" class="willfit__item-title">Весілля</a>
 									<div class="willfit__item-text">
 										<span>Наприклад:</span>
 										виїзні церемонії, шумні пікніки
@@ -1415,11 +1417,11 @@
 							</div>
 							<div class="willfit__item">
 								<div class="willfit__item-body">
-									<div class="willfit__item-title">
+									<a href="#" class="willfit__item-title">
 										Пікніки
 										<br>
 										та виїзні події
-									</div>
+									</a>
 									<div class="willfit__item-text">
 										<span>Наприклад:</span>
 										BBQ, вечірки на природі, зустрічі з великою кількістю друзів
@@ -1431,7 +1433,7 @@
 							</div>
 							<div class="willfit__item">
 								<div class="willfit__item-body">
-									<div class="willfit__item-title">Дитячі свята та шкільні заходи</div>
+									<a href="#" class="willfit__item-title">Дитячі свята та шкільні заходи</a>
 									<div class="willfit__item-text">
 										<span>Наприклад:</span>
 										дні народження дітей, випускні, ранки
@@ -1463,7 +1465,7 @@
 							<div data-fls-slider="" class="products__slider swiper">
 								<div class="products__wrapper swiper-wrapper">
 									<div class="products__slide swiper-slide product-card">
-										<img class="product-card__bg" loading="lazy" alt="Image" src="./assets/img/image-1.webp">
+										<img class="product-card__bg" loading="lazy" alt="Image" src="./assets/img/image-2.webp">
 										<div class="product-card__head">
 											<a href="#" class="product-card__title">
 												Сендвіч
@@ -1549,7 +1551,7 @@
 										</div>
 									</div>
 									<div class="products__slide swiper-slide product-card out-of-stock">
-										<img class="product-card__bg" loading="lazy" alt="Image" src="./assets/img/image-1.webp">
+										<img class="product-card__bg" loading="lazy" alt="Image" src="./assets/img/image-2.webp">
 										<div class="product-card__head">
 											<a href="#" class="product-card__title">
 												Сендвіч
@@ -1592,7 +1594,7 @@
 										</div>
 									</div>
 									<div class="products__slide swiper-slide product-card">
-										<img class="product-card__bg" loading="lazy" alt="Image" src="./assets/img/image-1.webp">
+										<img class="product-card__bg" src="assets/img/image-3.jpg" loading="lazy" alt="Image">
 										<div class="product-card__head">
 											<a href="#" class="product-card__title">
 												Сендвіч
@@ -1669,7 +1671,7 @@
 							<div data-fls-slider="" class="products__slider swiper">
 								<div class="products__wrapper swiper-wrapper">
 									<div class="products__slide swiper-slide product-card">
-										<img class="product-card__bg" loading="lazy" alt="Image" src="./assets/img/image-1.webp">
+										<img class="product-card__bg" loading="lazy" alt="Image" src="./assets/img/image-2.webp">
 										<div class="product-card__head">
 											<a href="#" class="product-card__title">
 												Сендвіч
@@ -1755,7 +1757,7 @@
 										</div>
 									</div>
 									<div class="products__slide swiper-slide product-card out-of-stock">
-										<img class="product-card__bg" loading="lazy" alt="Image" src="./assets/img/image-1.webp">
+										<img class="product-card__bg" loading="lazy" alt="Image" src="./assets/img/image-2.webp">
 										<div class="product-card__head">
 											<a href="#" class="product-card__title">
 												Сендвіч
@@ -1798,7 +1800,7 @@
 										</div>
 									</div>
 									<div class="products__slide swiper-slide product-card">
-										<img class="product-card__bg" loading="lazy" alt="Image" src="./assets/img/image-1.webp">
+										<img class="product-card__bg" src="assets/img/image-3.jpg" loading="lazy" alt="Image">
 										<div class="product-card__head">
 											<a href="#" class="product-card__title">
 												Сендвіч
@@ -1922,9 +1924,21 @@
 							<li>весілля, день народження, baby shower;</li>
 							<li>неформальну зустріч друзів або сімейне свято.</li>
 						</ul>
+						<h3>H3 -- Що входить у бокси?</h3>
+						<ol>
+							<li>корпоратив, ділову зустріч або тренінг;</li>
+							<li>презентацію чи відкриття магазину;</li>
+							<li>весілля, день народження, baby shower;</li>
+							<li>неформальну зустріч друзів або сімейне свято.</li>
+						</ol>
+						<a href="#">Усе готове</a>
+						<p>
+							<b>смачними закусками без клопоту</b>
+						</p>
 						<h4>H4 -- Що входить у бокси?</h4>
 						<p>
-							Забудьте про довгу організацію та
+							<b>Забудьте</b>
+							про довгу організацію та
 							<a href="#">пошуки кейтерингу</a>
 							. Оберіть набір на сайті, замовте онлайн — і
             насолоджуйтесь смачними закусками без клопоту. Усе готове до подачі.
@@ -1934,6 +1948,8 @@
 							Ідеально підходять для вітального фуршету або легкого перекусу. Смаколики на шпажках, канапе, сири, овочі та
             соуси.
 						</p>
+						<h6>H6 -- Антипасті та Фінгер фуд</h6>
+						<img loading="lazy" alt="Image" src="./assets/img/image-1.webp">
 					</div>
 				</section>
 			</main>
@@ -2085,15 +2101,15 @@
 						</svg>
 					</button>
 					<div data-fls-popup-content="" class="popup__sale">
-						<div class="popup__sale-img">
+						<a href="#" class="popup__sale-img">
 							<picture>
 								<source srcset="./assets/img/image-sale-mob.jpg" media="(max-width: 479.98px)">
 								<img loading="lazy" alt="image" src="./assets/img/image-sale.webp">
 							</picture>
-						</div>
+						</a>
 						<div class="popup__sale-body">
 							<div class="popup__sale-content">
-								<div class="popup__sale-title">Акція! 1+1=3</div>
+								<a href="#" class="popup__sale-title">Акція! 1+1=3</a>
 								<div class="popup__sale-text">Замовляйте 3 товари та отримайте знижку 100% на найдешевшу позицію в кошику</div>
 							</div>
 							<a href="#" class="popup__sale-link btn">
@@ -2107,10 +2123,55 @@
 				</div>
 			</div>
 		</div>
-		<button type="button" class="support-btn">
+		<button type="button" data-menu="consultation" data-menu-click="" class="support-btn">
 			<svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M15.596 12.5283C14.4941 11.5982 13.3758 11.0349 12.2874 11.9635L11.6375 12.5248C11.162 12.9322 10.2779 14.8358 6.85972 10.9555C3.44224 7.08008 5.47593 6.47668 5.95214 6.07277L6.6056 5.51081C7.68829 4.58007 7.2797 3.40838 6.49883 2.20228L6.0276 1.47173C5.24316 0.268437 4.38897 -0.521817 3.30344 0.407522L2.71689 0.913285C2.23712 1.25819 0.896037 2.37929 0.570732 4.50912C0.179228 7.06463 1.41425 9.99102 4.24376 13.2019C7.06971 16.4142 9.83658 18.0277 12.4575 17.9996C14.6357 17.9765 15.9512 16.823 16.3626 16.4037L16.9513 15.8972C18.034 14.9686 17.3613 14.0231 16.2587 13.0909L15.596 12.5283Z" fill="currentColor"></path>
 			</svg>
 		</button>
+		<ul id="fls-dev-panel">
+			<li>
+				<a href="index.html">index</a>
+			</li>
+			<li>
+				<a href="category.html">category</a>
+			</li>
+		</ul>
+		<style>
+			#fls-dev-panel{
+				position: fixed;
+				left: 10px;
+				padding: 15px 25px 15px 15px;
+				border-radius: 0 10px 10px 0;
+				top: 10%;
+				color: #ffffff;
+				background-color: rgba(51, 51, 51, 0.5);
+				transform: translate(-100%, 0px);
+				max-height: 80svh;
+				overflow: auto;
+				transition: all 300ms;
+				z-index: 9999;
+				font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+			}
+			#fls-dev-panel li{
+				list-style:none;
+			}
+			#fls-dev-panel hr{
+				border-bottom: 1px solid;
+			}
+			#fls-dev-panel:hover{
+				left: 0px;
+				transform: translate(0, 0);
+			}
+			#fls-dev-panel a{
+				text-decoration: none;
+				color: inherit;
+			}
+			#fls-dev-panel a:hover {
+				text-decoration: underline;
+			}
+			#fls-dev-panel li:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		</style>
 	</body>
 </html>
