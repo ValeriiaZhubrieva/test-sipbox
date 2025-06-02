@@ -1143,6 +1143,9 @@ textarea.input {
 .products__slider:not(.swiper-initialized) .products__slide:nth-child(n+4) {
   display: none;
 }
+.products__slide {
+  width: 100%;
+}
 .products__arrows {
   position: absolute;
   top: 50%;
