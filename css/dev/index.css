@@ -54,7 +54,7 @@
   position: relative;
   z-index: 3;
 }
-.hero__slider:not(.swiper-initialized) .hero__slide:nth-child(n+1) {
+.hero__slider:not(.swiper-initialized) .hero__slide:nth-child(n+2) {
   display: none;
 }
 .hero__slide {

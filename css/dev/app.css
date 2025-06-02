@@ -1137,7 +1137,10 @@ textarea.input {
 .products__slider {
   border-radius: 36px;
 }
-.products__slider:not(.swiper-initialized) .products__slide:nth-child(n+3) {
+.products__slider:not(.swiper-initialized) .products__wrapper {
+  gap: 24px;
+}
+.products__slider:not(.swiper-initialized) .products__slide:nth-child(n+4) {
   display: none;
 }
 .products__arrows {
