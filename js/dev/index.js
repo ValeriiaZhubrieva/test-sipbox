@@ -5220,9 +5220,3 @@ function initSliders() {
   }
 }
 document.querySelector("[data-fls-slider]") ? window.addEventListener("load", initSliders) : null;
-const favBtns = document.querySelectorAll(".btn-fav");
-favBtns.forEach((favBtn) => {
-  favBtn.addEventListener("click", () => {
-    favBtn.classList.toggle("is-active");
-  });
-});

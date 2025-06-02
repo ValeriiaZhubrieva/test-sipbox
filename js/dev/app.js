@@ -3447,8 +3447,31 @@ if (inputFields.length) {
 }
 if (document.querySelector("[data-fls-popup='popup-sale']")) {
   window.addEventListener("load", () => {
-    setTimeout(() => {
-      window.flsPopup.open("popup-sale");
-    }, 3e3);
+  });
+}
+function addActiveBtnSClass(buttonsClass, activeClass) {
+  const buttons = document.querySelectorAll(buttonsClass);
+  if (buttons.length) {
+    buttons.forEach((item) => {
+      item.addEventListener("click", function(e) {
+        e.preventDefault();
+        item.classList.add(activeClass);
+        buttons.forEach((otherItem) => {
+          if (otherItem !== this) {
+            otherItem.classList.remove(activeClass);
+          }
+        });
+      });
+    });
+  }
+}
+addActiveBtnSClass(".filter-block__btn", "is-active");
+addActiveBtnSClass(".subfilter-block__btn", "is-active");
+const toggleActiveBtns = document.querySelectorAll("[data-toggle-active]");
+if (toggleActiveBtns.length) {
+  toggleActiveBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      btn.classList.toggle("is-active");
+    });
   });
 }
