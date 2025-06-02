@@ -14,8 +14,13 @@
 .checkbox__input:focus-visible + .checkbox__text {
   outline: 1px solid #000;
 }
-.checkbox__input:checked + .checkbox__text:after {
-  transform: scale(1);
+.checkbox__input:checked + .checkbox__text:before {
+  border-color: var(--green-color);
+  background-color: var(--green-color);
+  background-image: url("../assets/img/icons/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 .checkbox__text {
   cursor: pointer;
@@ -26,24 +31,12 @@
 }
 .checkbox__text:before {
   content: "";
-  border-radius: 3px;
+  border-radius: 6px;
   align-self: flex-start;
   flex: 0 0 20px;
   width: 20px;
   height: 20px;
-  border: 1px solid #a7a9ac;
-}
-.checkbox__text::after {
-  content: "";
-  transition: all 0.3s ease 0s;
-  transform: scale(0);
-  width: 10px;
-  height: 10px;
-  border-radius: 3px;
-  background-color: #7a956b;
-  position: absolute;
-  left: 5px;
-  top: 5px;
+  border: 2px solid var(--light-gray);
 }.catalog {
   padding-top: 64px;
   margin-bottom: 160px;

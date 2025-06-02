@@ -1925,6 +1925,9 @@ textarea.input {
     min-height: 60px;
     border-radius: 48px;
   }
+  .menu-btn:not(.--dynamic) {
+    display: none;
+  }
   .menu-btn__arrow {
     transform: rotate(-90deg);
   }
@@ -1944,6 +1947,10 @@ textarea.input {
     max-width: 24px;
     width: 100%;
     color: var(--green-color);
+  }
+  .phones-btn:not(.--dynamic),
+  .fav-btn:not(.--dynamic) {
+    display: none;
   }
   .cart-btn__icons {
     width: 18px;
