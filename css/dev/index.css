@@ -58,6 +58,7 @@
   display: none;
 }
 .hero__slide {
+  width: 100%;
   min-height: 500px;
   border-radius: 36px;
   overflow: hidden;
