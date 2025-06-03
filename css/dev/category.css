@@ -684,7 +684,7 @@
 }
 @media (max-width: 23.12375em) {
   .pagination {
-    gap: 12px;
+    gap: 8px;
   }
 }
 @media (any-hover: hover) {
