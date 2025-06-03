@@ -200,6 +200,7 @@
 .filter-block__btn.is-active {
   background-color: var(--green-color);
   color: var(--white-color);
+  border-color: var(--green-color);
 }
 .filter-block__btn.is-active svg {
   color: var(--white-color);
