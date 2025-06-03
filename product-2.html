@@ -8,19 +8,20 @@
 		<link rel="preload" href="./assets/fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="preload" href="./assets/fonts/Inter-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
-		<title>Home Page</title>
+		<title>Сендвіч Сет Бокс</title>
 		<script type="module" crossorigin="" src="./js/app.min.js?v=1748971470139"></script>
 		<script type="module" crossorigin="" src="./js/slider.min.js?v=1748971470139"></script>
+		<script type="module" crossorigin="" src="./js/reviews.min.js?v=1748971470139"></script>
 		<script type="module" crossorigin="" src="./js/products.min.js?v=1748971470139"></script>
 		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1748971470139">
 		<link rel="stylesheet" crossorigin="" href="./css/slider.min.css?v=1748971470139">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1748971470139">
+		<link rel="stylesheet" crossorigin="" href="./css/reviews.min.css?v=1748971470139">
 		<link rel="stylesheet" crossorigin="" href="./css/products.min.css?v=1748971470139">
-		<link rel="stylesheet" crossorigin="" href="./css/advantages.min.css?v=1748971470139">
+		<link rel="stylesheet" crossorigin="" href="./css/contacts.min.css?v=1748971470139">
 	</head>
 	<body>
 		<div class="wrapper">
-			<header data-fls-header="" data-fls-header-scroll="" class="header">
+			<header data-fls-header="" data-fls-header-scroll="" class="header header--fixed">
 				<div class="header__container">
 					<div class="header__body">
 						<div class="header__left">
@@ -760,709 +761,337 @@
 					</div>
 				</div>
 			</header>
-			<main class="page page--home">
-				<section class="hero">
-					<div class="hero__container">
-						<div data-fls-slider="" class="hero__slider swiper">
-							<div class="hero__wrapper swiper-wrapper">
-								<div class="hero__slide swiper-slide">
-									<div class="hero__slide-body">
-										<div class="hero__slide-head">
-											<div class="hero__slide-title">
-												Ідеальний
-												<br>
-												варіант
-											</div>
-											<div class="hero__slide-subtitle">для вашого тімбілдінгу</div>
-										</div>
-										<div class="hero__slide-info">
-											<div class="hero__slide-text">
-												Розрахуйте свій варіант меню для корпоративного заходу, який колеги будуть згадувати ще
-                                багато років
-											</div>
-											<a href="#" class="hero__slide-btn btn-accent">Зголоднів</a>
-										</div>
-									</div>
-									<picture>
-										<source srcset="./assets/img/hero/image-mob.jpg" media="(max-width: 549.98px)">
-										<img class="hero__slide-bg" loading="lazy" alt="promo-img" src="./assets/img/hero/image.webp">
-									</picture>
-								</div>
-								<div class="hero__slide swiper-slide">
-									<div class="hero__slide-body">
-										<div class="hero__slide-head">
-											<div class="hero__slide-title">
-												Ідеальний
-												<br>
-												варіант
-											</div>
-										</div>
-										<div class="hero__slide-info">
-											<div class="hero__slide-text">
-												Розрахуйте свій варіант меню для корпоративного заходу, який колеги будуть згадувати ще
-                                багато років
-											</div>
-											<a href="#" class="hero__slide-btn btn-accent">Зголоднів</a>
-										</div>
-									</div>
-									<video class="hero__slide-bg" src="./assets/video/main_32.mp4" preload="metadata" playsinline="playsinline" muted width="100%" height="100%" loop autoplay loading="lazy"></video>
-								</div>
-								<div class="hero__slide swiper-slide">
-									<div class="hero__slide-body">
-										<div class="hero__slide-head">
-											<div class="hero__slide-title">
-												Ідеальний
-												<br>
-												варіант
-											</div>
-										</div>
-										<div class="hero__slide-info">
-											<div class="hero__slide-text">
-												Розрахуйте свій варіант меню для корпоративного заходу, який колеги будуть згадувати ще
-                                багато років
-											</div>
-											<a href="#" class="hero__slide-btn btn-accent">Зголоднів</a>
-										</div>
-									</div>
-									<picture>
-										<source srcset="./assets/img/hero/image-mob.jpg" media="(max-width: 549.98px)">
-										<img class="hero__slide-bg" loading="lazy" alt="promo-img" src="./assets/img/hero/image.webp">
-									</picture>
-								</div>
-								<div class="hero__slide swiper-slide">
-									<div class="hero__slide-body">
-										<div class="hero__slide-head">
-											<div class="hero__slide-title">
-												Ідеальний
-												<br>
-												варіант
-											</div>
-										</div>
-										<div class="hero__slide-info">
-											<div class="hero__slide-text">
-												Розрахуйте свій варіант меню для корпоративного заходу, який колеги будуть згадувати ще
-                                багато років
-											</div>
-											<a href="#" class="hero__slide-btn btn-accent">Зголоднів</a>
-										</div>
-									</div>
-									<picture>
-										<source srcset="./assets/img/hero/image-mob.jpg" media="(max-width: 549.98px)">
-										<img class="hero__slide-bg" loading="lazy" alt="promo-img" src="./assets/img/hero/image.webp">
-									</picture>
-								</div>
-							</div>
-							<div class="swiper-pagination"></div>
-						</div>
-						<div class="hero__arrows">
-							<button type="button" class="swiper-button-prev">
-								<svg width="17" height="28" viewbox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M15 2L3 14L15 26" stroke="currentColor" stroke-width="4"></path>
-								</svg>
-							</button>
-							<button type="button" class="swiper-button-next">
-								<svg width="17" height="28" viewbox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M2 2L14 14L2 26" stroke="currentColor" stroke-width="4"></path>
-								</svg>
-							</button>
-						</div>
-						<div data-fls-mouse="" class="hero__decor">
-							<img loading="lazy" alt="Image" src="./assets/img/decors/decor-spice.webp">
-						</div>
-					</div>
-				</section>
-				<section class="recommendation">
-					<div class="recommendation__container">
-						<div class="recommendation__body">
-							<div class="recommendation__title title-dark text-center">
-								<span>Рекомендуємо</span>
-								переглянути
-							</div>
-							<div class="recommendation__items">
-								<a href="#" class="recommendation__item">Гарячі</a>
-								<a href="#" class="recommendation__item">Холодні</a>
-								<a href="#" class="recommendation__item">Рибні</a>
-								<a href="#" class="recommendation__item">М’ясні</a>
-								<a href="#" class="recommendation__item">BBQ</a>
-								<a href="#" class="recommendation__item">Гострі</a>
-								<a href="#" class="recommendation__item">Не гострі</a>
-								<a href="#" class="recommendation__item">Солодкі</a>
-								<a href="#" class="recommendation__item">Солоні</a>
-								<a href="#" class="recommendation__item">Вегетаріанські</a>
-								<a href="#" class="recommendation__item">Корпоративні</a>
-								<a href="#" class="recommendation__item">Веганські</a>
-							</div>
-							<a href="#" class="recommendation__btn btn">
-								<span>Каталог</span>
-								<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M1.5 2L9.5 9L1.5 16" stroke="currentColor" stroke-width="3"></path>
+			<main class="page">
+				<section class="hero-product">
+					<img class="hero-product__bg" alt="Image" src="./assets/img/image-big.webp">
+					<!--
+<video class="hero-product__bg" src="@video/main_32.mp4" preload="metadata" playsinline="playsinline" muted="muted"
+width="100%" height="100%" loop autoplay loading="lazy"></video>
+-->
+					<div class="hero-product__container">
+						<div class="breadcrumbs breadcrumbs--dark">
+							<a href="#" class="breadcrumbs__link">
+								<svg width="17" height="13" viewbox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.44 10.4321H0.981085C0.715398 10.4321 0.5 10.6477 0.5 10.9136C0.5 12.0659 1.43334 13 2.5847 13H14.8363C15.9877 13 16.9211 12.0659 16.9211 10.9136C16.9211 10.6477 16.7057 10.4321 16.44 10.4321Z" fill="currentColor"></path>
+									<path d="M9.99342 1.54036V1.28395C9.99342 0.574857 9.41904 0 8.71053 0C8.00202 0 7.42763 0.574857 7.42763 1.28395V1.54036C7.84852 1.47696 8.277 1.44444 8.71053 1.44444C9.14405 1.44444 9.57253 1.47696 9.99342 1.54036Z" fill="currentColor"></path>
+									<path d="M14.04 4.61677C12.6164 3.19203 10.7237 2.40741 8.71053 2.40741C6.69731 2.40741 4.80462 3.19203 3.38106 4.61677C2.07151 5.92739 1.30373 7.63546 1.18907 9.46914H16.2319C16.1173 7.63546 15.3495 5.92739 14.04 4.61677Z" fill="currentColor"></path>
 								</svg>
 							</a>
+							<span class="breadcrumbs__link is-active">Корпоративні бокси</span>
 						</div>
-						<div data-fls-mouse="" class="recommendation__decor">
-							<img loading="lazy" alt="Image" src="./assets/img/decors/decor-pepper.webp">
-						</div>
-					</div>
-				</section>
-				<section class="products">
-					<div class="products__container">
-						<div class="products__head">
-							<div class="products__title title">
-								Популярні та
-								<span>смачні</span>
+						<div class="hero-product__body" data-fixed-hide="">
+							<div class="hero-product__title">
+								Сендвіч
+								<br>
+								Сет Бокс
 							</div>
-							<div class="swiper-pagination"></div>
-						</div>
-						<div class="products__inner">
-							<div data-fls-slider="" class="products__slider swiper">
-								<div class="products__wrapper swiper-wrapper">
-									<div class="products__slide swiper-slide product-card">
-										<img class="product-card__bg" loading="lazy" alt="Image" src="./assets/img/image-2.webp">
-										<div class="product-card__head">
-											<a href="#" class="product-card__title">
-												Сендвіч
-												<br>
-												Сет Бокс
-											</a>
-											<div class="product-card__info">
-												<div class="product-card__info-item">
-													<svg width="14" height="15" viewbox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M10.1052 6.17833L7.525 7.79092V10.7876C7.61033 10.7407 7.71778 10.6794 7.8575 10.5988L9.25484 9.79201C9.69353 9.53875 9.80805 9.46553 9.88757 9.37726C9.96961 9.28612 10.0316 9.17874 10.0695 9.06212C10.1062 8.94907 10.1123 8.81334 10.1123 8.30675V6.69332C10.1123 6.44769 10.1109 6.28928 10.1052 6.17833Z" fill="currentColor"></path>
-														<path d="M9.47324 5.33512L6.99174 6.88603L4.44144 5.38584C4.52067 5.33828 4.61966 5.28054 4.74521 5.20807L6.1425 4.40133C6.58119 4.14805 6.70187 4.08544 6.81807 4.06073C6.93805 4.03524 7.06202 4.03524 7.18193 4.06073C7.2982 4.08544 7.41881 4.14805 7.8575 4.40133L9.25484 5.20807C9.33884 5.25656 9.41094 5.29846 9.47324 5.33512Z" fill="currentColor"></path>
-														<path d="M3.89107 6.28025C3.88847 6.38196 3.88771 6.51454 3.88771 6.69332V8.30675C3.88771 8.81334 3.89381 8.94907 3.93053 9.06212C3.96843 9.17874 4.03041 9.28612 4.11246 9.37726C4.19198 9.46553 4.30652 9.53875 4.74521 9.79201L6.1425 10.5988C6.28222 10.6794 6.38967 10.7407 6.475 10.7876V7.80023L3.89107 6.28025Z" fill="currentColor"></path>
-														<path fill-rule="evenodd" clip-rule="evenodd" d="M6.97858 0.5H7.02142C8.064 0.5 8.87551 0.499993 9.52854 0.548223C10.1913 0.597167 10.7322 0.697869 11.2251 0.921169C12.2692 1.39426 13.1058 2.23081 13.5788 3.27496C13.8021 3.76779 13.9028 4.30873 13.9518 4.97147C14 5.62445 14 6.436 14 7.47858V7.52142C14 8.564 14 9.37551 13.9518 10.0285C13.9028 10.6913 13.8021 11.2322 13.5788 11.7251C13.1058 12.7692 12.2692 13.6058 11.2251 14.0788C10.7322 14.3021 10.1913 14.4028 9.52854 14.4518C8.87551 14.5 8.064 14.5 7.02142 14.5H6.97858C5.936 14.5 5.12445 14.5 4.47147 14.4518C3.80873 14.4028 3.26779 14.3021 2.77496 14.0788C1.73081 13.6058 0.894264 12.7692 0.421169 11.7251C0.197869 11.2322 0.0971671 10.6913 0.0482231 10.0285C-6.93128e-06 9.37551 0 8.564 0 7.52142V7.47858C0 6.436 -6.93128e-06 5.62446 0.0482231 4.97147C0.0971671 4.30873 0.197869 3.76779 0.421169 3.27496C0.894264 2.23081 1.73081 1.39426 2.77496 0.921169C3.26779 0.697869 3.80873 0.597167 4.47147 0.548223C5.12446 0.499993 5.936 0.5 6.97858 0.5ZM7.40026 3.03368C7.13636 2.97759 6.86364 2.97759 6.59981 3.03368C6.29965 3.09747 6.02651 3.25547 5.67889 3.45654L4.15884 4.33413C3.81088 4.53466 3.53746 4.69224 3.33216 4.92025C3.15165 5.12072 3.01529 5.3569 2.93193 5.61346C2.83711 5.90526 2.83737 6.22082 2.83767 6.62248V8.37759C2.83737 8.77925 2.83711 9.09481 2.93193 9.38657C3.01529 9.64319 3.15165 9.87937 3.33216 10.0799C3.53746 10.3078 3.81088 10.4654 4.15884 10.666L5.67889 11.5436C6.02651 11.7446 6.29965 11.9026 6.59981 11.9664C6.86364 12.0225 7.13636 12.0225 7.40026 11.9664C7.70035 11.9026 7.97356 11.7446 8.32118 11.5436L9.84123 10.666C10.1891 10.4654 10.4625 10.3078 10.6679 10.0799C10.8484 9.87937 10.9847 9.64319 11.0681 9.38657C11.1629 9.09481 11.1627 8.77925 11.1623 8.37759V6.62248C11.1627 6.22082 11.1629 5.90526 11.0681 5.61346C10.9847 5.3569 10.8484 5.12072 10.6679 4.92025C10.4625 4.69224 10.1891 4.53467 9.84123 4.33413L8.32118 3.45655C7.97356 3.25547 7.70035 3.09747 7.40026 3.03368Z" fill="currentColor"></path>
-													</svg>
-													<span>32 сендвічі</span>
-												</div>
-												<div class="product-card__info-item">
-													<svg width="13" height="15" viewbox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M12.9808 12.8299L11.7975 5.52877C11.6862 4.84035 11.1089 4.33723 10.4333 4.33723H8.65532C8.8638 3.96209 8.98302 3.52751 8.98302 3.06473C8.98302 1.65059 7.86927 0.5 6.49977 0.5C5.13056 0.5 4.01652 1.65059 4.01652 3.06473C4.01652 3.52751 4.13574 3.96209 4.34421 4.33723H2.56627C1.89033 4.33723 1.31334 4.84096 1.20206 5.52937L0.019012 12.8314C-0.0482298 13.2454 0.0648186 13.6715 0.327619 13.9917C0.590714 14.3123 0.976547 14.5 1.38352 14.5H11.6172C12.0242 14.5 12.41 14.3123 12.6731 13.9917C12.9356 13.6709 13.0484 13.2442 12.9808 12.8299ZM6.50006 1.99419C7.07147 1.99419 7.53658 2.47457 7.53658 3.06503C7.53658 3.65549 7.07147 4.13556 6.50006 4.13556C5.92836 4.13556 5.46325 3.65519 5.46325 3.06473C5.46325 2.47427 5.92836 1.99419 6.50006 1.99419Z" fill="currentColor"></path>
-													</svg>
-													<span>1 600 грамів</span>
-												</div>
-											</div>
-											<div class="product-card__prices">
-												<div class="product-card__price">1500 грн</div>
-											</div>
-											<div class="product-card__date">
-												Доставимо:
-												<span>07 травня</span>
-											</div>
-										</div>
-										<div class="product-card__bottom">
-											<button type="button" class="product-card__buy btn-accent btn-small">В кошик</button>
-											<button type="button" data-toggle-active="" class="product-card__fav btn-fav">
-												<svg width="25" height="21" viewbox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M17.6461 1.5C18.9486 1.50005 20.1998 1.97674 21.1998 2.85938L21.3961 3.04102C22.456 4.06873 23.094 5.50348 23.1608 7.01465L23.1666 7.31738C23.1587 8.51655 22.6918 9.8805 21.6617 11.3857L21.4479 11.6885C20.6512 12.7868 19.5702 13.9429 18.2164 15.1289L17.6198 15.6387C15.1737 17.6787 12.759 19.1131 12.1656 19.4561C11.6107 19.1375 9.47228 17.8766 7.20276 16.0625L6.68323 15.6387C5.24628 14.4446 4.084 13.2769 3.20862 12.1631L2.8512 11.6885C1.74972 10.1645 1.22583 8.78231 1.17151 7.56348L1.16663 7.32227C1.17628 5.85475 1.68744 4.48158 2.6012 3.41602L2.7887 3.20703C3.8355 2.09891 5.21757 1.50008 6.68713 1.5C8.56459 1.5 10.3047 2.51369 11.3151 4.15527L12.1666 5.53906L13.0182 4.15527C14.0285 2.51371 15.7687 1.5 17.6461 1.5Z" stroke="currentColor" stroke-width="2"></path>
-												</svg>
-											</button>
-										</div>
-									</div>
-									<div class="products__slide swiper-slide product-card">
-										<video class="product-card__bg" src="./assets/video/catalog_10.mp4" preload="metadata" playsinline="playsinline" muted width="100%" height="100%" loop autoplay loading="lazy"></video>
-										<div class="product-card__head">
-											<a href="#" class="product-card__title">
-												Сендвіч
-												<br>
-												Сет Бокс
-											</a>
-											<div class="product-card__info">
-												<div class="product-card__info-item">
-													<svg width="14" height="15" viewbox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M10.1052 6.17833L7.525 7.79092V10.7876C7.61033 10.7407 7.71778 10.6794 7.8575 10.5988L9.25484 9.79201C9.69353 9.53875 9.80805 9.46553 9.88757 9.37726C9.96961 9.28612 10.0316 9.17874 10.0695 9.06212C10.1062 8.94907 10.1123 8.81334 10.1123 8.30675V6.69332C10.1123 6.44769 10.1109 6.28928 10.1052 6.17833Z" fill="currentColor"></path>
-														<path d="M9.47324 5.33512L6.99174 6.88603L4.44144 5.38584C4.52067 5.33828 4.61966 5.28054 4.74521 5.20807L6.1425 4.40133C6.58119 4.14805 6.70187 4.08544 6.81807 4.06073C6.93805 4.03524 7.06202 4.03524 7.18193 4.06073C7.2982 4.08544 7.41881 4.14805 7.8575 4.40133L9.25484 5.20807C9.33884 5.25656 9.41094 5.29846 9.47324 5.33512Z" fill="currentColor"></path>
-														<path d="M3.89107 6.28025C3.88847 6.38196 3.88771 6.51454 3.88771 6.69332V8.30675C3.88771 8.81334 3.89381 8.94907 3.93053 9.06212C3.96843 9.17874 4.03041 9.28612 4.11246 9.37726C4.19198 9.46553 4.30652 9.53875 4.74521 9.79201L6.1425 10.5988C6.28222 10.6794 6.38967 10.7407 6.475 10.7876V7.80023L3.89107 6.28025Z" fill="currentColor"></path>
-														<path fill-rule="evenodd" clip-rule="evenodd" d="M6.97858 0.5H7.02142C8.064 0.5 8.87551 0.499993 9.52854 0.548223C10.1913 0.597167 10.7322 0.697869 11.2251 0.921169C12.2692 1.39426 13.1058 2.23081 13.5788 3.27496C13.8021 3.76779 13.9028 4.30873 13.9518 4.97147C14 5.62445 14 6.436 14 7.47858V7.52142C14 8.564 14 9.37551 13.9518 10.0285C13.9028 10.6913 13.8021 11.2322 13.5788 11.7251C13.1058 12.7692 12.2692 13.6058 11.2251 14.0788C10.7322 14.3021 10.1913 14.4028 9.52854 14.4518C8.87551 14.5 8.064 14.5 7.02142 14.5H6.97858C5.936 14.5 5.12445 14.5 4.47147 14.4518C3.80873 14.4028 3.26779 14.3021 2.77496 14.0788C1.73081 13.6058 0.894264 12.7692 0.421169 11.7251C0.197869 11.2322 0.0971671 10.6913 0.0482231 10.0285C-6.93128e-06 9.37551 0 8.564 0 7.52142V7.47858C0 6.436 -6.93128e-06 5.62446 0.0482231 4.97147C0.0971671 4.30873 0.197869 3.76779 0.421169 3.27496C0.894264 2.23081 1.73081 1.39426 2.77496 0.921169C3.26779 0.697869 3.80873 0.597167 4.47147 0.548223C5.12446 0.499993 5.936 0.5 6.97858 0.5ZM7.40026 3.03368C7.13636 2.97759 6.86364 2.97759 6.59981 3.03368C6.29965 3.09747 6.02651 3.25547 5.67889 3.45654L4.15884 4.33413C3.81088 4.53466 3.53746 4.69224 3.33216 4.92025C3.15165 5.12072 3.01529 5.3569 2.93193 5.61346C2.83711 5.90526 2.83737 6.22082 2.83767 6.62248V8.37759C2.83737 8.77925 2.83711 9.09481 2.93193 9.38657C3.01529 9.64319 3.15165 9.87937 3.33216 10.0799C3.53746 10.3078 3.81088 10.4654 4.15884 10.666L5.67889 11.5436C6.02651 11.7446 6.29965 11.9026 6.59981 11.9664C6.86364 12.0225 7.13636 12.0225 7.40026 11.9664C7.70035 11.9026 7.97356 11.7446 8.32118 11.5436L9.84123 10.666C10.1891 10.4654 10.4625 10.3078 10.6679 10.0799C10.8484 9.87937 10.9847 9.64319 11.0681 9.38657C11.1629 9.09481 11.1627 8.77925 11.1623 8.37759V6.62248C11.1627 6.22082 11.1629 5.90526 11.0681 5.61346C10.9847 5.3569 10.8484 5.12072 10.6679 4.92025C10.4625 4.69224 10.1891 4.53467 9.84123 4.33413L8.32118 3.45655C7.97356 3.25547 7.70035 3.09747 7.40026 3.03368Z" fill="currentColor"></path>
-													</svg>
-													<span>32 сендвічі</span>
-												</div>
-												<div class="product-card__info-item">
-													<svg width="13" height="15" viewbox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M12.9808 12.8299L11.7975 5.52877C11.6862 4.84035 11.1089 4.33723 10.4333 4.33723H8.65532C8.8638 3.96209 8.98302 3.52751 8.98302 3.06473C8.98302 1.65059 7.86927 0.5 6.49977 0.5C5.13056 0.5 4.01652 1.65059 4.01652 3.06473C4.01652 3.52751 4.13574 3.96209 4.34421 4.33723H2.56627C1.89033 4.33723 1.31334 4.84096 1.20206 5.52937L0.019012 12.8314C-0.0482298 13.2454 0.0648186 13.6715 0.327619 13.9917C0.590714 14.3123 0.976547 14.5 1.38352 14.5H11.6172C12.0242 14.5 12.41 14.3123 12.6731 13.9917C12.9356 13.6709 13.0484 13.2442 12.9808 12.8299ZM6.50006 1.99419C7.07147 1.99419 7.53658 2.47457 7.53658 3.06503C7.53658 3.65549 7.07147 4.13556 6.50006 4.13556C5.92836 4.13556 5.46325 3.65519 5.46325 3.06473C5.46325 2.47427 5.92836 1.99419 6.50006 1.99419Z" fill="currentColor"></path>
-													</svg>
-													<span>1 600 грамів</span>
-												</div>
-											</div>
-											<div class="product-card__prices">
-												<div class="product-card__sale">-33%</div>
-												<div class="product-card__price">1500 грн</div>
-												<div class="product-card__oldprice">1854 грн</div>
-											</div>
-											<div class="product-card__date">
-												Доставимо:
-												<span>07 травня</span>
-											</div>
-										</div>
-										<div class="product-card__bottom">
-											<button type="button" class="product-card__buy btn-accent btn-small">В кошик</button>
-											<button type="button" data-toggle-active="" class="product-card__fav btn-fav">
-												<svg width="25" height="21" viewbox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M17.6461 1.5C18.9486 1.50005 20.1998 1.97674 21.1998 2.85938L21.3961 3.04102C22.456 4.06873 23.094 5.50348 23.1608 7.01465L23.1666 7.31738C23.1587 8.51655 22.6918 9.8805 21.6617 11.3857L21.4479 11.6885C20.6512 12.7868 19.5702 13.9429 18.2164 15.1289L17.6198 15.6387C15.1737 17.6787 12.759 19.1131 12.1656 19.4561C11.6107 19.1375 9.47228 17.8766 7.20276 16.0625L6.68323 15.6387C5.24628 14.4446 4.084 13.2769 3.20862 12.1631L2.8512 11.6885C1.74972 10.1645 1.22583 8.78231 1.17151 7.56348L1.16663 7.32227C1.17628 5.85475 1.68744 4.48158 2.6012 3.41602L2.7887 3.20703C3.8355 2.09891 5.21757 1.50008 6.68713 1.5C8.56459 1.5 10.3047 2.51369 11.3151 4.15527L12.1666 5.53906L13.0182 4.15527C14.0285 2.51371 15.7687 1.5 17.6461 1.5Z" stroke="currentColor" stroke-width="2"></path>
-												</svg>
-											</button>
-										</div>
-									</div>
-									<div class="products__slide swiper-slide product-card out-of-stock">
-										<img class="product-card__bg" loading="lazy" alt="Image" src="./assets/img/image-2.webp">
-										<div class="product-card__head">
-											<a href="#" class="product-card__title">
-												Сендвіч
-												<br>
-												Сет Бокс
-											</a>
-											<div class="product-card__info">
-												<div class="product-card__info-item">
-													<svg width="14" height="15" viewbox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M10.1052 6.17833L7.525 7.79092V10.7876C7.61033 10.7407 7.71778 10.6794 7.8575 10.5988L9.25484 9.79201C9.69353 9.53875 9.80805 9.46553 9.88757 9.37726C9.96961 9.28612 10.0316 9.17874 10.0695 9.06212C10.1062 8.94907 10.1123 8.81334 10.1123 8.30675V6.69332C10.1123 6.44769 10.1109 6.28928 10.1052 6.17833Z" fill="currentColor"></path>
-														<path d="M9.47324 5.33512L6.99174 6.88603L4.44144 5.38584C4.52067 5.33828 4.61966 5.28054 4.74521 5.20807L6.1425 4.40133C6.58119 4.14805 6.70187 4.08544 6.81807 4.06073C6.93805 4.03524 7.06202 4.03524 7.18193 4.06073C7.2982 4.08544 7.41881 4.14805 7.8575 4.40133L9.25484 5.20807C9.33884 5.25656 9.41094 5.29846 9.47324 5.33512Z" fill="currentColor"></path>
-														<path d="M3.89107 6.28025C3.88847 6.38196 3.88771 6.51454 3.88771 6.69332V8.30675C3.88771 8.81334 3.89381 8.94907 3.93053 9.06212C3.96843 9.17874 4.03041 9.28612 4.11246 9.37726C4.19198 9.46553 4.30652 9.53875 4.74521 9.79201L6.1425 10.5988C6.28222 10.6794 6.38967 10.7407 6.475 10.7876V7.80023L3.89107 6.28025Z" fill="currentColor"></path>
-														<path fill-rule="evenodd" clip-rule="evenodd" d="M6.97858 0.5H7.02142C8.064 0.5 8.87551 0.499993 9.52854 0.548223C10.1913 0.597167 10.7322 0.697869 11.2251 0.921169C12.2692 1.39426 13.1058 2.23081 13.5788 3.27496C13.8021 3.76779 13.9028 4.30873 13.9518 4.97147C14 5.62445 14 6.436 14 7.47858V7.52142C14 8.564 14 9.37551 13.9518 10.0285C13.9028 10.6913 13.8021 11.2322 13.5788 11.7251C13.1058 12.7692 12.2692 13.6058 11.2251 14.0788C10.7322 14.3021 10.1913 14.4028 9.52854 14.4518C8.87551 14.5 8.064 14.5 7.02142 14.5H6.97858C5.936 14.5 5.12445 14.5 4.47147 14.4518C3.80873 14.4028 3.26779 14.3021 2.77496 14.0788C1.73081 13.6058 0.894264 12.7692 0.421169 11.7251C0.197869 11.2322 0.0971671 10.6913 0.0482231 10.0285C-6.93128e-06 9.37551 0 8.564 0 7.52142V7.47858C0 6.436 -6.93128e-06 5.62446 0.0482231 4.97147C0.0971671 4.30873 0.197869 3.76779 0.421169 3.27496C0.894264 2.23081 1.73081 1.39426 2.77496 0.921169C3.26779 0.697869 3.80873 0.597167 4.47147 0.548223C5.12446 0.499993 5.936 0.5 6.97858 0.5ZM7.40026 3.03368C7.13636 2.97759 6.86364 2.97759 6.59981 3.03368C6.29965 3.09747 6.02651 3.25547 5.67889 3.45654L4.15884 4.33413C3.81088 4.53466 3.53746 4.69224 3.33216 4.92025C3.15165 5.12072 3.01529 5.3569 2.93193 5.61346C2.83711 5.90526 2.83737 6.22082 2.83767 6.62248V8.37759C2.83737 8.77925 2.83711 9.09481 2.93193 9.38657C3.01529 9.64319 3.15165 9.87937 3.33216 10.0799C3.53746 10.3078 3.81088 10.4654 4.15884 10.666L5.67889 11.5436C6.02651 11.7446 6.29965 11.9026 6.59981 11.9664C6.86364 12.0225 7.13636 12.0225 7.40026 11.9664C7.70035 11.9026 7.97356 11.7446 8.32118 11.5436L9.84123 10.666C10.1891 10.4654 10.4625 10.3078 10.6679 10.0799C10.8484 9.87937 10.9847 9.64319 11.0681 9.38657C11.1629 9.09481 11.1627 8.77925 11.1623 8.37759V6.62248C11.1627 6.22082 11.1629 5.90526 11.0681 5.61346C10.9847 5.3569 10.8484 5.12072 10.6679 4.92025C10.4625 4.69224 10.1891 4.53467 9.84123 4.33413L8.32118 3.45655C7.97356 3.25547 7.70035 3.09747 7.40026 3.03368Z" fill="currentColor"></path>
-													</svg>
-													<span>32 сендвічі</span>
-												</div>
-												<div class="product-card__info-item">
-													<svg width="13" height="15" viewbox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M12.9808 12.8299L11.7975 5.52877C11.6862 4.84035 11.1089 4.33723 10.4333 4.33723H8.65532C8.8638 3.96209 8.98302 3.52751 8.98302 3.06473C8.98302 1.65059 7.86927 0.5 6.49977 0.5C5.13056 0.5 4.01652 1.65059 4.01652 3.06473C4.01652 3.52751 4.13574 3.96209 4.34421 4.33723H2.56627C1.89033 4.33723 1.31334 4.84096 1.20206 5.52937L0.019012 12.8314C-0.0482298 13.2454 0.0648186 13.6715 0.327619 13.9917C0.590714 14.3123 0.976547 14.5 1.38352 14.5H11.6172C12.0242 14.5 12.41 14.3123 12.6731 13.9917C12.9356 13.6709 13.0484 13.2442 12.9808 12.8299ZM6.50006 1.99419C7.07147 1.99419 7.53658 2.47457 7.53658 3.06503C7.53658 3.65549 7.07147 4.13556 6.50006 4.13556C5.92836 4.13556 5.46325 3.65519 5.46325 3.06473C5.46325 2.47427 5.92836 1.99419 6.50006 1.99419Z" fill="currentColor"></path>
-													</svg>
-													<span>1 600 грамів</span>
-												</div>
-											</div>
-											<div class="product-card__prices">
-												<div class="product-card__price">1500 грн</div>
-											</div>
-											<div class="product-card__date">
-												Доставимо:
-												<span>07 травня</span>
-											</div>
-											<div class="product-card__text">Не в наявності</div>
-										</div>
-										<div class="product-card__bottom">
-											<button type="button" class="product-card__buy btn-accent btn-small">В кошик</button>
-											<button type="button" data-toggle-active="" class="product-card__fav btn-fav">
-												<svg width="25" height="21" viewbox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M17.6461 1.5C18.9486 1.50005 20.1998 1.97674 21.1998 2.85938L21.3961 3.04102C22.456 4.06873 23.094 5.50348 23.1608 7.01465L23.1666 7.31738C23.1587 8.51655 22.6918 9.8805 21.6617 11.3857L21.4479 11.6885C20.6512 12.7868 19.5702 13.9429 18.2164 15.1289L17.6198 15.6387C15.1737 17.6787 12.759 19.1131 12.1656 19.4561C11.6107 19.1375 9.47228 17.8766 7.20276 16.0625L6.68323 15.6387C5.24628 14.4446 4.084 13.2769 3.20862 12.1631L2.8512 11.6885C1.74972 10.1645 1.22583 8.78231 1.17151 7.56348L1.16663 7.32227C1.17628 5.85475 1.68744 4.48158 2.6012 3.41602L2.7887 3.20703C3.8355 2.09891 5.21757 1.50008 6.68713 1.5C8.56459 1.5 10.3047 2.51369 11.3151 4.15527L12.1666 5.53906L13.0182 4.15527C14.0285 2.51371 15.7687 1.5 17.6461 1.5Z" stroke="currentColor" stroke-width="2"></path>
-												</svg>
-											</button>
-										</div>
-									</div>
-									<div class="products__slide swiper-slide product-card">
-										<img class="product-card__bg" loading="lazy" alt="Image" src="./assets/img/image-2.webp">
-										<div class="product-card__head">
-											<a href="#" class="product-card__title">
-												Сендвіч
-												<br>
-												Сет Бокс
-											</a>
-											<div class="product-card__info">
-												<div class="product-card__info-item">
-													<svg width="14" height="15" viewbox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M10.1052 6.17833L7.525 7.79092V10.7876C7.61033 10.7407 7.71778 10.6794 7.8575 10.5988L9.25484 9.79201C9.69353 9.53875 9.80805 9.46553 9.88757 9.37726C9.96961 9.28612 10.0316 9.17874 10.0695 9.06212C10.1062 8.94907 10.1123 8.81334 10.1123 8.30675V6.69332C10.1123 6.44769 10.1109 6.28928 10.1052 6.17833Z" fill="currentColor"></path>
-														<path d="M9.47324 5.33512L6.99174 6.88603L4.44144 5.38584C4.52067 5.33828 4.61966 5.28054 4.74521 5.20807L6.1425 4.40133C6.58119 4.14805 6.70187 4.08544 6.81807 4.06073C6.93805 4.03524 7.06202 4.03524 7.18193 4.06073C7.2982 4.08544 7.41881 4.14805 7.8575 4.40133L9.25484 5.20807C9.33884 5.25656 9.41094 5.29846 9.47324 5.33512Z" fill="currentColor"></path>
-														<path d="M3.89107 6.28025C3.88847 6.38196 3.88771 6.51454 3.88771 6.69332V8.30675C3.88771 8.81334 3.89381 8.94907 3.93053 9.06212C3.96843 9.17874 4.03041 9.28612 4.11246 9.37726C4.19198 9.46553 4.30652 9.53875 4.74521 9.79201L6.1425 10.5988C6.28222 10.6794 6.38967 10.7407 6.475 10.7876V7.80023L3.89107 6.28025Z" fill="currentColor"></path>
-														<path fill-rule="evenodd" clip-rule="evenodd" d="M6.97858 0.5H7.02142C8.064 0.5 8.87551 0.499993 9.52854 0.548223C10.1913 0.597167 10.7322 0.697869 11.2251 0.921169C12.2692 1.39426 13.1058 2.23081 13.5788 3.27496C13.8021 3.76779 13.9028 4.30873 13.9518 4.97147C14 5.62445 14 6.436 14 7.47858V7.52142C14 8.564 14 9.37551 13.9518 10.0285C13.9028 10.6913 13.8021 11.2322 13.5788 11.7251C13.1058 12.7692 12.2692 13.6058 11.2251 14.0788C10.7322 14.3021 10.1913 14.4028 9.52854 14.4518C8.87551 14.5 8.064 14.5 7.02142 14.5H6.97858C5.936 14.5 5.12445 14.5 4.47147 14.4518C3.80873 14.4028 3.26779 14.3021 2.77496 14.0788C1.73081 13.6058 0.894264 12.7692 0.421169 11.7251C0.197869 11.2322 0.0971671 10.6913 0.0482231 10.0285C-6.93128e-06 9.37551 0 8.564 0 7.52142V7.47858C0 6.436 -6.93128e-06 5.62446 0.0482231 4.97147C0.0971671 4.30873 0.197869 3.76779 0.421169 3.27496C0.894264 2.23081 1.73081 1.39426 2.77496 0.921169C3.26779 0.697869 3.80873 0.597167 4.47147 0.548223C5.12446 0.499993 5.936 0.5 6.97858 0.5ZM7.40026 3.03368C7.13636 2.97759 6.86364 2.97759 6.59981 3.03368C6.29965 3.09747 6.02651 3.25547 5.67889 3.45654L4.15884 4.33413C3.81088 4.53466 3.53746 4.69224 3.33216 4.92025C3.15165 5.12072 3.01529 5.3569 2.93193 5.61346C2.83711 5.90526 2.83737 6.22082 2.83767 6.62248V8.37759C2.83737 8.77925 2.83711 9.09481 2.93193 9.38657C3.01529 9.64319 3.15165 9.87937 3.33216 10.0799C3.53746 10.3078 3.81088 10.4654 4.15884 10.666L5.67889 11.5436C6.02651 11.7446 6.29965 11.9026 6.59981 11.9664C6.86364 12.0225 7.13636 12.0225 7.40026 11.9664C7.70035 11.9026 7.97356 11.7446 8.32118 11.5436L9.84123 10.666C10.1891 10.4654 10.4625 10.3078 10.6679 10.0799C10.8484 9.87937 10.9847 9.64319 11.0681 9.38657C11.1629 9.09481 11.1627 8.77925 11.1623 8.37759V6.62248C11.1627 6.22082 11.1629 5.90526 11.0681 5.61346C10.9847 5.3569 10.8484 5.12072 10.6679 4.92025C10.4625 4.69224 10.1891 4.53467 9.84123 4.33413L8.32118 3.45655C7.97356 3.25547 7.70035 3.09747 7.40026 3.03368Z" fill="currentColor"></path>
-													</svg>
-													<span>32 сендвічі</span>
-												</div>
-												<div class="product-card__info-item">
-													<svg width="13" height="15" viewbox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M12.9808 12.8299L11.7975 5.52877C11.6862 4.84035 11.1089 4.33723 10.4333 4.33723H8.65532C8.8638 3.96209 8.98302 3.52751 8.98302 3.06473C8.98302 1.65059 7.86927 0.5 6.49977 0.5C5.13056 0.5 4.01652 1.65059 4.01652 3.06473C4.01652 3.52751 4.13574 3.96209 4.34421 4.33723H2.56627C1.89033 4.33723 1.31334 4.84096 1.20206 5.52937L0.019012 12.8314C-0.0482298 13.2454 0.0648186 13.6715 0.327619 13.9917C0.590714 14.3123 0.976547 14.5 1.38352 14.5H11.6172C12.0242 14.5 12.41 14.3123 12.6731 13.9917C12.9356 13.6709 13.0484 13.2442 12.9808 12.8299ZM6.50006 1.99419C7.07147 1.99419 7.53658 2.47457 7.53658 3.06503C7.53658 3.65549 7.07147 4.13556 6.50006 4.13556C5.92836 4.13556 5.46325 3.65519 5.46325 3.06473C5.46325 2.47427 5.92836 1.99419 6.50006 1.99419Z" fill="currentColor"></path>
-													</svg>
-													<span>1 600 грамів</span>
-												</div>
-											</div>
-											<div class="product-card__prices">
-												<div class="product-card__price">1500 грн</div>
-											</div>
-											<div class="product-card__date">
-												Доставимо:
-												<span>07 травня</span>
-											</div>
-										</div>
-										<div class="product-card__bottom">
-											<button type="button" class="product-card__buy btn-accent btn-small">В кошик</button>
-											<button type="button" data-toggle-active="" class="product-card__fav btn-fav">
-												<svg width="25" height="21" viewbox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M17.6461 1.5C18.9486 1.50005 20.1998 1.97674 21.1998 2.85938L21.3961 3.04102C22.456 4.06873 23.094 5.50348 23.1608 7.01465L23.1666 7.31738C23.1587 8.51655 22.6918 9.8805 21.6617 11.3857L21.4479 11.6885C20.6512 12.7868 19.5702 13.9429 18.2164 15.1289L17.6198 15.6387C15.1737 17.6787 12.759 19.1131 12.1656 19.4561C11.6107 19.1375 9.47228 17.8766 7.20276 16.0625L6.68323 15.6387C5.24628 14.4446 4.084 13.2769 3.20862 12.1631L2.8512 11.6885C1.74972 10.1645 1.22583 8.78231 1.17151 7.56348L1.16663 7.32227C1.17628 5.85475 1.68744 4.48158 2.6012 3.41602L2.7887 3.20703C3.8355 2.09891 5.21757 1.50008 6.68713 1.5C8.56459 1.5 10.3047 2.51369 11.3151 4.15527L12.1666 5.53906L13.0182 4.15527C14.0285 2.51371 15.7687 1.5 17.6461 1.5Z" stroke="currentColor" stroke-width="2"></path>
-												</svg>
-											</button>
-										</div>
-									</div>
+							<div class="hero-product__content">
+								<div class="hero-product__prices">
+									<div class="hero-product__sale">-33%</div>
+									<div class="hero-product__oldprice">1854 грн</div>
+									<div class="hero-product__price">1500 грн</div>
 								</div>
-							</div>
-							<div class="products__arrows">
-								<button type="button" class="swiper-button-prev">
-									<svg width="17" height="28" viewbox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M15 2L3 14L15 26" stroke="currentColor" stroke-width="4"></path>
-									</svg>
-								</button>
-								<button type="button" class="swiper-button-next">
-									<svg width="17" height="28" viewbox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M2 2L14 14L2 26" stroke="currentColor" stroke-width="4"></path>
-									</svg>
-								</button>
-							</div>
-						</div>
-						<a href="#" class="products__btn btn">
-							<span>Дивитись всi</span>
-							<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M1 2L9 9L1 16" stroke="currentColor" stroke-width="3"></path>
-							</svg>
-						</a>
-					</div>
-				</section>
-				<section class="advantages">
-					<div class="advantages__container">
-						<div class="advantages__title title text-center">
-							Чому нас
-							<span>обирають?</span>
-						</div>
-						<div class="advantages__items">
-							<div class="advantages__item" style="background-image: url('./assets/img/decors/marker.svg');">
-								<div class="advantages__item-body">
-									<div class="advantages__item-title">
-										Швидка
-										<br>
-										доставка
+								<div class="hero-product__bottom">
+									<div class="hero-product__date">
+										Доставимо:
+										<span>07 травня</span>
 									</div>
-									<div class="advantages__item-text">
-										Доставка боксів можлива у межах
-										<br>
-										м. Києва та Київської області.
-									</div>
+									<button type="button" class="hero-product__btn btn-accent btn-small">В кошик</button>
+									<button type="button" class="hero-product__btn btn-white btn-small">Замовити в 1 клік</button>
+									<button type="button" class="hero-product__fav btn-fav" data-toggle-active="">
+										<svg width="25" height="21" viewbox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M17.9795 1.5C19.282 1.50005 20.5332 1.97674 21.5332 2.85938L21.7295 3.04102C22.7894 4.06873 23.4274 5.50348 23.4941 7.01465L23.5 7.31738C23.4921 8.51655 23.0251 9.8805 21.9951 11.3857L21.7812 11.6885C20.9845 12.7868 19.9036 13.9429 18.5498 15.1289L17.9531 15.6387C15.507 17.6787 13.0924 19.1131 12.499 19.4561C11.944 19.1375 9.80565 17.8766 7.53613 16.0625L7.0166 15.6387C5.57965 14.4446 4.41738 13.2769 3.54199 12.1631L3.18457 11.6885C2.08309 10.1645 1.55921 8.78231 1.50488 7.56348L1.5 7.32227C1.50965 5.85475 2.02081 4.48158 2.93457 3.41602L3.12207 3.20703C4.16887 2.09891 5.55095 1.50008 7.02051 1.5C8.89797 1.5 10.6381 2.51369 11.6484 4.15527L12.5 5.53906L13.3516 4.15527C14.3619 2.51371 16.102 1.5 17.9795 1.5Z" stroke="currentColor" stroke-width="2"></path>
+										</svg>
+									</button>
 								</div>
-							</div>
-							<div class="advantages__item advantages__item--accent" style="background-image: url('./assets/img/decors/star.svg');">
-								<div class="advantages__item-body">
-									<div class="advantages__item-title">
-										Для будь
-										<br>
-										яких подій
-									</div>
-									<div class="advantages__item-text">
-										Мінімальна сума замовлення
-										<br>
-										від 10 000грн
-									</div>
-								</div>
-								<button type="button" class="advantages__item-btn btn-2" data-menu="consultation" data-menu-click="">Замовити консультацію</button>
-							</div>
-							<div class="advantages__item" style="background-image: url('./assets/img/decors/fire-small-1.svg');">
-								<div class="advantages__item-body">
-									<div class="advantages__item-title">
-										Оперативна
-										<br>
-										підготовка
-									</div>
-									<div class="advantages__item-text">
-										Строк замовлення за 2 дні до
-										<br>
-										заходу.
-									</div>
-								</div>
-							</div>
-							<div data-fls-mouse="" class="advantages__decor-1">
-								<img loading="lazy" alt="Image" src="./assets/img/decors/decor-3.webp">
-							</div>
-							<div data-fls-mouse="" class="advantages__decor-2">
-								<img loading="lazy" alt="Image" src="./assets/img/decors/decor-4.webp">
 							</div>
 						</div>
 					</div>
-				</section>
-				<section class="products">
-					<div class="products__container">
-						<div class="products__head">
-							<div class="products__title title">
-								Смачні
-								<span>новинки</span>
+					<div class="hero-product__fixed-block fixed-block visible" data-fixed-block="">
+						<div class="fixed-block__left">
+							<div class="fixed-block__title">
+								<span>Сендвіч Сет Бокс</span>
 							</div>
-							<div class="swiper-pagination"></div>
-						</div>
-						<div class="products__inner">
-							<div data-fls-slider="" class="products__slider swiper">
-								<div class="products__wrapper swiper-wrapper">
-									<div class="products__slide swiper-slide product-card">
-										<img class="product-card__bg" loading="lazy" alt="Image" src="./assets/img/image-2.webp">
-										<div class="product-card__head">
-											<a href="#" class="product-card__title">
-												Сендвіч
-												<br>
-												Сет Бокс
-											</a>
-											<div class="product-card__info">
-												<div class="product-card__info-item">
-													<svg width="14" height="15" viewbox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M10.1052 6.17833L7.525 7.79092V10.7876C7.61033 10.7407 7.71778 10.6794 7.8575 10.5988L9.25484 9.79201C9.69353 9.53875 9.80805 9.46553 9.88757 9.37726C9.96961 9.28612 10.0316 9.17874 10.0695 9.06212C10.1062 8.94907 10.1123 8.81334 10.1123 8.30675V6.69332C10.1123 6.44769 10.1109 6.28928 10.1052 6.17833Z" fill="currentColor"></path>
-														<path d="M9.47324 5.33512L6.99174 6.88603L4.44144 5.38584C4.52067 5.33828 4.61966 5.28054 4.74521 5.20807L6.1425 4.40133C6.58119 4.14805 6.70187 4.08544 6.81807 4.06073C6.93805 4.03524 7.06202 4.03524 7.18193 4.06073C7.2982 4.08544 7.41881 4.14805 7.8575 4.40133L9.25484 5.20807C9.33884 5.25656 9.41094 5.29846 9.47324 5.33512Z" fill="currentColor"></path>
-														<path d="M3.89107 6.28025C3.88847 6.38196 3.88771 6.51454 3.88771 6.69332V8.30675C3.88771 8.81334 3.89381 8.94907 3.93053 9.06212C3.96843 9.17874 4.03041 9.28612 4.11246 9.37726C4.19198 9.46553 4.30652 9.53875 4.74521 9.79201L6.1425 10.5988C6.28222 10.6794 6.38967 10.7407 6.475 10.7876V7.80023L3.89107 6.28025Z" fill="currentColor"></path>
-														<path fill-rule="evenodd" clip-rule="evenodd" d="M6.97858 0.5H7.02142C8.064 0.5 8.87551 0.499993 9.52854 0.548223C10.1913 0.597167 10.7322 0.697869 11.2251 0.921169C12.2692 1.39426 13.1058 2.23081 13.5788 3.27496C13.8021 3.76779 13.9028 4.30873 13.9518 4.97147C14 5.62445 14 6.436 14 7.47858V7.52142C14 8.564 14 9.37551 13.9518 10.0285C13.9028 10.6913 13.8021 11.2322 13.5788 11.7251C13.1058 12.7692 12.2692 13.6058 11.2251 14.0788C10.7322 14.3021 10.1913 14.4028 9.52854 14.4518C8.87551 14.5 8.064 14.5 7.02142 14.5H6.97858C5.936 14.5 5.12445 14.5 4.47147 14.4518C3.80873 14.4028 3.26779 14.3021 2.77496 14.0788C1.73081 13.6058 0.894264 12.7692 0.421169 11.7251C0.197869 11.2322 0.0971671 10.6913 0.0482231 10.0285C-6.93128e-06 9.37551 0 8.564 0 7.52142V7.47858C0 6.436 -6.93128e-06 5.62446 0.0482231 4.97147C0.0971671 4.30873 0.197869 3.76779 0.421169 3.27496C0.894264 2.23081 1.73081 1.39426 2.77496 0.921169C3.26779 0.697869 3.80873 0.597167 4.47147 0.548223C5.12446 0.499993 5.936 0.5 6.97858 0.5ZM7.40026 3.03368C7.13636 2.97759 6.86364 2.97759 6.59981 3.03368C6.29965 3.09747 6.02651 3.25547 5.67889 3.45654L4.15884 4.33413C3.81088 4.53466 3.53746 4.69224 3.33216 4.92025C3.15165 5.12072 3.01529 5.3569 2.93193 5.61346C2.83711 5.90526 2.83737 6.22082 2.83767 6.62248V8.37759C2.83737 8.77925 2.83711 9.09481 2.93193 9.38657C3.01529 9.64319 3.15165 9.87937 3.33216 10.0799C3.53746 10.3078 3.81088 10.4654 4.15884 10.666L5.67889 11.5436C6.02651 11.7446 6.29965 11.9026 6.59981 11.9664C6.86364 12.0225 7.13636 12.0225 7.40026 11.9664C7.70035 11.9026 7.97356 11.7446 8.32118 11.5436L9.84123 10.666C10.1891 10.4654 10.4625 10.3078 10.6679 10.0799C10.8484 9.87937 10.9847 9.64319 11.0681 9.38657C11.1629 9.09481 11.1627 8.77925 11.1623 8.37759V6.62248C11.1627 6.22082 11.1629 5.90526 11.0681 5.61346C10.9847 5.3569 10.8484 5.12072 10.6679 4.92025C10.4625 4.69224 10.1891 4.53467 9.84123 4.33413L8.32118 3.45655C7.97356 3.25547 7.70035 3.09747 7.40026 3.03368Z" fill="currentColor"></path>
-													</svg>
-													<span>32 сендвічі</span>
-												</div>
-												<div class="product-card__info-item">
-													<svg width="13" height="15" viewbox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M12.9808 12.8299L11.7975 5.52877C11.6862 4.84035 11.1089 4.33723 10.4333 4.33723H8.65532C8.8638 3.96209 8.98302 3.52751 8.98302 3.06473C8.98302 1.65059 7.86927 0.5 6.49977 0.5C5.13056 0.5 4.01652 1.65059 4.01652 3.06473C4.01652 3.52751 4.13574 3.96209 4.34421 4.33723H2.56627C1.89033 4.33723 1.31334 4.84096 1.20206 5.52937L0.019012 12.8314C-0.0482298 13.2454 0.0648186 13.6715 0.327619 13.9917C0.590714 14.3123 0.976547 14.5 1.38352 14.5H11.6172C12.0242 14.5 12.41 14.3123 12.6731 13.9917C12.9356 13.6709 13.0484 13.2442 12.9808 12.8299ZM6.50006 1.99419C7.07147 1.99419 7.53658 2.47457 7.53658 3.06503C7.53658 3.65549 7.07147 4.13556 6.50006 4.13556C5.92836 4.13556 5.46325 3.65519 5.46325 3.06473C5.46325 2.47427 5.92836 1.99419 6.50006 1.99419Z" fill="currentColor"></path>
-													</svg>
-													<span>1 600 грамів</span>
-												</div>
-											</div>
-											<div class="product-card__prices">
-												<div class="product-card__price">1500 грн</div>
-											</div>
-											<div class="product-card__date">
-												Доставимо:
-												<span>07 травня</span>
-											</div>
-										</div>
-										<div class="product-card__bottom">
-											<button type="button" class="product-card__buy btn-accent btn-small">В кошик</button>
-											<button type="button" data-toggle-active="" class="product-card__fav btn-fav">
-												<svg width="25" height="21" viewbox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M17.6461 1.5C18.9486 1.50005 20.1998 1.97674 21.1998 2.85938L21.3961 3.04102C22.456 4.06873 23.094 5.50348 23.1608 7.01465L23.1666 7.31738C23.1587 8.51655 22.6918 9.8805 21.6617 11.3857L21.4479 11.6885C20.6512 12.7868 19.5702 13.9429 18.2164 15.1289L17.6198 15.6387C15.1737 17.6787 12.759 19.1131 12.1656 19.4561C11.6107 19.1375 9.47228 17.8766 7.20276 16.0625L6.68323 15.6387C5.24628 14.4446 4.084 13.2769 3.20862 12.1631L2.8512 11.6885C1.74972 10.1645 1.22583 8.78231 1.17151 7.56348L1.16663 7.32227C1.17628 5.85475 1.68744 4.48158 2.6012 3.41602L2.7887 3.20703C3.8355 2.09891 5.21757 1.50008 6.68713 1.5C8.56459 1.5 10.3047 2.51369 11.3151 4.15527L12.1666 5.53906L13.0182 4.15527C14.0285 2.51371 15.7687 1.5 17.6461 1.5Z" stroke="currentColor" stroke-width="2"></path>
-												</svg>
-											</button>
-										</div>
-									</div>
-									<div class="products__slide swiper-slide product-card">
-										<video class="product-card__bg" src="./assets/video/catalog_10.mp4" preload="metadata" playsinline="playsinline" muted width="100%" height="100%" loop autoplay loading="lazy"></video>
-										<div class="product-card__head">
-											<a href="#" class="product-card__title">
-												Сендвіч
-												<br>
-												Сет Бокс
-											</a>
-											<div class="product-card__info">
-												<div class="product-card__info-item">
-													<svg width="14" height="15" viewbox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M10.1052 6.17833L7.525 7.79092V10.7876C7.61033 10.7407 7.71778 10.6794 7.8575 10.5988L9.25484 9.79201C9.69353 9.53875 9.80805 9.46553 9.88757 9.37726C9.96961 9.28612 10.0316 9.17874 10.0695 9.06212C10.1062 8.94907 10.1123 8.81334 10.1123 8.30675V6.69332C10.1123 6.44769 10.1109 6.28928 10.1052 6.17833Z" fill="currentColor"></path>
-														<path d="M9.47324 5.33512L6.99174 6.88603L4.44144 5.38584C4.52067 5.33828 4.61966 5.28054 4.74521 5.20807L6.1425 4.40133C6.58119 4.14805 6.70187 4.08544 6.81807 4.06073C6.93805 4.03524 7.06202 4.03524 7.18193 4.06073C7.2982 4.08544 7.41881 4.14805 7.8575 4.40133L9.25484 5.20807C9.33884 5.25656 9.41094 5.29846 9.47324 5.33512Z" fill="currentColor"></path>
-														<path d="M3.89107 6.28025C3.88847 6.38196 3.88771 6.51454 3.88771 6.69332V8.30675C3.88771 8.81334 3.89381 8.94907 3.93053 9.06212C3.96843 9.17874 4.03041 9.28612 4.11246 9.37726C4.19198 9.46553 4.30652 9.53875 4.74521 9.79201L6.1425 10.5988C6.28222 10.6794 6.38967 10.7407 6.475 10.7876V7.80023L3.89107 6.28025Z" fill="currentColor"></path>
-														<path fill-rule="evenodd" clip-rule="evenodd" d="M6.97858 0.5H7.02142C8.064 0.5 8.87551 0.499993 9.52854 0.548223C10.1913 0.597167 10.7322 0.697869 11.2251 0.921169C12.2692 1.39426 13.1058 2.23081 13.5788 3.27496C13.8021 3.76779 13.9028 4.30873 13.9518 4.97147C14 5.62445 14 6.436 14 7.47858V7.52142C14 8.564 14 9.37551 13.9518 10.0285C13.9028 10.6913 13.8021 11.2322 13.5788 11.7251C13.1058 12.7692 12.2692 13.6058 11.2251 14.0788C10.7322 14.3021 10.1913 14.4028 9.52854 14.4518C8.87551 14.5 8.064 14.5 7.02142 14.5H6.97858C5.936 14.5 5.12445 14.5 4.47147 14.4518C3.80873 14.4028 3.26779 14.3021 2.77496 14.0788C1.73081 13.6058 0.894264 12.7692 0.421169 11.7251C0.197869 11.2322 0.0971671 10.6913 0.0482231 10.0285C-6.93128e-06 9.37551 0 8.564 0 7.52142V7.47858C0 6.436 -6.93128e-06 5.62446 0.0482231 4.97147C0.0971671 4.30873 0.197869 3.76779 0.421169 3.27496C0.894264 2.23081 1.73081 1.39426 2.77496 0.921169C3.26779 0.697869 3.80873 0.597167 4.47147 0.548223C5.12446 0.499993 5.936 0.5 6.97858 0.5ZM7.40026 3.03368C7.13636 2.97759 6.86364 2.97759 6.59981 3.03368C6.29965 3.09747 6.02651 3.25547 5.67889 3.45654L4.15884 4.33413C3.81088 4.53466 3.53746 4.69224 3.33216 4.92025C3.15165 5.12072 3.01529 5.3569 2.93193 5.61346C2.83711 5.90526 2.83737 6.22082 2.83767 6.62248V8.37759C2.83737 8.77925 2.83711 9.09481 2.93193 9.38657C3.01529 9.64319 3.15165 9.87937 3.33216 10.0799C3.53746 10.3078 3.81088 10.4654 4.15884 10.666L5.67889 11.5436C6.02651 11.7446 6.29965 11.9026 6.59981 11.9664C6.86364 12.0225 7.13636 12.0225 7.40026 11.9664C7.70035 11.9026 7.97356 11.7446 8.32118 11.5436L9.84123 10.666C10.1891 10.4654 10.4625 10.3078 10.6679 10.0799C10.8484 9.87937 10.9847 9.64319 11.0681 9.38657C11.1629 9.09481 11.1627 8.77925 11.1623 8.37759V6.62248C11.1627 6.22082 11.1629 5.90526 11.0681 5.61346C10.9847 5.3569 10.8484 5.12072 10.6679 4.92025C10.4625 4.69224 10.1891 4.53467 9.84123 4.33413L8.32118 3.45655C7.97356 3.25547 7.70035 3.09747 7.40026 3.03368Z" fill="currentColor"></path>
-													</svg>
-													<span>32 сендвічі</span>
-												</div>
-												<div class="product-card__info-item">
-													<svg width="13" height="15" viewbox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M12.9808 12.8299L11.7975 5.52877C11.6862 4.84035 11.1089 4.33723 10.4333 4.33723H8.65532C8.8638 3.96209 8.98302 3.52751 8.98302 3.06473C8.98302 1.65059 7.86927 0.5 6.49977 0.5C5.13056 0.5 4.01652 1.65059 4.01652 3.06473C4.01652 3.52751 4.13574 3.96209 4.34421 4.33723H2.56627C1.89033 4.33723 1.31334 4.84096 1.20206 5.52937L0.019012 12.8314C-0.0482298 13.2454 0.0648186 13.6715 0.327619 13.9917C0.590714 14.3123 0.976547 14.5 1.38352 14.5H11.6172C12.0242 14.5 12.41 14.3123 12.6731 13.9917C12.9356 13.6709 13.0484 13.2442 12.9808 12.8299ZM6.50006 1.99419C7.07147 1.99419 7.53658 2.47457 7.53658 3.06503C7.53658 3.65549 7.07147 4.13556 6.50006 4.13556C5.92836 4.13556 5.46325 3.65519 5.46325 3.06473C5.46325 2.47427 5.92836 1.99419 6.50006 1.99419Z" fill="currentColor"></path>
-													</svg>
-													<span>1 600 грамів</span>
-												</div>
-											</div>
-											<div class="product-card__prices">
-												<div class="product-card__sale">-33%</div>
-												<div class="product-card__price">1500 грн</div>
-												<div class="product-card__oldprice">1854 грн</div>
-											</div>
-											<div class="product-card__date">
-												Доставимо:
-												<span>07 травня</span>
-											</div>
-										</div>
-										<div class="product-card__bottom">
-											<button type="button" class="product-card__buy btn-accent btn-small">В кошик</button>
-											<button type="button" data-toggle-active="" class="product-card__fav btn-fav">
-												<svg width="25" height="21" viewbox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M17.6461 1.5C18.9486 1.50005 20.1998 1.97674 21.1998 2.85938L21.3961 3.04102C22.456 4.06873 23.094 5.50348 23.1608 7.01465L23.1666 7.31738C23.1587 8.51655 22.6918 9.8805 21.6617 11.3857L21.4479 11.6885C20.6512 12.7868 19.5702 13.9429 18.2164 15.1289L17.6198 15.6387C15.1737 17.6787 12.759 19.1131 12.1656 19.4561C11.6107 19.1375 9.47228 17.8766 7.20276 16.0625L6.68323 15.6387C5.24628 14.4446 4.084 13.2769 3.20862 12.1631L2.8512 11.6885C1.74972 10.1645 1.22583 8.78231 1.17151 7.56348L1.16663 7.32227C1.17628 5.85475 1.68744 4.48158 2.6012 3.41602L2.7887 3.20703C3.8355 2.09891 5.21757 1.50008 6.68713 1.5C8.56459 1.5 10.3047 2.51369 11.3151 4.15527L12.1666 5.53906L13.0182 4.15527C14.0285 2.51371 15.7687 1.5 17.6461 1.5Z" stroke="currentColor" stroke-width="2"></path>
-												</svg>
-											</button>
-										</div>
-									</div>
-									<div class="products__slide swiper-slide product-card out-of-stock">
-										<img class="product-card__bg" loading="lazy" alt="Image" src="./assets/img/image-2.webp">
-										<div class="product-card__head">
-											<a href="#" class="product-card__title">
-												Сендвіч
-												<br>
-												Сет Бокс
-											</a>
-											<div class="product-card__info">
-												<div class="product-card__info-item">
-													<svg width="14" height="15" viewbox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M10.1052 6.17833L7.525 7.79092V10.7876C7.61033 10.7407 7.71778 10.6794 7.8575 10.5988L9.25484 9.79201C9.69353 9.53875 9.80805 9.46553 9.88757 9.37726C9.96961 9.28612 10.0316 9.17874 10.0695 9.06212C10.1062 8.94907 10.1123 8.81334 10.1123 8.30675V6.69332C10.1123 6.44769 10.1109 6.28928 10.1052 6.17833Z" fill="currentColor"></path>
-														<path d="M9.47324 5.33512L6.99174 6.88603L4.44144 5.38584C4.52067 5.33828 4.61966 5.28054 4.74521 5.20807L6.1425 4.40133C6.58119 4.14805 6.70187 4.08544 6.81807 4.06073C6.93805 4.03524 7.06202 4.03524 7.18193 4.06073C7.2982 4.08544 7.41881 4.14805 7.8575 4.40133L9.25484 5.20807C9.33884 5.25656 9.41094 5.29846 9.47324 5.33512Z" fill="currentColor"></path>
-														<path d="M3.89107 6.28025C3.88847 6.38196 3.88771 6.51454 3.88771 6.69332V8.30675C3.88771 8.81334 3.89381 8.94907 3.93053 9.06212C3.96843 9.17874 4.03041 9.28612 4.11246 9.37726C4.19198 9.46553 4.30652 9.53875 4.74521 9.79201L6.1425 10.5988C6.28222 10.6794 6.38967 10.7407 6.475 10.7876V7.80023L3.89107 6.28025Z" fill="currentColor"></path>
-														<path fill-rule="evenodd" clip-rule="evenodd" d="M6.97858 0.5H7.02142C8.064 0.5 8.87551 0.499993 9.52854 0.548223C10.1913 0.597167 10.7322 0.697869 11.2251 0.921169C12.2692 1.39426 13.1058 2.23081 13.5788 3.27496C13.8021 3.76779 13.9028 4.30873 13.9518 4.97147C14 5.62445 14 6.436 14 7.47858V7.52142C14 8.564 14 9.37551 13.9518 10.0285C13.9028 10.6913 13.8021 11.2322 13.5788 11.7251C13.1058 12.7692 12.2692 13.6058 11.2251 14.0788C10.7322 14.3021 10.1913 14.4028 9.52854 14.4518C8.87551 14.5 8.064 14.5 7.02142 14.5H6.97858C5.936 14.5 5.12445 14.5 4.47147 14.4518C3.80873 14.4028 3.26779 14.3021 2.77496 14.0788C1.73081 13.6058 0.894264 12.7692 0.421169 11.7251C0.197869 11.2322 0.0971671 10.6913 0.0482231 10.0285C-6.93128e-06 9.37551 0 8.564 0 7.52142V7.47858C0 6.436 -6.93128e-06 5.62446 0.0482231 4.97147C0.0971671 4.30873 0.197869 3.76779 0.421169 3.27496C0.894264 2.23081 1.73081 1.39426 2.77496 0.921169C3.26779 0.697869 3.80873 0.597167 4.47147 0.548223C5.12446 0.499993 5.936 0.5 6.97858 0.5ZM7.40026 3.03368C7.13636 2.97759 6.86364 2.97759 6.59981 3.03368C6.29965 3.09747 6.02651 3.25547 5.67889 3.45654L4.15884 4.33413C3.81088 4.53466 3.53746 4.69224 3.33216 4.92025C3.15165 5.12072 3.01529 5.3569 2.93193 5.61346C2.83711 5.90526 2.83737 6.22082 2.83767 6.62248V8.37759C2.83737 8.77925 2.83711 9.09481 2.93193 9.38657C3.01529 9.64319 3.15165 9.87937 3.33216 10.0799C3.53746 10.3078 3.81088 10.4654 4.15884 10.666L5.67889 11.5436C6.02651 11.7446 6.29965 11.9026 6.59981 11.9664C6.86364 12.0225 7.13636 12.0225 7.40026 11.9664C7.70035 11.9026 7.97356 11.7446 8.32118 11.5436L9.84123 10.666C10.1891 10.4654 10.4625 10.3078 10.6679 10.0799C10.8484 9.87937 10.9847 9.64319 11.0681 9.38657C11.1629 9.09481 11.1627 8.77925 11.1623 8.37759V6.62248C11.1627 6.22082 11.1629 5.90526 11.0681 5.61346C10.9847 5.3569 10.8484 5.12072 10.6679 4.92025C10.4625 4.69224 10.1891 4.53467 9.84123 4.33413L8.32118 3.45655C7.97356 3.25547 7.70035 3.09747 7.40026 3.03368Z" fill="currentColor"></path>
-													</svg>
-													<span>32 сендвічі</span>
-												</div>
-												<div class="product-card__info-item">
-													<svg width="13" height="15" viewbox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M12.9808 12.8299L11.7975 5.52877C11.6862 4.84035 11.1089 4.33723 10.4333 4.33723H8.65532C8.8638 3.96209 8.98302 3.52751 8.98302 3.06473C8.98302 1.65059 7.86927 0.5 6.49977 0.5C5.13056 0.5 4.01652 1.65059 4.01652 3.06473C4.01652 3.52751 4.13574 3.96209 4.34421 4.33723H2.56627C1.89033 4.33723 1.31334 4.84096 1.20206 5.52937L0.019012 12.8314C-0.0482298 13.2454 0.0648186 13.6715 0.327619 13.9917C0.590714 14.3123 0.976547 14.5 1.38352 14.5H11.6172C12.0242 14.5 12.41 14.3123 12.6731 13.9917C12.9356 13.6709 13.0484 13.2442 12.9808 12.8299ZM6.50006 1.99419C7.07147 1.99419 7.53658 2.47457 7.53658 3.06503C7.53658 3.65549 7.07147 4.13556 6.50006 4.13556C5.92836 4.13556 5.46325 3.65519 5.46325 3.06473C5.46325 2.47427 5.92836 1.99419 6.50006 1.99419Z" fill="currentColor"></path>
-													</svg>
-													<span>1 600 грамів</span>
-												</div>
-											</div>
-											<div class="product-card__prices">
-												<div class="product-card__price">1500 грн</div>
-											</div>
-											<div class="product-card__date">
-												Доставимо:
-												<span>07 травня</span>
-											</div>
-											<div class="product-card__text">Не в наявності</div>
-										</div>
-										<div class="product-card__bottom">
-											<button type="button" class="product-card__buy btn-accent btn-small">В кошик</button>
-											<button type="button" data-toggle-active="" class="product-card__fav btn-fav">
-												<svg width="25" height="21" viewbox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M17.6461 1.5C18.9486 1.50005 20.1998 1.97674 21.1998 2.85938L21.3961 3.04102C22.456 4.06873 23.094 5.50348 23.1608 7.01465L23.1666 7.31738C23.1587 8.51655 22.6918 9.8805 21.6617 11.3857L21.4479 11.6885C20.6512 12.7868 19.5702 13.9429 18.2164 15.1289L17.6198 15.6387C15.1737 17.6787 12.759 19.1131 12.1656 19.4561C11.6107 19.1375 9.47228 17.8766 7.20276 16.0625L6.68323 15.6387C5.24628 14.4446 4.084 13.2769 3.20862 12.1631L2.8512 11.6885C1.74972 10.1645 1.22583 8.78231 1.17151 7.56348L1.16663 7.32227C1.17628 5.85475 1.68744 4.48158 2.6012 3.41602L2.7887 3.20703C3.8355 2.09891 5.21757 1.50008 6.68713 1.5C8.56459 1.5 10.3047 2.51369 11.3151 4.15527L12.1666 5.53906L13.0182 4.15527C14.0285 2.51371 15.7687 1.5 17.6461 1.5Z" stroke="currentColor" stroke-width="2"></path>
-												</svg>
-											</button>
-										</div>
-									</div>
-									<div class="products__slide swiper-slide product-card">
-										<img class="product-card__bg" loading="lazy" alt="Image" src="./assets/img/image-2.webp">
-										<div class="product-card__head">
-											<a href="#" class="product-card__title">
-												Сендвіч
-												<br>
-												Сет Бокс
-											</a>
-											<div class="product-card__info">
-												<div class="product-card__info-item">
-													<svg width="14" height="15" viewbox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M10.1052 6.17833L7.525 7.79092V10.7876C7.61033 10.7407 7.71778 10.6794 7.8575 10.5988L9.25484 9.79201C9.69353 9.53875 9.80805 9.46553 9.88757 9.37726C9.96961 9.28612 10.0316 9.17874 10.0695 9.06212C10.1062 8.94907 10.1123 8.81334 10.1123 8.30675V6.69332C10.1123 6.44769 10.1109 6.28928 10.1052 6.17833Z" fill="currentColor"></path>
-														<path d="M9.47324 5.33512L6.99174 6.88603L4.44144 5.38584C4.52067 5.33828 4.61966 5.28054 4.74521 5.20807L6.1425 4.40133C6.58119 4.14805 6.70187 4.08544 6.81807 4.06073C6.93805 4.03524 7.06202 4.03524 7.18193 4.06073C7.2982 4.08544 7.41881 4.14805 7.8575 4.40133L9.25484 5.20807C9.33884 5.25656 9.41094 5.29846 9.47324 5.33512Z" fill="currentColor"></path>
-														<path d="M3.89107 6.28025C3.88847 6.38196 3.88771 6.51454 3.88771 6.69332V8.30675C3.88771 8.81334 3.89381 8.94907 3.93053 9.06212C3.96843 9.17874 4.03041 9.28612 4.11246 9.37726C4.19198 9.46553 4.30652 9.53875 4.74521 9.79201L6.1425 10.5988C6.28222 10.6794 6.38967 10.7407 6.475 10.7876V7.80023L3.89107 6.28025Z" fill="currentColor"></path>
-														<path fill-rule="evenodd" clip-rule="evenodd" d="M6.97858 0.5H7.02142C8.064 0.5 8.87551 0.499993 9.52854 0.548223C10.1913 0.597167 10.7322 0.697869 11.2251 0.921169C12.2692 1.39426 13.1058 2.23081 13.5788 3.27496C13.8021 3.76779 13.9028 4.30873 13.9518 4.97147C14 5.62445 14 6.436 14 7.47858V7.52142C14 8.564 14 9.37551 13.9518 10.0285C13.9028 10.6913 13.8021 11.2322 13.5788 11.7251C13.1058 12.7692 12.2692 13.6058 11.2251 14.0788C10.7322 14.3021 10.1913 14.4028 9.52854 14.4518C8.87551 14.5 8.064 14.5 7.02142 14.5H6.97858C5.936 14.5 5.12445 14.5 4.47147 14.4518C3.80873 14.4028 3.26779 14.3021 2.77496 14.0788C1.73081 13.6058 0.894264 12.7692 0.421169 11.7251C0.197869 11.2322 0.0971671 10.6913 0.0482231 10.0285C-6.93128e-06 9.37551 0 8.564 0 7.52142V7.47858C0 6.436 -6.93128e-06 5.62446 0.0482231 4.97147C0.0971671 4.30873 0.197869 3.76779 0.421169 3.27496C0.894264 2.23081 1.73081 1.39426 2.77496 0.921169C3.26779 0.697869 3.80873 0.597167 4.47147 0.548223C5.12446 0.499993 5.936 0.5 6.97858 0.5ZM7.40026 3.03368C7.13636 2.97759 6.86364 2.97759 6.59981 3.03368C6.29965 3.09747 6.02651 3.25547 5.67889 3.45654L4.15884 4.33413C3.81088 4.53466 3.53746 4.69224 3.33216 4.92025C3.15165 5.12072 3.01529 5.3569 2.93193 5.61346C2.83711 5.90526 2.83737 6.22082 2.83767 6.62248V8.37759C2.83737 8.77925 2.83711 9.09481 2.93193 9.38657C3.01529 9.64319 3.15165 9.87937 3.33216 10.0799C3.53746 10.3078 3.81088 10.4654 4.15884 10.666L5.67889 11.5436C6.02651 11.7446 6.29965 11.9026 6.59981 11.9664C6.86364 12.0225 7.13636 12.0225 7.40026 11.9664C7.70035 11.9026 7.97356 11.7446 8.32118 11.5436L9.84123 10.666C10.1891 10.4654 10.4625 10.3078 10.6679 10.0799C10.8484 9.87937 10.9847 9.64319 11.0681 9.38657C11.1629 9.09481 11.1627 8.77925 11.1623 8.37759V6.62248C11.1627 6.22082 11.1629 5.90526 11.0681 5.61346C10.9847 5.3569 10.8484 5.12072 10.6679 4.92025C10.4625 4.69224 10.1891 4.53467 9.84123 4.33413L8.32118 3.45655C7.97356 3.25547 7.70035 3.09747 7.40026 3.03368Z" fill="currentColor"></path>
-													</svg>
-													<span>32 сендвічі</span>
-												</div>
-												<div class="product-card__info-item">
-													<svg width="13" height="15" viewbox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M12.9808 12.8299L11.7975 5.52877C11.6862 4.84035 11.1089 4.33723 10.4333 4.33723H8.65532C8.8638 3.96209 8.98302 3.52751 8.98302 3.06473C8.98302 1.65059 7.86927 0.5 6.49977 0.5C5.13056 0.5 4.01652 1.65059 4.01652 3.06473C4.01652 3.52751 4.13574 3.96209 4.34421 4.33723H2.56627C1.89033 4.33723 1.31334 4.84096 1.20206 5.52937L0.019012 12.8314C-0.0482298 13.2454 0.0648186 13.6715 0.327619 13.9917C0.590714 14.3123 0.976547 14.5 1.38352 14.5H11.6172C12.0242 14.5 12.41 14.3123 12.6731 13.9917C12.9356 13.6709 13.0484 13.2442 12.9808 12.8299ZM6.50006 1.99419C7.07147 1.99419 7.53658 2.47457 7.53658 3.06503C7.53658 3.65549 7.07147 4.13556 6.50006 4.13556C5.92836 4.13556 5.46325 3.65519 5.46325 3.06473C5.46325 2.47427 5.92836 1.99419 6.50006 1.99419Z" fill="currentColor"></path>
-													</svg>
-													<span>1 600 грамів</span>
-												</div>
-											</div>
-											<div class="product-card__prices">
-												<div class="product-card__price">1500 грн</div>
-											</div>
-											<div class="product-card__date">
-												Доставимо:
-												<span>07 травня</span>
-											</div>
-										</div>
-										<div class="product-card__bottom">
-											<button type="button" class="product-card__buy btn-accent btn-small">В кошик</button>
-											<button type="button" data-toggle-active="" class="product-card__fav btn-fav">
-												<svg width="25" height="21" viewbox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M17.6461 1.5C18.9486 1.50005 20.1998 1.97674 21.1998 2.85938L21.3961 3.04102C22.456 4.06873 23.094 5.50348 23.1608 7.01465L23.1666 7.31738C23.1587 8.51655 22.6918 9.8805 21.6617 11.3857L21.4479 11.6885C20.6512 12.7868 19.5702 13.9429 18.2164 15.1289L17.6198 15.6387C15.1737 17.6787 12.759 19.1131 12.1656 19.4561C11.6107 19.1375 9.47228 17.8766 7.20276 16.0625L6.68323 15.6387C5.24628 14.4446 4.084 13.2769 3.20862 12.1631L2.8512 11.6885C1.74972 10.1645 1.22583 8.78231 1.17151 7.56348L1.16663 7.32227C1.17628 5.85475 1.68744 4.48158 2.6012 3.41602L2.7887 3.20703C3.8355 2.09891 5.21757 1.50008 6.68713 1.5C8.56459 1.5 10.3047 2.51369 11.3151 4.15527L12.1666 5.53906L13.0182 4.15527C14.0285 2.51371 15.7687 1.5 17.6461 1.5Z" stroke="currentColor" stroke-width="2"></path>
-												</svg>
-											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="products__arrows">
-								<button type="button" class="swiper-button-prev">
-									<svg width="17" height="28" viewbox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M15 2L3 14L15 26" stroke="currentColor" stroke-width="4"></path>
-									</svg>
-								</button>
-								<button type="button" class="swiper-button-next">
-									<svg width="17" height="28" viewbox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M2 2L14 14L2 26" stroke="currentColor" stroke-width="4"></path>
-									</svg>
-								</button>
+							<div class="fixed-block__prices">
+								<div class="fixed-block__price">1 500 грн</div>
+								<div class="fixed-block__sale">-33%</div>
+								<div class="fixed-block__oldprice">1854 грн</div>
 							</div>
 						</div>
-						<a href="#" class="products__btn btn">
-							<span>Дивитись всi</span>
-							<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M1 2L9 9L1 16" stroke="currentColor" stroke-width="3"></path>
-							</svg>
-						</a>
+						<div class="fixed-block__right">
+							<button type="button" class="fixed-block__btn btn-accent">В кошик</button>
+							<button type="button" class="fixed-block__btn btn-gray-2">Замовити в 1 клік</button>
+							<button type="button" class="fixed-block__fav btn-fav-2" data-toggle-active="">
+								<svg width="13" height="11" viewbox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M6.49999 11C6.43423 11 6.36849 10.9834 6.30959 10.9501C6.2456 10.914 4.72545 10.0504 3.18348 8.74931C2.26957 7.97817 1.54005 7.21331 1.01523 6.47602C0.336084 5.52197 -0.00544414 4.60429 6.56113e-05 3.74844C0.00651481 2.75255 0.371098 1.81599 1.02673 1.11125C1.69344 0.394627 2.58317 0 3.53209 0C4.74822 0 5.8601 0.666489 6.50002 1.72229C7.13994 0.666514 8.25181 0 9.46794 0C10.3644 0 11.2198 0.356074 11.8765 1.00264C12.5971 1.71218 13.0066 2.71472 12.9999 3.75315C12.9944 4.60752 12.6465 5.52381 11.9658 6.47654C11.4394 7.21346 10.7109 7.97797 9.80053 8.74889C8.2642 10.0499 6.75496 10.9134 6.69146 10.9495C6.63228 10.9832 6.56611 11 6.49999 11Z" fill="currentColor"></path>
+								</svg>
+							</button>
+						</div>
 					</div>
 				</section>
-				<section class="willfit">
-					<div class="willfit__container">
-						<div class="willfit__title title text-center">
-							<span>Ідеально</span>
-							підійде для
+				<div class="quote-block">
+					<div class="quote-block__container">
+						<div class="quote-block__body">
+							<img class="quote-block__icon" src="./assets/img/icons/quote-circle.svg" loading="lazy" alt="Image">
+							<div class="quote-block__content">
+								<div class="quote-block__title">
+									<b>Наш шеф</b>
+									про цей бокс:
+								</div>
+								<div class="quote-block__text">
+									Ідеальний варіант для швидкого кейтерингу на зустріч, вечірку чи мітинг. Ми підсмажуємо хліб до
+                    золотої скоринки,
+                    додаємо свіжі інгредієнти, збалансовуємо смаки — і створюємо 32 соковитих клаб-сендвіча на будь-який
+                    смак: з шинкою,
+                    лососем, тунцем та моцарелою з томатом. Все акуратно запаковано та готове до подачі.
+								</div>
+							</div>
 						</div>
-						<div class="willfit__items">
-							<div class="willfit__item willfit__item--accent" style="background-image: url('./assets/img/decors/bow.svg');">
-								<div class="willfit__item-body">
-									<a href="#" class="willfit__item-title">Корпоративні заходи</a>
-									<div class="willfit__item-text">
-										<span>Наприклад:</span>
-										конференції, семінари, тренінги, презентації, обіди в офісі, тімбілдинги
+					</div>
+				</div>
+				<section class="product-detail">
+					<div class="product-detail__container">
+						<div class="product-detail__body">
+							<div class="product-detail__head">
+								<div class="product-detail__title title">
+									<span>Детальніше</span>
+									про бокс
+								</div>
+								<button type="button" class="product-detail__btn btn" data-menu="consultation" data-menu-click="">
+									<svg width="17" height="18" viewbox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M15.096 12.5283C13.9941 11.5982 12.8758 11.0349 11.7874 11.9635L11.1375 12.5248C10.662 12.9322 9.77792 14.8358 6.35972 10.9555C2.94224 7.08008 4.97593 6.47668 5.45214 6.07277L6.1056 5.51081C7.18829 4.58007 6.7797 3.40838 5.99883 2.20228L5.5276 1.47173C4.74316 0.268437 3.88897 -0.521817 2.80344 0.407522L2.21689 0.913285C1.73712 1.25819 0.396037 2.37929 0.0707324 4.50912C-0.320772 7.06463 0.914247 9.99102 3.74376 13.2019C6.56971 16.4142 9.33658 18.0277 11.9575 17.9996C14.1357 17.9765 15.4512 16.823 15.8626 16.4037L16.4513 15.8972C17.534 14.9686 16.8613 14.0231 15.7587 13.0909L15.096 12.5283Z" fill="currentColor"></path>
+									</svg>
+									<span>Консультація</span>
+								</button>
+							</div>
+							<div class="product-detail__inner">
+								<div class="product-detail__label">Склад боксу:</div>
+								<div class="product-detail__tags">
+									<div class="product-detail__tag">
+										Профітроль з лососем та авокадо
+										<span>4 шт</span>
+									</div>
+									<div class="product-detail__tag">
+										Профітроль з крем сиром, сиром Дор-Блю та курагою
+										<span>4 шт</span>
+									</div>
+									<div class="product-detail__tag">
+										Профітроль з крем сиром, фетой та курячим філе
+										<span>4 шт</span>
+									</div>
+									<div class="product-detail__tag">
+										Профітроль з салямі та сиром фета
+										<span>4 шт</span>
+									</div>
+									<div class="product-detail__tag">
+										Профітроль з баликом і томатом чері
+										<span>4 шт</span>
+									</div>
+									<div class="product-detail__tag">
+										Профітроль з баликом і томатом чері
+										<span>4 шт</span>
 									</div>
 								</div>
-								<div class="willfit__item-btns">
-									<a href="#" class="willfit__item-btn btn-white">Дивитись бокси</a>
-									<button type="button" class="willfit__item-btn btn-2" data-menu="consultation" data-menu-click="">Замовити консультацію</button>
-								</div>
 							</div>
-							<div class="willfit__item">
-								<div class="willfit__item-body">
-									<a href="" class="willfit__item-title">Сімейні свята</a>
-									<div class="willfit__item-text">
-										<span>Наприклад:</span>
-										дні народження, ювілеї, річниці
+							<div class="product-detail__items">
+								<div class="product-detail__item">
+									<div class="product-detail__label">Вага боксу/порційність:</div>
+									<div class="product-detail__text">720 грам / 24 штук</div>
+								</div>
+								<div class="product-detail__item">
+									<div class="product-detail__label">Інгрідієнти:</div>
+									<div class="product-detail__text">
+										Лосось, креветка, крем сир, сир дорблю, сир фета, курка, салямі, балик, авокадо, курага, томати,
+                        салат
 									</div>
 								</div>
-								<div class="willfit__item-btns">
-									<a href="#" class="willfit__item-btn btn-accent">Дивитись бокси</a>
+								<div class="product-detail__item">
+									<div class="product-detail__label">Термін придатності:</div>
+									<div class="product-detail__text">До 24 годин за температури +2…+6 С</div>
+								</div>
+								<div class="product-detail__item">
+									<div class="product-detail__label">Формат подачі:</div>
+									<div class="product-detail__text">Готове до вживання, упаковане в коробку</div>
 								</div>
 							</div>
-							<div class="willfit__item">
-								<div class="willfit__item-body">
-									<a href="#" class="willfit__item-title">Весілля</a>
-									<div class="willfit__item-text">
-										<span>Наприклад:</span>
-										виїзні церемонії, шумні пікніки
-									</div>
-								</div>
-								<div class="willfit__item-btns">
-									<a href="#" class="willfit__item-btn btn-accent">Дивитись бокси</a>
-								</div>
-							</div>
-							<div class="willfit__item">
-								<div class="willfit__item-body">
-									<a href="#" class="willfit__item-title">
-										Пікніки
-										<br>
-										та виїзні події
-									</a>
-									<div class="willfit__item-text">
-										<span>Наприклад:</span>
-										BBQ, вечірки на природі, зустрічі з великою кількістю друзів
-									</div>
-								</div>
-								<div class="willfit__item-btns">
-									<a href="#" class="willfit__item-btn btn-accent">Дивитись бокси</a>
-								</div>
-							</div>
-							<div class="willfit__item">
-								<div class="willfit__item-body">
-									<a href="#" class="willfit__item-title">Дитячі свята та шкільні заходи</a>
-									<div class="willfit__item-text">
-										<span>Наприклад:</span>
-										дні народження дітей, випускні, ранки
-									</div>
-								</div>
-								<div class="willfit__item-btns">
-									<a href="#" class="willfit__item-btn btn-accent">Дивитись бокси</a>
-								</div>
-							</div>
-							<div data-fls-mouse="" class="willfit__decor-1">
+							<div data-fls-mouse="" class="product-detail__decor-1">
 								<img loading="lazy" alt="Image" src="./assets/img/decors/decor-5.webp">
 							</div>
-							<div data-fls-mouse="" class="willfit__decor-2">
-								<img loading="lazy" alt="Image" src="./assets/img/decors/decor-6.webp">
-							</div>
-							<div data-fls-mouse="" class="willfit__decor-3">
+							<div data-fls-mouse="" class="product-detail__decor-2">
 								<img loading="lazy" alt="Image" src="./assets/img/decors/decor-7.webp">
 							</div>
 						</div>
 					</div>
 				</section>
+				<section class="box-gallery">
+					<div class="box-gallery__container">
+						<div class="box-gallery__title title text-center">
+							<span>Галерея</span>
+							боксу
+						</div>
+						<div class="box-gallery__inner">
+							<div data-fls-slider="" class="box-gallery__slider swiper">
+								<div class="box-gallery__wrapper swiper-wrapper">
+									<div class="box-gallery__slide swiper-slide">
+										<img loading="lazy" alt="Image" src="./assets/img/image-2.webp">
+									</div>
+									<div class="box-gallery__slide swiper-slide">
+										<img loading="lazy" alt="Image" src="./assets/img/image-2.webp">
+									</div>
+									<div class="box-gallery__slide swiper-slide">
+										<img loading="lazy" alt="Image" src="./assets/img/image-2.webp">
+									</div>
+									<div class="box-gallery__slide swiper-slide">
+										<img loading="lazy" alt="Image" src="./assets/img/image-2.webp">
+									</div>
+									<div class="box-gallery__slide swiper-slide">
+										<img loading="lazy" alt="Image" src="./assets/img/image-2.webp">
+									</div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<div class="box-gallery__arrows">
+								<button type="button" class="swiper-button-prev">
+									<svg width="17" height="28" viewbox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M15 2L3 14L15 26" stroke="currentColor" stroke-width="4"></path>
+									</svg>
+								</button>
+								<button type="button" class="swiper-button-next">
+									<svg width="17" height="28" viewbox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M2 2L14 14L2 26" stroke="currentColor" stroke-width="4"></path>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="compound">
+					<div class="compound__container">
+						<div class="compound__title title text-center">
+							<span>Склад</span>
+							боксу
+						</div>
+						<div class="compound__body">
+							<div class="compound__item">
+								<div class="compound__item-img">
+									<img loading="lazy" alt="Image" src="./assets/img/image-3.webp">
+								</div>
+								<div class="compound__item-count">х 8 шт</div>
+								<div class="compound__item-title">Клаб-сендвічі з шинкою</div>
+							</div>
+							<div class="compound__item">
+								<div class="compound__item-img">
+									<img loading="lazy" alt="Image" src="./assets/img/image-3.webp">
+								</div>
+								<div class="compound__item-count">х 8 шт</div>
+								<div class="compound__item-title">Клаб-сендвічі з шинкою</div>
+							</div>
+							<div class="compound__item">
+								<div class="compound__item-img">
+									<img loading="lazy" alt="Image" src="./assets/img/image-3.webp">
+								</div>
+								<div class="compound__item-count">х 8 шт</div>
+								<div class="compound__item-title">Клаб-сендвічі з шинкою</div>
+							</div>
+							<div class="compound__item">
+								<div class="compound__item-img">
+									<img loading="lazy" alt="Image" src="./assets/img/image-3.webp">
+								</div>
+								<div class="compound__item-count">х 8 шт</div>
+								<div class="compound__item-title">Клаб-сендвічі з моцарелою та помідором</div>
+							</div>
+							<div class="compound__item">
+								<div class="compound__item-img">
+									<img loading="lazy" alt="Image" src="./assets/img/image-3.webp">
+								</div>
+								<div class="compound__item-count">х 8 шт</div>
+								<div class="compound__item-title">Клаб-сендвічі з шинкою</div>
+							</div>
+							<div class="compound__item">
+								<div class="compound__item-img">
+									<img loading="lazy" alt="Image" src="./assets/img/image-3.webp">
+								</div>
+								<div class="compound__item-count">х 8 шт</div>
+								<div class="compound__item-title">Клаб-сендвічі з шинкою</div>
+							</div>
+						</div>
+						<div data-fls-mouse="" class="compound__decor">
+							<img loading="lazy" alt="Image" src="./assets/img/decors/decor-3.webp">
+						</div>
+					</div>
+				</section>
+				<section class="reviews">
+					<div class="reviews__container">
+						<div class="reviews__body">
+							<div class="reviews__title title">Залишити відгук</div>
+							<form action="#" class="reviews__form">
+								<div class="reviews__inputs">
+									<div class="input-field reviews__field">
+										<label class="input-field__label">Стисло про враження</label>
+										<input autocomplete="off" type="text" name="title" placeholder="Стисло про враження" class="input-field__input">
+									</div>
+									<div class="options-rating reviews__rating">
+										<label class="options-rating__label">Ваша оцінка</label>
+										<div class="options-rating__items">
+											<label class="options-rating__item">
+												<input class="options-rating__input" type="radio" value="1" name="rating">
+												<span class="options-rating__star">
+													<svg width="24" height="21" viewbox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M17.4795 1.5C18.782 1.50005 20.0332 1.97674 21.0332 2.85938L21.2295 3.04102C22.2894 4.06873 22.9274 5.50348 22.9941 7.01465L23 7.31738C22.9921 8.51655 22.5251 9.8805 21.4951 11.3857L21.2812 11.6885C20.4845 12.7868 19.4036 13.9429 18.0498 15.1289L17.4531 15.6387C15.007 17.6787 12.5924 19.1131 11.999 19.4561C11.444 19.1375 9.30565 17.8766 7.03613 16.0625L6.5166 15.6387C5.07965 14.4446 3.91738 13.2769 3.04199 12.1631L2.68457 11.6885C1.58309 10.1645 1.05921 8.78231 1.00488 7.56348L1 7.32227C1.00965 5.85475 1.52081 4.48158 2.43457 3.41602L2.62207 3.20703C3.66887 2.09891 5.05095 1.50008 6.52051 1.5C8.39797 1.5 10.1381 2.51369 11.1484 4.15527L12 5.53906L12.8516 4.15527C13.8619 2.51371 15.602 1.5 17.4795 1.5Z" stroke="currentColor" stroke-width="2"></path>
+													</svg>
+												</span>
+											</label>
+											<label class="options-rating__item">
+												<input class="options-rating__input" type="radio" value="1" name="rating">
+												<span class="options-rating__star">
+													<svg width="24" height="21" viewbox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M17.4795 1.5C18.782 1.50005 20.0332 1.97674 21.0332 2.85938L21.2295 3.04102C22.2894 4.06873 22.9274 5.50348 22.9941 7.01465L23 7.31738C22.9921 8.51655 22.5251 9.8805 21.4951 11.3857L21.2812 11.6885C20.4845 12.7868 19.4036 13.9429 18.0498 15.1289L17.4531 15.6387C15.007 17.6787 12.5924 19.1131 11.999 19.4561C11.444 19.1375 9.30565 17.8766 7.03613 16.0625L6.5166 15.6387C5.07965 14.4446 3.91738 13.2769 3.04199 12.1631L2.68457 11.6885C1.58309 10.1645 1.05921 8.78231 1.00488 7.56348L1 7.32227C1.00965 5.85475 1.52081 4.48158 2.43457 3.41602L2.62207 3.20703C3.66887 2.09891 5.05095 1.50008 6.52051 1.5C8.39797 1.5 10.1381 2.51369 11.1484 4.15527L12 5.53906L12.8516 4.15527C13.8619 2.51371 15.602 1.5 17.4795 1.5Z" stroke="currentColor" stroke-width="2"></path>
+													</svg>
+												</span>
+											</label>
+											<label class="options-rating__item">
+												<input class="options-rating__input" type="radio" value="1" name="rating">
+												<span class="options-rating__star">
+													<svg width="24" height="21" viewbox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M17.4795 1.5C18.782 1.50005 20.0332 1.97674 21.0332 2.85938L21.2295 3.04102C22.2894 4.06873 22.9274 5.50348 22.9941 7.01465L23 7.31738C22.9921 8.51655 22.5251 9.8805 21.4951 11.3857L21.2812 11.6885C20.4845 12.7868 19.4036 13.9429 18.0498 15.1289L17.4531 15.6387C15.007 17.6787 12.5924 19.1131 11.999 19.4561C11.444 19.1375 9.30565 17.8766 7.03613 16.0625L6.5166 15.6387C5.07965 14.4446 3.91738 13.2769 3.04199 12.1631L2.68457 11.6885C1.58309 10.1645 1.05921 8.78231 1.00488 7.56348L1 7.32227C1.00965 5.85475 1.52081 4.48158 2.43457 3.41602L2.62207 3.20703C3.66887 2.09891 5.05095 1.50008 6.52051 1.5C8.39797 1.5 10.1381 2.51369 11.1484 4.15527L12 5.53906L12.8516 4.15527C13.8619 2.51371 15.602 1.5 17.4795 1.5Z" stroke="currentColor" stroke-width="2"></path>
+													</svg>
+												</span>
+											</label>
+											<label class="options-rating__item">
+												<input class="options-rating__input" type="radio" value="1" name="rating">
+												<span class="options-rating__star">
+													<svg width="24" height="21" viewbox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M17.4795 1.5C18.782 1.50005 20.0332 1.97674 21.0332 2.85938L21.2295 3.04102C22.2894 4.06873 22.9274 5.50348 22.9941 7.01465L23 7.31738C22.9921 8.51655 22.5251 9.8805 21.4951 11.3857L21.2812 11.6885C20.4845 12.7868 19.4036 13.9429 18.0498 15.1289L17.4531 15.6387C15.007 17.6787 12.5924 19.1131 11.999 19.4561C11.444 19.1375 9.30565 17.8766 7.03613 16.0625L6.5166 15.6387C5.07965 14.4446 3.91738 13.2769 3.04199 12.1631L2.68457 11.6885C1.58309 10.1645 1.05921 8.78231 1.00488 7.56348L1 7.32227C1.00965 5.85475 1.52081 4.48158 2.43457 3.41602L2.62207 3.20703C3.66887 2.09891 5.05095 1.50008 6.52051 1.5C8.39797 1.5 10.1381 2.51369 11.1484 4.15527L12 5.53906L12.8516 4.15527C13.8619 2.51371 15.602 1.5 17.4795 1.5Z" stroke="currentColor" stroke-width="2"></path>
+													</svg>
+												</span>
+											</label>
+											<label class="options-rating__item">
+												<input class="options-rating__input" type="radio" value="1" name="rating">
+												<span class="options-rating__star">
+													<svg width="24" height="21" viewbox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M17.4795 1.5C18.782 1.50005 20.0332 1.97674 21.0332 2.85938L21.2295 3.04102C22.2894 4.06873 22.9274 5.50348 22.9941 7.01465L23 7.31738C22.9921 8.51655 22.5251 9.8805 21.4951 11.3857L21.2812 11.6885C20.4845 12.7868 19.4036 13.9429 18.0498 15.1289L17.4531 15.6387C15.007 17.6787 12.5924 19.1131 11.999 19.4561C11.444 19.1375 9.30565 17.8766 7.03613 16.0625L6.5166 15.6387C5.07965 14.4446 3.91738 13.2769 3.04199 12.1631L2.68457 11.6885C1.58309 10.1645 1.05921 8.78231 1.00488 7.56348L1 7.32227C1.00965 5.85475 1.52081 4.48158 2.43457 3.41602L2.62207 3.20703C3.66887 2.09891 5.05095 1.50008 6.52051 1.5C8.39797 1.5 10.1381 2.51369 11.1484 4.15527L12 5.53906L12.8516 4.15527C13.8619 2.51371 15.602 1.5 17.4795 1.5Z" stroke="currentColor" stroke-width="2"></path>
+													</svg>
+												</span>
+											</label>
+										</div>
+									</div>
+									<div class="input-field reviews__field--long">
+										<label class="input-field__label">Ваш відгук</label>
+										<textarea class="input-field__input" name="review" placeholder="Ваш відгук"></textarea>
+									</div>
+								</div>
+								<button type="submit" class="reviews__btn btn">Залишити відгук</button>
+							</form>
+						</div>
+						<div data-fls-mouse="" class="reviews__decor">
+							<img loading="lazy" alt="Image" src="./assets/img/decors/decor-6.webp">
+						</div>
+					</div>
+				</section>
 				<section class="products">
 					<div class="products__container">
 						<div class="products__head">
-							<div class="products__title title">Для корпоративу</div>
+							<div class="products__title title">Рекомендуємо</div>
 							<div class="swiper-pagination"></div>
 						</div>
 						<div class="products__inner">
@@ -1653,22 +1282,16 @@
 									</svg>
 								</button>
 							</div>
-							<div data-fls-mouse="" class="products__decor products__decor--bottom-center">
+							<div data-fls-mouse="" class="products__decor products__decor--bottom-right">
 								<img loading="lazy" alt="Image" src="./assets/img/decors/decor-8.webp">
 							</div>
 						</div>
-						<a href="#" class="products__btn btn">
-							<span>Дивитись всi</span>
-							<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M1 2L9 9L1 16" stroke="currentColor" stroke-width="3"></path>
-							</svg>
-						</a>
 					</div>
 				</section>
 				<section class="products">
 					<div class="products__container">
 						<div class="products__head">
-							<div class="products__title title">М’ясні</div>
+							<div class="products__title title">Переглянуті бокси</div>
 							<div class="swiper-pagination"></div>
 						</div>
 						<div class="products__inner">
@@ -1860,47 +1483,39 @@
 								</button>
 							</div>
 						</div>
-						<a href="#" class="products__btn btn">
-							<span>Дивитись всi</span>
-							<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M1 2L9 9L1 16" stroke="currentColor" stroke-width="3"></path>
-							</svg>
-						</a>
 					</div>
 				</section>
-				<section class="recommendation recommendation--accent">
-					<div class="recommendation__container">
-						<div class="recommendation__body">
-							<div class="recommendation__title title-dark text-center">
-								<span>Рекомендуємо</span>
-								переглянути
+				<section class="contacts contacts--accent">
+					<div class="contacts__container">
+						<div class="contacts__body">
+							<div class="contacts__title title-dark">
+								<span>Замовити</span>
+								консультацію
 							</div>
-							<div class="recommendation__items">
-								<a href="#" class="recommendation__item">Гарячі</a>
-								<a href="#" class="recommendation__item">Холодні</a>
-								<a href="#" class="recommendation__item">Рибні</a>
-								<a href="#" class="recommendation__item">М’ясні</a>
-								<a href="#" class="recommendation__item">BBQ</a>
-								<a href="#" class="recommendation__item">Гострі</a>
-								<a href="#" class="recommendation__item">Не гострі</a>
-								<a href="#" class="recommendation__item">Солодкі</a>
-								<a href="#" class="recommendation__item">Солоні</a>
-								<a href="#" class="recommendation__item">Вегетаріанські</a>
-								<a href="#" class="recommendation__item">Корпоративні</a>
-								<a href="#" class="recommendation__item">Веганські</a>
+							<form action="#" class="contacts__form">
+								<div class="contacts__inputs">
+									<div class="input-field">
+										<label class="input-field__label">Ваше ім’я</label>
+										<input autocomplete="off" type="text" name="name" placeholder="Ваше ім’я" class="input-field__input">
+									</div>
+									<div class="input-field">
+										<label class="input-field__label">Телефон</label>
+										<input autocomplete="off" type="tel" name="phone" data-fls-input-mask="+38 (999) 999 - 99 - 99" placeholder="+38 (___) ___ - __ - __" class="input-field__input">
+									</div>
+								</div>
+								<button type="button" class="contacts__btn btn-2">
+									<svg width="17" height="19" viewbox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M15.096 13.0283C13.9941 12.0982 12.8758 11.5349 11.7874 12.4635L11.1375 13.0248C10.662 13.4322 9.77792 15.3358 6.35972 11.4555C2.94224 7.58008 4.97593 6.97668 5.45214 6.57277L6.1056 6.01081C7.18829 5.08007 6.7797 3.90838 5.99883 2.70228L5.5276 1.97173C4.74316 0.768437 3.88897 -0.0218169 2.80344 0.907522L2.21689 1.41329C1.73712 1.75819 0.396037 2.87929 0.0707324 5.00912C-0.320772 7.56463 0.914247 10.491 3.74376 13.7019C6.56971 16.9142 9.33658 18.5277 11.9575 18.4996C14.1357 18.4765 15.4512 17.323 15.8626 16.9037L16.4513 16.3972C17.534 15.4686 16.8613 14.5231 15.7587 13.5909L15.096 13.0283Z" fill="currentColor"></path>
+									</svg>
+									<span>Залишити заявку</span>
+								</button>
+							</form>
+							<div data-fls-mouse="" class="contacts__decor-1">
+								<img loading="lazy" alt="Image" src="./assets/img/decors/decor-5.webp">
 							</div>
-							<a href="#" class="recommendation__btn btn">
-								<span>Каталог</span>
-								<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M1.5 2L9.5 9L1.5 16" stroke="currentColor" stroke-width="3"></path>
-								</svg>
-							</a>
-						</div>
-						<div data-fls-mouse="" class="recommendation__decor-2">
-							<img loading="lazy" alt="Image" src="./assets/img/decors/decor-spice.webp">
-						</div>
-						<div data-fls-mouse="" class="recommendation__decor-3">
-							<img loading="lazy" alt="Image" src="./assets/img/decors/decor-9.webp">
+							<div data-fls-mouse="" class="contacts__decor-2">
+								<img loading="lazy" alt="Image" src="./assets/img/decors/decor-7.webp">
+							</div>
 						</div>
 					</div>
 				</section>
@@ -1957,7 +1572,7 @@
 					</div>
 				</section>
 			</main>
-			<footer class="footer">
+			<footer class="footer" data-fixed-hide="">
 				<div class="footer__container">
 					<div class="footer__body">
 						<div class="footer__info">
@@ -2127,11 +1742,6 @@
 				</div>
 			</div>
 		</div>
-		<button type="button" data-menu="consultation" data-menu-click="" class="support-btn">
-			<svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M15.596 12.5283C14.4941 11.5982 13.3758 11.0349 12.2874 11.9635L11.6375 12.5248C11.162 12.9322 10.2779 14.8358 6.85972 10.9555C3.44224 7.08008 5.47593 6.47668 5.95214 6.07277L6.6056 5.51081C7.68829 4.58007 7.2797 3.40838 6.49883 2.20228L6.0276 1.47173C5.24316 0.268437 4.38897 -0.521817 3.30344 0.407522L2.71689 0.913285C2.23712 1.25819 0.896037 2.37929 0.570732 4.50912C0.179228 7.06463 1.41425 9.99102 4.24376 13.2019C7.06971 16.4142 9.83658 18.0277 12.4575 17.9996C14.6357 17.9765 15.9512 16.823 16.3626 16.4037L16.9513 15.8972C18.034 14.9686 17.3613 14.0231 16.2587 13.0909L15.596 12.5283Z" fill="currentColor"></path>
-			</svg>
-		</button>
 		<ul id="fls-dev-panel">
 			<li>
 				<a href="product.html">product</a>

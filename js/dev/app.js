@@ -3426,7 +3426,7 @@ document.querySelector("[data-fls-mouse]") ? window.addEventListener("load", new
   }
   document.addEventListener("DOMContentLoaded", setupMenuImageHover);
 })();
-const inputFields = document.querySelectorAll("input");
+const inputFields = document.querySelectorAll("input, textarea");
 if (inputFields.length) {
   inputFields.forEach((input) => {
     const parent = input.parentElement;

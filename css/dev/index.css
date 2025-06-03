@@ -1,40 +1,4 @@
-.swiper {
-  overflow: hidden;
-}
-
-.swiper-initialized {
-  touch-action: pan-y;
-}
-
-.swiper-wrapper {
-  width: 100%;
-  height: 100%;
-  box-sizing: content-box;
-  display: flex;
-  position: relative;
-}
-
-.swiper-vertical .swiper-wrapper {
-  flex-direction: column;
-}
-
-.swiper-autoheight .swiper-wrapper {
-  align-items: flex-start;
-}
-
-.swiper-initialized .swiper-slide {
-  flex-shrink: 0;
-}
-
-.swiper-android .swiper-slide,
-.swiper-android .swiper-wrapper {
-  transform: translate3d(0px, 0, 0);
-}
-
-.swiper-button-lock,
-.swiper-pagination-lock {
-  display: none !important;
-}.hero {
+.hero {
   margin-top: 63px;
   margin-bottom: 160px;
 }
@@ -247,72 +211,6 @@
   right: -334px;
   width: 581px;
   height: 591px;
-}.advantages {
-  margin-bottom: 160px;
-}
-.advantages__title {
-  margin-bottom: 48px;
-}
-.advantages__items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  position: relative;
-}
-.advantages__item {
-  flex: 1 1 auto;
-  width: calc(33.333% - 24px);
-  min-width: 320px;
-  box-shadow: 0 4px 30px 0 rgba(186, 224, 204, 0.65);
-  background-color: var(--white-color);
-  background-repeat: no-repeat;
-  background-position: bottom -58px right -50px;
-  background-size: contain;
-  border-radius: 36px;
-  padding: 48px;
-  min-height: 400px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.advantages__item--accent {
-  background-color: var(--accent);
-  color: var(--green-color);
-}
-.advantages__item-body {
-  flex: 1 1 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.advantages__item-title {
-  font-weight: 600;
-  line-height: 105%;
-}
-.advantages__item-text {
-  font-size: 20px;
-  line-height: 120%;
-}
-.advantages__decor-1, .advantages__decor-2 {
-  position: absolute;
-  pointer-events: none;
-}
-.advantages__decor-1 img, .advantages__decor-2 img {
-  width: 100%;
-  object-fit: cover;
-}
-.advantages__decor-1 {
-  width: 744px;
-  height: 754px;
-  z-index: -1;
-  top: -383px;
-  right: -465px;
-}
-.advantages__decor-2 {
-  width: 454px;
-  height: 449px;
-  bottom: -244px;
-  left: -273px;
 }.willfit {
   margin-bottom: 160px;
 }
@@ -452,18 +350,6 @@
     width: 290px;
     height: 295px;
   }
-  .advantages__decor-1 {
-    width: 372px;
-    height: 377px;
-    top: -170px;
-    right: -130px;
-  }
-  .advantages__decor-2 {
-    width: 186px;
-    height: 189px;
-    bottom: -115px;
-    left: -78px;
-  }
   .willfit__decor-1 {
     top: -48px;
     left: -77px;
@@ -488,9 +374,6 @@
   }
 }
 @media (max-width: 81.24875em) {
-  .advantages__item {
-    padding: 24px;
-  }
   .willfit__item {
     padding: 24px;
   }
@@ -510,9 +393,6 @@
   }
   .recommendation--accent .recommendation__body {
     padding: 48px;
-  }
-  .advantages__item {
-    min-height: 250px;
   }
   .willfit__item {
     min-height: 340px;
@@ -586,29 +466,6 @@
     width: 190px;
     height: 195px;
   }
-  .advantages {
-    margin-bottom: 100px;
-  }
-  .advantages__title {
-    margin-bottom: 36px;
-  }
-  .advantages__items {
-    gap: 16px;
-  }
-  .advantages__item {
-    width: calc(33.333% - 16px);
-    border-radius: 16px;
-    background-position: bottom -20px right -50px;
-  }
-  .advantages__item-body {
-    gap: 12px;
-  }
-  .advantages__item-title {
-    font-size: 24px;
-  }
-  .advantages__item-text {
-    font-size: 16px;
-  }
   .willfit {
     margin-bottom: 100px;
   }
@@ -668,15 +525,6 @@
   .recommendation--accent .recommendation__body {
     padding: 48px 12px;
   }
-  .advantages__item {
-    min-width: 270px;
-  }
-  .advantages__decor-1 {
-    width: 272px;
-    height: 277px;
-    top: -120px;
-    right: -100px;
-  }
   .willfit__item {
     min-width: 270px;
     background-size: 263px;
@@ -696,9 +544,6 @@
   .hero__slide-title {
     font-size: 48px;
   }
-  .advantages__item {
-    padding: 16px;
-  }
   .willfit__item {
     padding: 16px;
   }
@@ -713,9 +558,6 @@
   .hero__slide-subtitle {
     font-size: clamp( 16px , -3.3929446226px  +  2.5251887579vw , 36px );
   }
-  .advantages__item-title {
-    font-size: clamp( 24px , 12.3642332264px  +  1.5151132547vw , 36px );
-  }
   .willfit__item--accent .willfit__item-title {
     font-size: clamp( 24px , 0.7284664529px  +  3.0302265094vw , 48px );
   }
@@ -728,9 +570,6 @@
     font-size: 141px;
   }
   .hero__slide-subtitle {
-    font-size: 36px;
-  }
-  .advantages__item-title {
     font-size: 36px;
   }
   .willfit__item--accent .willfit__item-title {

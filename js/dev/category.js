@@ -1,4 +1,7 @@
 import "./app.min.js";
+import "./category.min2.js";
+/* empty css              */
+/* empty css             */
 function miniSelect(selParent, selOptions) {
   const selParents = document.querySelectorAll(selParent);
   if (selParents.length) {
