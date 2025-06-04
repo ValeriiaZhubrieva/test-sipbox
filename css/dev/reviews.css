@@ -719,7 +719,7 @@
 .box-gallery__slider {
   overflow: visible;
 }
-.box-gallery__slider:not(.swiper-initialized) .products__wrapper {
+.box-gallery__slider:not(.swiper-initialized) .box-gallery__wrapper {
   gap: 24px;
 }
 .box-gallery__slider:not(.swiper-initialized) .box-gallery__slide:nth-child(n+4) {
@@ -852,7 +852,7 @@
   padding: 0 16px;
   margin: 0 -16px;
 }
-.reviews__slider:not(.swiper-initialized) .products__wrapper {
+.reviews__slider:not(.swiper-initialized) .reviews__wrapper {
   gap: 24px;
 }
 .reviews__slider:not(.swiper-initialized) .reviews__slide:nth-child(n+3) {

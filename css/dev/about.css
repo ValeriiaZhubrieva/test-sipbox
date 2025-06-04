@@ -229,7 +229,7 @@
 .team__inner {
   position: relative;
 }
-.team__slider:not(.swiper-initialized) .products__wrapper {
+.team__slider:not(.swiper-initialized) .team__wrapper {
   gap: 24px;
 }
 .team__slider:not(.swiper-initialized) .team__slide:nth-child(n+5) {
