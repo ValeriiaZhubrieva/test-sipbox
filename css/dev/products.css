@@ -363,6 +363,9 @@
   }
 }
 @media (max-width: 29.99875em) {
+  .products__slider:not(.swiper-initialized) .products__slide:nth-child(n+2) {
+    display: none;
+  }
   .product-card__buy {
     max-width: 120px;
     min-height: 39px;

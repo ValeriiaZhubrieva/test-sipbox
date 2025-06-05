@@ -5208,7 +5208,7 @@ function initSliders() {
           },
           767.98: {
             slidesPerView: 2,
-            spaceBetween: 16,
+            spaceBetween: 24,
             centeredSlides: false
           },
           1199.98: {
@@ -5283,13 +5283,22 @@ function initSliders() {
           319.98: {
             slidesPerView: 1.1
           },
-          549.98: {
+          389.98: {
+            slidesPerView: 1.5
+          },
+          479.98: {
             slidesPerView: 2
           },
-          991.98: {
+          649.98: {
+            slidesPerView: 2.5
+          },
+          767.98: {
             slidesPerView: 3
           },
-          1249.98: {
+          1149.98: {
+            slidesPerView: 4
+          },
+          1349.98: {
             slidesPerView: 4.7
           }
         },

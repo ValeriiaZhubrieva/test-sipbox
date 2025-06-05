@@ -9,12 +9,13 @@
 		<link rel="preload" href="./assets/fonts/Inter-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Category</title>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1749031406426"></script>
-		<script type="module" crossorigin="" src="./js/category.min2.js?v=1749031406426"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1749031406426">
-		<link rel="stylesheet" crossorigin="" href="./css/category.min.css?v=1749031406426">
-		<link rel="stylesheet" crossorigin="" href="./css/products.min.css?v=1749031406426">
-		<link rel="stylesheet" crossorigin="" href="./css/contacts.min.css?v=1749031406426">
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1749114534537"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1749114534537">
+		<link rel="stylesheet" crossorigin="" href="./css/category.min.css?v=1749114534537">
+		<link rel="stylesheet" crossorigin="" href="./css/products.min.css?v=1749114534537">
+		<link rel="stylesheet" crossorigin="" href="./css/pagination.min.css?v=1749114534537">
+		<link rel="stylesheet" crossorigin="" href="./css/block-text.min.css?v=1749114534537">
+		<link rel="stylesheet" crossorigin="" href="./css/contacts.min.css?v=1749114534537">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -772,20 +773,20 @@
 								</a>
 								<span class="breadcrumbs__link is-active">Корпоративні бокси</span>
 							</div>
-							<div class="catalog__title title">
+							<h1 class="catalog__title title">
 								<span>Корпоративні</span>
 								бокси
-							</div>
+							</h1>
 						</div>
 						<div class="catalog__head">
 							<button type="button" class="catalog__btn-filters btn" data-menu="aside-block">Фільтрація</button>
 							<div class="catalog__head-filters" data-fls-dynamic=".aside-block__body, 1099.98, 1">
 								<div class="catalog__head-row">
 									<div class="catalog__head-items filter-block">
-										<button type="button" class="filter-block__btn btn-empty is-active">Всi</button>
-										<button type="button" class="filter-block__btn btn-empty">Додатки до боксів</button>
-										<button type="button" class="filter-block__btn btn-empty">Сезоні/святкові</button>
-										<button type="button" class="filter-block__btn btn-empty">Напої</button>
+										<a href="#" class="filter-block__btn btn-empty is-active">Всi</a>
+										<a href="#" class="filter-block__btn btn-empty">Додатки до боксів</a>
+										<a href="#" class="filter-block__btn btn-empty">Сезоні/святкові</a>
+										<a href="#" class="filter-block__btn btn-empty">Напої</a>
 									</div>
 								</div>
 								<div class="catalog__head-row mob-hide">
@@ -874,62 +875,70 @@
 											</button>
 										</div>
 										<div class="aside-block__filters-body">
-											<label class="checkbox">
-												<input class="checkbox__input" checked type="checkbox" value="1" name="filter">
-												<span class="checkbox__text">Всi</span>
-											</label>
-											<label class="checkbox">
-												<input class="checkbox__input" type="checkbox" value="2" name="filter">
-												<span class="checkbox__text">Гарячі</span>
-											</label>
-											<label class="checkbox">
-												<input class="checkbox__input" type="checkbox" value="3" name="filter">
-												<span class="checkbox__text">Холодні</span>
-											</label>
-											<label class="checkbox">
-												<input class="checkbox__input" type="checkbox" value="4" name="filter">
-												<span class="checkbox__text">Риба</span>
-											</label>
-											<label class="checkbox">
-												<input class="checkbox__input" type="checkbox" value="5" name="filter">
-												<span class="checkbox__text">М’ясо</span>
-											</label>
-											<label class="checkbox">
-												<input class="checkbox__input" type="checkbox" value="6" name="filter">
-												<span class="checkbox__text">BBQ</span>
-											</label>
-											<label class="checkbox">
-												<input class="checkbox__input" type="checkbox" value="7" name="filter">
-												<span class="checkbox__text">Салати</span>
-											</label>
-											<label class="checkbox">
-												<input class="checkbox__input" type="checkbox" value="8" name="filter">
-												<span class="checkbox__text">Гострі</span>
-											</label>
-											<label class="checkbox">
-												<input class="checkbox__input" type="checkbox" value="9" name="filter">
-												<span class="checkbox__text">Не гострі</span>
-											</label>
-											<label class="checkbox">
-												<input class="checkbox__input" type="checkbox" value="10" name="filter">
-												<span class="checkbox__text">Солодкі</span>
-											</label>
-											<label class="checkbox">
-												<input class="checkbox__input" type="checkbox" value="11" name="filter">
-												<span class="checkbox__text">Солоні</span>
-											</label>
-											<label class="checkbox">
-												<input class="checkbox__input" type="checkbox" value="12" name="filter">
-												<span class="checkbox__text">Вегетаріанські</span>
-											</label>
-											<label class="checkbox">
-												<input class="checkbox__input" type="checkbox" value="13" name="filter">
-												<span class="checkbox__text">Веганські</span>
-											</label>
-											<label class="checkbox">
-												<input class="checkbox__input" type="checkbox" value="14" name="filter">
-												<span class="checkbox__text">Дитячі</span>
-											</label>
+											<button type="button" data-toggle-active="" class="ocf-value ocf-checkbox filters__data is-active">
+												<span class="ocf-checkbox__text">Всi</span>
+											</button>
+											<button type="button" data-toggle-active="" class="ocf-value ocf-checkbox filters__data">
+												<span class="ocf-checkbox__text">Гарячі</span>
+											</button>
+											<button type="button" data-toggle-active="" class="ocf-value ocf-checkbox filters__data">
+												<span class="ocf-checkbox__text">Холодні</span>
+											</button>
+											<button type="button" data-toggle-active="" class="ocf-value ocf-checkbox filters__data">
+												<span class="ocf-checkbox__text">Риба</span>
+											</button>
+											<button type="button" data-toggle-active="" class="ocf-value ocf-checkbox filters__data">
+												<span class="ocf-checkbox__text">М’ясо</span>
+											</button>
+											<button type="button" data-toggle-active="" class="ocf-value ocf-checkbox filters__data">
+												<span class="ocf-checkbox__text">BBQ</span>
+											</button>
+											<button type="button" data-toggle-active="" class="ocf-value ocf-checkbox filters__data">
+												<span class="ocf-checkbox__text">Салати</span>
+											</button>
+											<button type="button" data-toggle-active="" class="ocf-value ocf-checkbox filters__data">
+												<span class="ocf-checkbox__text">Гострі</span>
+											</button>
+											<button type="button" data-toggle-active="" class="ocf-value ocf-checkbox filters__data">
+												<span class="ocf-checkbox__text">Не гострі</span>
+											</button>
+											<button type="button" data-toggle-active="" class="ocf-value ocf-checkbox filters__data">
+												<span class="ocf-checkbox__text">Солодкі</span>
+											</button>
+											<button type="button" data-toggle-active="" class="ocf-value ocf-checkbox filters__data">
+												<span class="ocf-checkbox__text">Солоні</span>
+											</button>
+											<button type="button" data-toggle-active="" class="ocf-value ocf-checkbox filters__data">
+												<span class="ocf-checkbox__text">Вегетаріанські</span>
+											</button>
+											<button type="button" data-toggle-active="" class="ocf-value ocf-checkbox filters__data">
+												<span class="ocf-checkbox__text">Веганські</span>
+											</button>
+											<button type="button" data-toggle-active="" class="ocf-value ocf-checkbox filters__data">
+												<span class="ocf-checkbox__text">Дитячі</span>
+											</button>
+										</div>
+									</div>
+									<div class="aside-block__filters">
+										<div class="aside-block__filters-head">
+											<div class="aside-block__filters-title">Додатки до боксів</div>
+											<button type="button" class="aside-block__filters-reset btn-gray-2">
+												<svg width="8" height="8" viewbox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M8 6.55437L5.41223 3.96661L7.96988 1.40896L6.59104 0.0301239L4.03339 2.58777L1.44563 0L0 1.44563L2.58777 4.03339L0.0366652 6.5845L1.4155 7.96333L3.96661 5.41223L6.55437 8L8 6.55437Z" fill="currentColor"></path>
+												</svg>
+												<span>Скинути</span>
+											</button>
+										</div>
+										<div class="aside-block__filters-body">
+											<button type="button" data-toggle-active="" class="ocf-value ocf-checkbox filters__data is-active">
+												<span class="ocf-checkbox__text">Всi</span>
+											</button>
+											<button type="button" data-toggle-active="" class="ocf-value ocf-checkbox filters__data">
+												<span class="ocf-checkbox__text">Гарячі</span>
+											</button>
+											<button type="button" data-toggle-active="" class="ocf-value ocf-checkbox filters__data">
+												<span class="ocf-checkbox__text">Холодні</span>
+											</button>
 										</div>
 									</div>
 									<button type="button" class="aside-block__apply btn" data-menu-close="">Застосувати</button>
@@ -2051,6 +2060,18 @@
 			</li>
 			<li>
 				<a href="product-2.html">product-2</a>
+			</li>
+			<li>
+				<a href="policy.html">policy</a>
+			</li>
+			<li>
+				<a href="page-fav.html">page-fav</a>
+			</li>
+			<li>
+				<a href="page-fav-2.html">page-fav-2</a>
+			</li>
+			<li>
+				<a href="page-404.html">page-404</a>
 			</li>
 			<li>
 				<a href="index.html">index</a>

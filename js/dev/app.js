@@ -3454,7 +3454,6 @@ function addActiveBtnSClass(buttonsClass, activeClass) {
   if (buttons.length) {
     buttons.forEach((item) => {
       item.addEventListener("click", function(e) {
-        e.preventDefault();
         item.classList.add(activeClass);
         buttons.forEach((otherItem) => {
           if (otherItem !== this) {

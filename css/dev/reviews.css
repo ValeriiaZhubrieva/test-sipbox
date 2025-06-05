@@ -428,7 +428,11 @@
   justify-content: space-between;
   gap: 24px;
 }
+.hero-product__breadcrumbs:not(:last-child) {
+  margin-bottom: 0px;
+}
 .hero-product__title {
+  max-width: 50%;
   align-self: flex-start;
   font-weight: 600;
   line-height: 100%;
@@ -1069,6 +1073,7 @@
     padding: 24px 0 36px 0;
     display: flex;
     flex-direction: column;
+    min-height: calc(100svh - 72px);
   }
   .hero-product__container {
     flex: 1 1 auto;
@@ -1079,6 +1084,7 @@
     align-items: stretch;
   }
   .hero-product__title {
+    max-width: 100%;
     flex: 1 1 auto;
   }
   .hero-product__prices {
@@ -1113,6 +1119,9 @@
   }
   .product-detail__item:nth-child(2n) {
     border-right: none;
+  }
+  .box-gallery__slider:not(.swiper-initialized) .box-gallery__slide:nth-child(n+3) {
+    display: none;
   }
   .box-gallery__slide {
     border-radius: 16px;
@@ -1197,8 +1206,17 @@
   .box-gallery__title:not(:last-child) {
     margin-bottom: 36px;
   }
+  .box-gallery__slider:not(.swiper-initialized) .box-gallery__slide:nth-child(n+2) {
+    display: none;
+  }
   .box-gallery__wrapper:not(:last-child) {
     margin-bottom: 36px;
+  }
+  .box-gallery__slide {
+    transition: opacity 0.3s ease-out 0.3s;
+  }
+  .box-gallery__slide.swiper-slide-prev {
+    opacity: 0;
   }
   .box-gallery__arrows {
     display: none;
@@ -1243,6 +1261,9 @@
   .reviews__slider {
     border-radius: 16px;
   }
+  .reviews__slider:not(.swiper-initialized) .reviews__slide:nth-child(n+2) {
+    display: none;
+  }
   .reviews__wrapper:not(:last-child) {
     margin-bottom: 36px;
   }
@@ -1260,6 +1281,15 @@
     border-radius: 16px;
     padding: 16px;
     gap: 12px;
+  }
+  .review-card__date {
+    font-size: 18px;
+  }
+  .review-card__title {
+    font-size: 20px;
+  }
+  .review-card__text {
+    font-size: 18px;
   }
 }
 @media (max-width: 40.62375em) {
@@ -1307,6 +1337,15 @@
   }
   .reviews__rating .options-rating__items {
     justify-content: space-between;
+  }
+  .review-card__date {
+    font-size: 16px;
+  }
+  .review-card__title {
+    font-size: 18px;
+  }
+  .review-card__text {
+    font-size: 16px;
   }
 }
 @media (max-width: 23.12375em) {

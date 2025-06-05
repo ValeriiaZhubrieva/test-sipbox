@@ -265,11 +265,15 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 105%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .team__slide-position {
   font-size: 20px;
   line-height: 120%;
   color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .team__arrows {
   position: absolute;
@@ -430,6 +434,13 @@
   .team__head {
     flex-direction: column;
   }
+  .team__slider {
+    padding: 0 20px;
+    margin: 0 -20px;
+  }
+  .team__slider:not(.swiper-initialized) .team__slide:nth-child(n+4) {
+    display: none;
+  }
   .team__arrows {
     display: none;
   }
@@ -443,12 +454,6 @@
 @media (max-width: 40.62375em) {
   .block-info__images {
     grid-template-columns: 1fr;
-  }
-}
-@media (max-width: 34.37375em) {
-  .team__slider {
-    padding: 0 20px;
-    margin: 0 -20px;
   }
 }
 @media (max-width: 29.99875em) {

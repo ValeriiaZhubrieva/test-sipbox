@@ -1,0 +1,135 @@
+section.block-text {
+  margin-bottom: 160px;
+}
+
+.block-text {
+  font-size: 20px;
+  line-height: 140%;
+}
+.block-text h2,
+.block-text h3,
+.block-text h4,
+.block-text h5,
+.block-text h6 {
+  font-weight: 600;
+  line-height: 120%;
+}
+.block-text h2:not(:last-child),
+.block-text h3:not(:last-child),
+.block-text h4:not(:last-child),
+.block-text h5:not(:last-child),
+.block-text h6:not(:last-child) {
+  margin-bottom: 8px;
+}
+.block-text h1 {
+  font-weight: 600;
+  line-height: 120%;
+}
+.block-text h1:not(:last-child) {
+  margin-bottom: 24px;
+}
+.block-text h4,
+.block-text h5 {
+  font-size: 24px;
+}
+.block-text h6 {
+  font-size: 22px;
+}
+.block-text p:not(:last-child),
+.block-text ul:not(:last-child),
+.block-text ol:not(:last-child),
+.block-text a:not(:last-child),
+.block-text img:not(:last-child) {
+  margin-bottom: 24px;
+}
+.block-text p a:not(:last-child),
+.block-text ul a:not(:last-child),
+.block-text ol a:not(:last-child) {
+  margin-bottom: 0;
+}
+.block-text ul,
+.block-text ol {
+  padding-left: 25px;
+}
+.block-text ul li {
+  list-style: disc;
+}
+.block-text ol li {
+  list-style: decimal;
+}
+.block-text b {
+  font-weight: 600;
+}
+.block-text a {
+  font-weight: 600;
+  color: var(--green-color);
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+.block-text img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.block-text .not-margin:not(:last-child) {
+  margin-bottom: 0;
+}
+@media (max-width: 61.99875em) {
+  .block-text h4,
+  .block-text h5 {
+    font-size: 18px;
+  }
+  .block-text h6 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 47.99875em) {
+  section.block-text {
+    margin-bottom: 100px;
+  }
+  .block-text h1 {
+    font-size: 40px;
+  }
+  .block-text h2 {
+    font-size: 24px;
+  }
+  .block-text h3 {
+    font-size: 20px;
+  }
+  .block-text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 23.12375em) {
+  .block-text h1 {
+    font-size: 34px;
+  }
+}
+@media (min-width: 47.99875em) and (max-width: 97.5em) {
+  .block-text h1 {
+    font-size: clamp( 40px , 32.242822151px  +  1.0100755031vw , 48px );
+  }
+  .block-text h2 {
+    font-size: clamp( 24px , 12.3642332264px  +  1.5151132547vw , 36px );
+  }
+  .block-text h3 {
+    font-size: clamp( 20px , 12.242822151px  +  1.0100755031vw , 28px );
+  }
+}
+@media (min-width: 97.5em) {
+  .block-text h1 {
+    font-size: 48px;
+  }
+  .block-text h2 {
+    font-size: 36px;
+  }
+  .block-text h3 {
+    font-size: 28px;
+  }
+}
+@media (any-hover: hover) {
+  .block-text a:hover {
+    color: var(--light-green);
+    text-decoration: none;
+  }
+}

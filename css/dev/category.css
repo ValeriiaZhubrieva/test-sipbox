@@ -60,7 +60,7 @@
 .catalog__head .sel-block {
   position: static;
   display: grid;
-  max-width: 191px;
+  max-width: 200px;
   flex: 1 1 auto;
 }
 .catalog__head .sel-block__current {
@@ -400,49 +400,6 @@
   font-size: 16px;
   line-height: 120%;
   color: var(--dark-60);
-}.pagination {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 36px;
-  grid-column: 1/-1;
-}
-.pagination__arrow {
-  background-color: var(--accent);
-  color: var(--green-color);
-  display: grid;
-  place-content: center;
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  transition: color 0.3s, background 0.3s;
-}
-.pagination__arrow.disabled {
-  background-color: var(--bg-color);
-  pointer-events: none;
-}
-.pagination__list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-.pagination__link {
-  min-width: 72px;
-  height: 72px;
-  padding: 10px;
-  border-radius: 50%;
-  background-color: var(--white-color);
-  display: grid;
-  place-content: center;
-  font-weight: 600;
-  font-size: 20px;
-  color: var(--green-color);
-  transition: color 0.3s, background 0.3s;
-}
-.pagination__link.is-active {
-  background-color: var(--green-color);
-  color: var(--white-color);
 }
 @media (max-width: 97.5em) {
   .catalog__head .sel-block {
@@ -625,22 +582,6 @@
   .nearest-date__text {
     font-size: 14px;
   }
-  .pagination {
-    gap: 24px;
-  }
-  .pagination__arrow {
-    width: 40px;
-    height: 40px;
-  }
-  .pagination__arrow svg {
-    width: 11px;
-  }
-  .pagination__link {
-    min-width: 40px;
-    height: 40px;
-    padding: 5px;
-    font-size: 16px;
-  }
 }
 @media (max-width: 40.62375em) {
   .catalog__btn-filters {
@@ -682,24 +623,11 @@
     max-width: 100%;
   }
 }
-@media (max-width: 23.12375em) {
-  .pagination {
-    gap: 8px;
-  }
-}
 @media (any-hover: hover) {
   .checkbox:hover .checkbox__input + .checkbox__text:before {
     background-image: url("../assets/img/icons/check.svg");
   }
   .checkbox:hover .checkbox__text {
     color: var(--main-color);
-  }
-  .pagination__arrow:hover {
-    background-color: var(--green-color);
-    color: var(--accent);
-  }
-  .pagination a.pagination__link:hover {
-    background-color: var(--green-color);
-    color: var(--white-color);
   }
 }
