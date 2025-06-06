@@ -8,16 +8,12 @@
 		<link rel="preload" href="./assets/fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="preload" href="./assets/fonts/Inter-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
-		<title>Наші статті та новини</title>
+		<title>Оформити замовлення</title>
 		<script type="module" crossorigin="" src="./js/app.min.js?v=1749222546765"></script>
-		<script type="module" crossorigin="" src="./js/popup.min.js?v=1749222546765"></script>
-		<script type="module" crossorigin="" src="./js/mouse.min.js?v=1749222546765"></script>
+		<script type="module" crossorigin="" src="./js/datepicker.min.js?v=1749222546765"></script>
 		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1749222546765">
-		<link rel="stylesheet" crossorigin="" href="./css/popup.min.css?v=1749222546765">
-		<link rel="stylesheet" crossorigin="" href="./css/blog.min.css?v=1749222546765">
-		<link rel="stylesheet" crossorigin="" href="./css/page-404.min.css?v=1749222546765">
-		<link rel="stylesheet" crossorigin="" href="./css/pagination.min.css?v=1749222546765">
-		<link rel="stylesheet" crossorigin="" href="./css/contacts.min.css?v=1749222546765">
+		<link rel="stylesheet" crossorigin="" href="./css/datepicker.min.css?v=1749222546765">
+		<link rel="stylesheet" crossorigin="" href="./css/checkout.min.css?v=1749222546765">
 		<link rel="stylesheet" crossorigin="" href="./css/footer.min.css?v=1749222546765">
 	</head>
 	<body>
@@ -762,10 +758,11 @@
 					</div>
 				</div>
 			</header>
+			<!-- <script type="module" src="@components/pages/404/page-404.js?v=1749222546765"></script> -->
 			<main class="page">
-				<section class="blog">
-					<div class="blog__container">
-						<div class="blog__breadcrumbs breadcrumbs">
+				<section class="checkout-block">
+					<div class="checkout-block__container">
+						<div class="checkout-block__breadcrumbs breadcrumbs">
 							<a href="#" class="breadcrumbs__link">
 								<svg width="17" height="13" viewbox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M16.44 10.4321H0.981085C0.715398 10.4321 0.5 10.6477 0.5 10.9136C0.5 12.0659 1.43334 13 2.5847 13H14.8363C15.9877 13 16.9211 12.0659 16.9211 10.9136C16.9211 10.6477 16.7057 10.4321 16.44 10.4321Z" fill="currentColor"></path>
@@ -773,242 +770,537 @@
 									<path d="M14.04 4.61677C12.6164 3.19203 10.7237 2.40741 8.71053 2.40741C6.69731 2.40741 4.80462 3.19203 3.38106 4.61677C2.07151 5.92739 1.30373 7.63546 1.18907 9.46914H16.2319C16.1173 7.63546 15.3495 5.92739 14.04 4.61677Z" fill="currentColor"></path>
 								</svg>
 							</a>
-							<span class="breadcrumbs__link is-active">Новини</span>
+							<span class="breadcrumbs__link is-active">Оформити замовлення</span>
 						</div>
-						<h1 class="blog__title title">
-							Наші
-							<span>статті та новини</span>
-						</h1>
-						<div class="blog__items">
-							<div class="blog__item blog__item--long">
-								<img class="blog__item-bg" loading="lazy" alt="Image" src="./assets/img/about/image.webp">
-								<div class="blog__item-body">
-									<a href="#" class="blog__item-title">Новорічний корпоратив для IT-компанії</a>
-									<div class="blog__item-text">
-										Створити новорічний корпоратив - ця задача нам точно під силу! Наша команда підходить до
-                        корпоративів креативно. Смачні закуски, музика, команда професіоналів обслуговування та смачні
-                        коктейлі - опис класичного корпоративу. А що як додати трохи дива?
+						<h1 class="checkout-block__title title">Оформити замовлення</h1>
+						<div class="checkout-block__body">
+							<div class="checkout-block__inner">
+								<div class="checkout-block__products">
+									<div class="cart-item">
+										<div class="cart-item__product">
+											<div class="cart-item__product-img">
+												<img loading="lazy" alt="Image" src="./assets/img/image-1-small.webp">
+											</div>
+											<div class="cart-item__product-name">Сендвіч Сет Бокс</div>
+										</div>
+										<div data-fls-quantity="" class="quantity">
+											<button data-fls-quantity-minus="" type="button" class="quantity__button disabled">
+												<svg width="4" height="2" viewbox="0 0 4 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M4 0.365234V1.6347H0V0.365234H4Z" fill="currentColor"></path>
+												</svg>
+											</button>
+											<div class="quantity__input">
+												<input data-fls-quantity-value="" autocomplete="off" type="text" name="quantity" value="01">
+											</div>
+											<button data-fls-quantity-plus="" type="button" class="quantity__button">
+												<svg width="6" height="6" viewbox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M2.34132 6V3.63111H0V2.36889H2.34132V0H3.66467V2.36889H6V3.63111H3.66467V6H2.34132Z" fill="currentColor"></path>
+												</svg>
+											</button>
+										</div>
+										<div class="cart-item__info">
+											<div class="cart-item__info-title">1 500 грн</div>
+											<div class="cart-item__info-text">1 500 грн х 1 шт</div>
+										</div>
+										<div class="cart-item__info cart-item__info--volume">
+											<div class="cart-item__info-title">
+												<svg width="9" height="11" viewbox="0 0 9 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M8.98672 9.30708L8.16749 4.09198C8.09044 3.60025 7.69079 3.24088 7.22303 3.24088H5.99215C6.13648 2.97292 6.21901 2.66251 6.21901 2.33195C6.21901 1.32185 5.44796 0.5 4.49984 0.5C3.55193 0.5 2.78067 1.32185 2.78067 2.33195C2.78067 2.66251 2.8632 2.97292 3.00753 3.24088H1.77665C1.30869 3.24088 0.909237 3.60068 0.832193 4.09241L0.0131621 9.30816C-0.0333899 9.60385 0.0448744 9.9082 0.226813 10.1369C0.408956 10.3659 0.676071 10.5 0.957822 10.5H8.04267C8.32442 10.5 8.59154 10.3659 8.77368 10.1369C8.95542 9.90776 9.03348 9.60298 8.98672 9.30708ZM4.50004 1.56728C4.89563 1.56728 5.21764 1.91041 5.21764 2.33216C5.21764 2.75392 4.89563 3.09683 4.50004 3.09683C4.10425 3.09683 3.78225 2.7537 3.78225 2.33195C3.78225 1.91019 4.10425 1.56728 4.50004 1.56728Z" fill="currentColor"></path>
+												</svg>
+												<span>1 200 грамів</span>
+											</div>
+											<div class="cart-item__info-text">1 200 грамів х 1 шт</div>
+										</div>
+										<button type="button" class="cart-item__delete">
+											<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9 2H7V1.5C7 0.65 6.35 0 5.5 0H4.5C3.65 0 3 0.65 3 1.5V2H1C0.7 2 0.5 2.2 0.5 2.5C0.5 2.8 0.7 3 1 3H1.5V8.5C1.5 9.35 2.15 10 3 10H7C7.85 10 8.5 9.35 8.5 8.5V3H9C9.3 3 9.5 2.8 9.5 2.5C9.5 2.2 9.3 2 9 2ZM4 1.5C4 1.2 4.2 1 4.5 1H5.5C5.8 1 6 1.2 6 1.5V2H4V1.5ZM4.5 7.5C4.5 7.8 4.3 8 4 8C3.7 8 3.5 7.8 3.5 7.5V4.5C3.5 4.2 3.7 4 4 4C4.3 4 4.5 4.2 4.5 4.5V7.5ZM6.5 7.5C6.5 7.8 6.3 8 6 8C5.7 8 5.5 7.8 5.5 7.5V4.5C5.5 4.2 5.7 4 6 4C6.3 4 6.5 4.2 6.5 4.5V7.5Z" fill="currentColor"></path>
+											</svg>
+										</button>
 									</div>
-									<a href="#" class="blog__item-btn btn-white">
-										<span>Детальніше</span>
-										<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 2L9 9L1 16" stroke="currentColor" stroke-width="3"></path>
-										</svg>
-									</a>
+									<div class="cart-item">
+										<div class="cart-item__product">
+											<div class="cart-item__product-img">
+												<img loading="lazy" alt="Image" src="./assets/img/image-1-small.webp">
+											</div>
+											<div class="cart-item__product-name">Сендвіч Сет Бокс</div>
+										</div>
+										<div data-fls-quantity="" class="quantity">
+											<button data-fls-quantity-minus="" type="button" class="quantity__button">
+												<svg width="4" height="2" viewbox="0 0 4 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M4 0.365234V1.6347H0V0.365234H4Z" fill="currentColor"></path>
+												</svg>
+											</button>
+											<div class="quantity__input">
+												<input data-fls-quantity-value="" autocomplete="off" type="text" name="quantity" value="10">
+											</div>
+											<button data-fls-quantity-plus="" type="button" class="quantity__button">
+												<svg width="6" height="6" viewbox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M2.34132 6V3.63111H0V2.36889H2.34132V0H3.66467V2.36889H6V3.63111H3.66467V6H2.34132Z" fill="currentColor"></path>
+												</svg>
+											</button>
+										</div>
+										<div class="cart-item__info">
+											<div class="cart-item__info-title">1 500 грн</div>
+											<div class="cart-item__info-text">1 500 грн х 1 шт</div>
+										</div>
+										<div class="cart-item__info cart-item__info--volume">
+											<div class="cart-item__info-title">
+												<svg width="9" height="11" viewbox="0 0 9 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M8.98672 9.30708L8.16749 4.09198C8.09044 3.60025 7.69079 3.24088 7.22303 3.24088H5.99215C6.13648 2.97292 6.21901 2.66251 6.21901 2.33195C6.21901 1.32185 5.44796 0.5 4.49984 0.5C3.55193 0.5 2.78067 1.32185 2.78067 2.33195C2.78067 2.66251 2.8632 2.97292 3.00753 3.24088H1.77665C1.30869 3.24088 0.909237 3.60068 0.832193 4.09241L0.0131621 9.30816C-0.0333899 9.60385 0.0448744 9.9082 0.226813 10.1369C0.408956 10.3659 0.676071 10.5 0.957822 10.5H8.04267C8.32442 10.5 8.59154 10.3659 8.77368 10.1369C8.95542 9.90776 9.03348 9.60298 8.98672 9.30708ZM4.50004 1.56728C4.89563 1.56728 5.21764 1.91041 5.21764 2.33216C5.21764 2.75392 4.89563 3.09683 4.50004 3.09683C4.10425 3.09683 3.78225 2.7537 3.78225 2.33195C3.78225 1.91019 4.10425 1.56728 4.50004 1.56728Z" fill="currentColor"></path>
+												</svg>
+												<span>1 200 грамів</span>
+											</div>
+											<div class="cart-item__info-text">1 200 грамів х 1 шт</div>
+										</div>
+										<button type="button" class="cart-item__delete">
+											<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9 2H7V1.5C7 0.65 6.35 0 5.5 0H4.5C3.65 0 3 0.65 3 1.5V2H1C0.7 2 0.5 2.2 0.5 2.5C0.5 2.8 0.7 3 1 3H1.5V8.5C1.5 9.35 2.15 10 3 10H7C7.85 10 8.5 9.35 8.5 8.5V3H9C9.3 3 9.5 2.8 9.5 2.5C9.5 2.2 9.3 2 9 2ZM4 1.5C4 1.2 4.2 1 4.5 1H5.5C5.8 1 6 1.2 6 1.5V2H4V1.5ZM4.5 7.5C4.5 7.8 4.3 8 4 8C3.7 8 3.5 7.8 3.5 7.5V4.5C3.5 4.2 3.7 4 4 4C4.3 4 4.5 4.2 4.5 4.5V7.5ZM6.5 7.5C6.5 7.8 6.3 8 6 8C5.7 8 5.5 7.8 5.5 7.5V4.5C5.5 4.2 5.7 4 6 4C6.3 4 6.5 4.2 6.5 4.5V7.5Z" fill="currentColor"></path>
+											</svg>
+										</button>
+									</div>
+									<div class="cart-item">
+										<div class="cart-item__product">
+											<div class="cart-item__product-img">
+												<img loading="lazy" alt="Image" src="./assets/img/image-1-small.webp">
+											</div>
+											<div class="cart-item__product-name">Сендвіч Сет Бокс</div>
+										</div>
+										<div data-fls-quantity="" class="quantity">
+											<button data-fls-quantity-minus="" type="button" class="quantity__button disabled">
+												<svg width="4" height="2" viewbox="0 0 4 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M4 0.365234V1.6347H0V0.365234H4Z" fill="currentColor"></path>
+												</svg>
+											</button>
+											<div class="quantity__input">
+												<input data-fls-quantity-value="" autocomplete="off" type="text" name="quantity" value="01">
+											</div>
+											<button data-fls-quantity-plus="" type="button" class="quantity__button">
+												<svg width="6" height="6" viewbox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M2.34132 6V3.63111H0V2.36889H2.34132V0H3.66467V2.36889H6V3.63111H3.66467V6H2.34132Z" fill="currentColor"></path>
+												</svg>
+											</button>
+										</div>
+										<div class="cart-item__info">
+											<div class="cart-item__info-title">1 500 грн</div>
+											<div class="cart-item__info-text">1 500 грн х 1 шт</div>
+										</div>
+										<div class="cart-item__info cart-item__info--volume">
+											<div class="cart-item__info-title">
+												<svg width="9" height="11" viewbox="0 0 9 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M8.98672 9.30708L8.16749 4.09198C8.09044 3.60025 7.69079 3.24088 7.22303 3.24088H5.99215C6.13648 2.97292 6.21901 2.66251 6.21901 2.33195C6.21901 1.32185 5.44796 0.5 4.49984 0.5C3.55193 0.5 2.78067 1.32185 2.78067 2.33195C2.78067 2.66251 2.8632 2.97292 3.00753 3.24088H1.77665C1.30869 3.24088 0.909237 3.60068 0.832193 4.09241L0.0131621 9.30816C-0.0333899 9.60385 0.0448744 9.9082 0.226813 10.1369C0.408956 10.3659 0.676071 10.5 0.957822 10.5H8.04267C8.32442 10.5 8.59154 10.3659 8.77368 10.1369C8.95542 9.90776 9.03348 9.60298 8.98672 9.30708ZM4.50004 1.56728C4.89563 1.56728 5.21764 1.91041 5.21764 2.33216C5.21764 2.75392 4.89563 3.09683 4.50004 3.09683C4.10425 3.09683 3.78225 2.7537 3.78225 2.33195C3.78225 1.91019 4.10425 1.56728 4.50004 1.56728Z" fill="currentColor"></path>
+												</svg>
+												<span>1 200 грамів</span>
+											</div>
+											<div class="cart-item__info-text">1 200 грамів х 1 шт</div>
+										</div>
+										<button type="button" class="cart-item__delete">
+											<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9 2H7V1.5C7 0.65 6.35 0 5.5 0H4.5C3.65 0 3 0.65 3 1.5V2H1C0.7 2 0.5 2.2 0.5 2.5C0.5 2.8 0.7 3 1 3H1.5V8.5C1.5 9.35 2.15 10 3 10H7C7.85 10 8.5 9.35 8.5 8.5V3H9C9.3 3 9.5 2.8 9.5 2.5C9.5 2.2 9.3 2 9 2ZM4 1.5C4 1.2 4.2 1 4.5 1H5.5C5.8 1 6 1.2 6 1.5V2H4V1.5ZM4.5 7.5C4.5 7.8 4.3 8 4 8C3.7 8 3.5 7.8 3.5 7.5V4.5C3.5 4.2 3.7 4 4 4C4.3 4 4.5 4.2 4.5 4.5V7.5ZM6.5 7.5C6.5 7.8 6.3 8 6 8C5.7 8 5.5 7.8 5.5 7.5V4.5C5.5 4.2 5.7 4 6 4C6.3 4 6.5 4.2 6.5 4.5V7.5Z" fill="currentColor"></path>
+											</svg>
+										</button>
+									</div>
+									<div class="cart-item">
+										<div class="cart-item__product">
+											<div class="cart-item__product-img">
+												<img loading="lazy" alt="Image" src="./assets/img/image-1-small.webp">
+											</div>
+											<div class="cart-item__product-name">Сендвіч Сет Бокс</div>
+										</div>
+										<div data-fls-quantity="" class="quantity">
+											<button data-fls-quantity-minus="" type="button" class="quantity__button disabled">
+												<svg width="4" height="2" viewbox="0 0 4 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M4 0.365234V1.6347H0V0.365234H4Z" fill="currentColor"></path>
+												</svg>
+											</button>
+											<div class="quantity__input">
+												<input data-fls-quantity-value="" autocomplete="off" type="text" name="quantity" value="01">
+											</div>
+											<button data-fls-quantity-plus="" type="button" class="quantity__button">
+												<svg width="6" height="6" viewbox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M2.34132 6V3.63111H0V2.36889H2.34132V0H3.66467V2.36889H6V3.63111H3.66467V6H2.34132Z" fill="currentColor"></path>
+												</svg>
+											</button>
+										</div>
+										<div class="cart-item__info">
+											<div class="cart-item__info-title">1 500 грн</div>
+											<div class="cart-item__info-text">1 500 грн х 1 шт</div>
+										</div>
+										<div class="cart-item__info cart-item__info--volume">
+											<div class="cart-item__info-title">
+												<svg width="9" height="11" viewbox="0 0 9 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M8.98672 9.30708L8.16749 4.09198C8.09044 3.60025 7.69079 3.24088 7.22303 3.24088H5.99215C6.13648 2.97292 6.21901 2.66251 6.21901 2.33195C6.21901 1.32185 5.44796 0.5 4.49984 0.5C3.55193 0.5 2.78067 1.32185 2.78067 2.33195C2.78067 2.66251 2.8632 2.97292 3.00753 3.24088H1.77665C1.30869 3.24088 0.909237 3.60068 0.832193 4.09241L0.0131621 9.30816C-0.0333899 9.60385 0.0448744 9.9082 0.226813 10.1369C0.408956 10.3659 0.676071 10.5 0.957822 10.5H8.04267C8.32442 10.5 8.59154 10.3659 8.77368 10.1369C8.95542 9.90776 9.03348 9.60298 8.98672 9.30708ZM4.50004 1.56728C4.89563 1.56728 5.21764 1.91041 5.21764 2.33216C5.21764 2.75392 4.89563 3.09683 4.50004 3.09683C4.10425 3.09683 3.78225 2.7537 3.78225 2.33195C3.78225 1.91019 4.10425 1.56728 4.50004 1.56728Z" fill="currentColor"></path>
+												</svg>
+												<span>1 200 грамів</span>
+											</div>
+											<div class="cart-item__info-text">1 200 грамів х 1 шт</div>
+										</div>
+										<button type="button" class="cart-item__delete">
+											<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9 2H7V1.5C7 0.65 6.35 0 5.5 0H4.5C3.65 0 3 0.65 3 1.5V2H1C0.7 2 0.5 2.2 0.5 2.5C0.5 2.8 0.7 3 1 3H1.5V8.5C1.5 9.35 2.15 10 3 10H7C7.85 10 8.5 9.35 8.5 8.5V3H9C9.3 3 9.5 2.8 9.5 2.5C9.5 2.2 9.3 2 9 2ZM4 1.5C4 1.2 4.2 1 4.5 1H5.5C5.8 1 6 1.2 6 1.5V2H4V1.5ZM4.5 7.5C4.5 7.8 4.3 8 4 8C3.7 8 3.5 7.8 3.5 7.5V4.5C3.5 4.2 3.7 4 4 4C4.3 4 4.5 4.2 4.5 4.5V7.5ZM6.5 7.5C6.5 7.8 6.3 8 6 8C5.7 8 5.5 7.8 5.5 7.5V4.5C5.5 4.2 5.7 4 6 4C6.3 4 6.5 4.2 6.5 4.5V7.5Z" fill="currentColor"></path>
+											</svg>
+										</button>
+									</div>
+									<div class="cart-item">
+										<div class="cart-item__product">
+											<div class="cart-item__product-img">
+												<img loading="lazy" alt="Image" src="./assets/img/image-1-small.webp">
+											</div>
+											<div class="cart-item__product-name">Сендвіч Сет Бокс</div>
+										</div>
+										<div data-fls-quantity="" class="quantity">
+											<button data-fls-quantity-minus="" type="button" class="quantity__button disabled">
+												<svg width="4" height="2" viewbox="0 0 4 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M4 0.365234V1.6347H0V0.365234H4Z" fill="currentColor"></path>
+												</svg>
+											</button>
+											<div class="quantity__input">
+												<input data-fls-quantity-value="" autocomplete="off" type="text" name="quantity" value="01">
+											</div>
+											<button data-fls-quantity-plus="" type="button" class="quantity__button">
+												<svg width="6" height="6" viewbox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M2.34132 6V3.63111H0V2.36889H2.34132V0H3.66467V2.36889H6V3.63111H3.66467V6H2.34132Z" fill="currentColor"></path>
+												</svg>
+											</button>
+										</div>
+										<div class="cart-item__info">
+											<div class="cart-item__info-title">1 500 грн</div>
+											<div class="cart-item__info-text">1 500 грн х 1 шт</div>
+										</div>
+										<div class="cart-item__info cart-item__info--volume">
+											<div class="cart-item__info-title">
+												<svg width="9" height="11" viewbox="0 0 9 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M8.98672 9.30708L8.16749 4.09198C8.09044 3.60025 7.69079 3.24088 7.22303 3.24088H5.99215C6.13648 2.97292 6.21901 2.66251 6.21901 2.33195C6.21901 1.32185 5.44796 0.5 4.49984 0.5C3.55193 0.5 2.78067 1.32185 2.78067 2.33195C2.78067 2.66251 2.8632 2.97292 3.00753 3.24088H1.77665C1.30869 3.24088 0.909237 3.60068 0.832193 4.09241L0.0131621 9.30816C-0.0333899 9.60385 0.0448744 9.9082 0.226813 10.1369C0.408956 10.3659 0.676071 10.5 0.957822 10.5H8.04267C8.32442 10.5 8.59154 10.3659 8.77368 10.1369C8.95542 9.90776 9.03348 9.60298 8.98672 9.30708ZM4.50004 1.56728C4.89563 1.56728 5.21764 1.91041 5.21764 2.33216C5.21764 2.75392 4.89563 3.09683 4.50004 3.09683C4.10425 3.09683 3.78225 2.7537 3.78225 2.33195C3.78225 1.91019 4.10425 1.56728 4.50004 1.56728Z" fill="currentColor"></path>
+												</svg>
+												<span>1 200 грамів</span>
+											</div>
+											<div class="cart-item__info-text">1 200 грамів х 1 шт</div>
+										</div>
+										<button type="button" class="cart-item__delete">
+											<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9 2H7V1.5C7 0.65 6.35 0 5.5 0H4.5C3.65 0 3 0.65 3 1.5V2H1C0.7 2 0.5 2.2 0.5 2.5C0.5 2.8 0.7 3 1 3H1.5V8.5C1.5 9.35 2.15 10 3 10H7C7.85 10 8.5 9.35 8.5 8.5V3H9C9.3 3 9.5 2.8 9.5 2.5C9.5 2.2 9.3 2 9 2ZM4 1.5C4 1.2 4.2 1 4.5 1H5.5C5.8 1 6 1.2 6 1.5V2H4V1.5ZM4.5 7.5C4.5 7.8 4.3 8 4 8C3.7 8 3.5 7.8 3.5 7.5V4.5C3.5 4.2 3.7 4 4 4C4.3 4 4.5 4.2 4.5 4.5V7.5ZM6.5 7.5C6.5 7.8 6.3 8 6 8C5.7 8 5.5 7.8 5.5 7.5V4.5C5.5 4.2 5.7 4 6 4C6.3 4 6.5 4.2 6.5 4.5V7.5Z" fill="currentColor"></path>
+											</svg>
+										</button>
+									</div>
+									<div class="cart-item">
+										<div class="cart-item__product">
+											<div class="cart-item__product-img">
+												<img loading="lazy" alt="Image" src="./assets/img/image-1-small.webp">
+											</div>
+											<div class="cart-item__product-name">Сендвіч Сет Бокс</div>
+										</div>
+										<div data-fls-quantity="" class="quantity">
+											<button data-fls-quantity-minus="" type="button" class="quantity__button disabled">
+												<svg width="4" height="2" viewbox="0 0 4 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M4 0.365234V1.6347H0V0.365234H4Z" fill="currentColor"></path>
+												</svg>
+											</button>
+											<div class="quantity__input">
+												<input data-fls-quantity-value="" autocomplete="off" type="text" name="quantity" value="01">
+											</div>
+											<button data-fls-quantity-plus="" type="button" class="quantity__button">
+												<svg width="6" height="6" viewbox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M2.34132 6V3.63111H0V2.36889H2.34132V0H3.66467V2.36889H6V3.63111H3.66467V6H2.34132Z" fill="currentColor"></path>
+												</svg>
+											</button>
+										</div>
+										<div class="cart-item__info">
+											<div class="cart-item__info-title">1 500 грн</div>
+											<div class="cart-item__info-text">1 500 грн х 1 шт</div>
+										</div>
+										<div class="cart-item__info cart-item__info--volume">
+											<div class="cart-item__info-title">
+												<svg width="9" height="11" viewbox="0 0 9 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M8.98672 9.30708L8.16749 4.09198C8.09044 3.60025 7.69079 3.24088 7.22303 3.24088H5.99215C6.13648 2.97292 6.21901 2.66251 6.21901 2.33195C6.21901 1.32185 5.44796 0.5 4.49984 0.5C3.55193 0.5 2.78067 1.32185 2.78067 2.33195C2.78067 2.66251 2.8632 2.97292 3.00753 3.24088H1.77665C1.30869 3.24088 0.909237 3.60068 0.832193 4.09241L0.0131621 9.30816C-0.0333899 9.60385 0.0448744 9.9082 0.226813 10.1369C0.408956 10.3659 0.676071 10.5 0.957822 10.5H8.04267C8.32442 10.5 8.59154 10.3659 8.77368 10.1369C8.95542 9.90776 9.03348 9.60298 8.98672 9.30708ZM4.50004 1.56728C4.89563 1.56728 5.21764 1.91041 5.21764 2.33216C5.21764 2.75392 4.89563 3.09683 4.50004 3.09683C4.10425 3.09683 3.78225 2.7537 3.78225 2.33195C3.78225 1.91019 4.10425 1.56728 4.50004 1.56728Z" fill="currentColor"></path>
+												</svg>
+												<span>1 200 грамів</span>
+											</div>
+											<div class="cart-item__info-text">1 200 грамів х 1 шт</div>
+										</div>
+										<button type="button" class="cart-item__delete">
+											<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9 2H7V1.5C7 0.65 6.35 0 5.5 0H4.5C3.65 0 3 0.65 3 1.5V2H1C0.7 2 0.5 2.2 0.5 2.5C0.5 2.8 0.7 3 1 3H1.5V8.5C1.5 9.35 2.15 10 3 10H7C7.85 10 8.5 9.35 8.5 8.5V3H9C9.3 3 9.5 2.8 9.5 2.5C9.5 2.2 9.3 2 9 2ZM4 1.5C4 1.2 4.2 1 4.5 1H5.5C5.8 1 6 1.2 6 1.5V2H4V1.5ZM4.5 7.5C4.5 7.8 4.3 8 4 8C3.7 8 3.5 7.8 3.5 7.5V4.5C3.5 4.2 3.7 4 4 4C4.3 4 4.5 4.2 4.5 4.5V7.5ZM6.5 7.5C6.5 7.8 6.3 8 6 8C5.7 8 5.5 7.8 5.5 7.5V4.5C5.5 4.2 5.7 4 6 4C6.3 4 6.5 4.2 6.5 4.5V7.5Z" fill="currentColor"></path>
+											</svg>
+										</button>
+									</div>
+									<div class="cart-item">
+										<div class="cart-item__product">
+											<div class="cart-item__product-img">
+												<img loading="lazy" alt="Image" src="./assets/img/image-1-small.webp">
+											</div>
+											<div class="cart-item__product-name">Сендвіч Сет Бокс</div>
+										</div>
+										<div data-fls-quantity="" class="quantity">
+											<button data-fls-quantity-minus="" type="button" class="quantity__button disabled">
+												<svg width="4" height="2" viewbox="0 0 4 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M4 0.365234V1.6347H0V0.365234H4Z" fill="currentColor"></path>
+												</svg>
+											</button>
+											<div class="quantity__input">
+												<input data-fls-quantity-value="" autocomplete="off" type="text" name="quantity" value="01">
+											</div>
+											<button data-fls-quantity-plus="" type="button" class="quantity__button">
+												<svg width="6" height="6" viewbox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M2.34132 6V3.63111H0V2.36889H2.34132V0H3.66467V2.36889H6V3.63111H3.66467V6H2.34132Z" fill="currentColor"></path>
+												</svg>
+											</button>
+										</div>
+										<div class="cart-item__info">
+											<div class="cart-item__info-title">1 500 грн</div>
+											<div class="cart-item__info-text">1 500 грн х 1 шт</div>
+										</div>
+										<div class="cart-item__info cart-item__info--volume">
+											<div class="cart-item__info-title">
+												<svg width="9" height="11" viewbox="0 0 9 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M8.98672 9.30708L8.16749 4.09198C8.09044 3.60025 7.69079 3.24088 7.22303 3.24088H5.99215C6.13648 2.97292 6.21901 2.66251 6.21901 2.33195C6.21901 1.32185 5.44796 0.5 4.49984 0.5C3.55193 0.5 2.78067 1.32185 2.78067 2.33195C2.78067 2.66251 2.8632 2.97292 3.00753 3.24088H1.77665C1.30869 3.24088 0.909237 3.60068 0.832193 4.09241L0.0131621 9.30816C-0.0333899 9.60385 0.0448744 9.9082 0.226813 10.1369C0.408956 10.3659 0.676071 10.5 0.957822 10.5H8.04267C8.32442 10.5 8.59154 10.3659 8.77368 10.1369C8.95542 9.90776 9.03348 9.60298 8.98672 9.30708ZM4.50004 1.56728C4.89563 1.56728 5.21764 1.91041 5.21764 2.33216C5.21764 2.75392 4.89563 3.09683 4.50004 3.09683C4.10425 3.09683 3.78225 2.7537 3.78225 2.33195C3.78225 1.91019 4.10425 1.56728 4.50004 1.56728Z" fill="currentColor"></path>
+												</svg>
+												<span>1 200 грамів</span>
+											</div>
+											<div class="cart-item__info-text">1 200 грамів х 1 шт</div>
+										</div>
+										<button type="button" class="cart-item__delete">
+											<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9 2H7V1.5C7 0.65 6.35 0 5.5 0H4.5C3.65 0 3 0.65 3 1.5V2H1C0.7 2 0.5 2.2 0.5 2.5C0.5 2.8 0.7 3 1 3H1.5V8.5C1.5 9.35 2.15 10 3 10H7C7.85 10 8.5 9.35 8.5 8.5V3H9C9.3 3 9.5 2.8 9.5 2.5C9.5 2.2 9.3 2 9 2ZM4 1.5C4 1.2 4.2 1 4.5 1H5.5C5.8 1 6 1.2 6 1.5V2H4V1.5ZM4.5 7.5C4.5 7.8 4.3 8 4 8C3.7 8 3.5 7.8 3.5 7.5V4.5C3.5 4.2 3.7 4 4 4C4.3 4 4.5 4.2 4.5 4.5V7.5ZM6.5 7.5C6.5 7.8 6.3 8 6 8C5.7 8 5.5 7.8 5.5 7.5V4.5C5.5 4.2 5.7 4 6 4C6.3 4 6.5 4.2 6.5 4.5V7.5Z" fill="currentColor"></path>
+											</svg>
+										</button>
+									</div>
+									<div class="cart-item">
+										<div class="cart-item__product">
+											<div class="cart-item__product-img">
+												<img loading="lazy" alt="Image" src="./assets/img/image-1-small.webp">
+											</div>
+											<div class="cart-item__product-name">Сендвіч Сет Бокс</div>
+										</div>
+										<div data-fls-quantity="" class="quantity">
+											<button data-fls-quantity-minus="" type="button" class="quantity__button disabled">
+												<svg width="4" height="2" viewbox="0 0 4 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M4 0.365234V1.6347H0V0.365234H4Z" fill="currentColor"></path>
+												</svg>
+											</button>
+											<div class="quantity__input">
+												<input data-fls-quantity-value="" autocomplete="off" type="text" name="quantity" value="01">
+											</div>
+											<button data-fls-quantity-plus="" type="button" class="quantity__button">
+												<svg width="6" height="6" viewbox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M2.34132 6V3.63111H0V2.36889H2.34132V0H3.66467V2.36889H6V3.63111H3.66467V6H2.34132Z" fill="currentColor"></path>
+												</svg>
+											</button>
+										</div>
+										<div class="cart-item__info">
+											<div class="cart-item__info-title">1 600 грн</div>
+											<div class="cart-item__info-text">1 500 грн х 1 шт</div>
+										</div>
+										<div class="cart-item__info cart-item__info--volume">
+											<div class="cart-item__info-title">
+												<svg width="9" height="11" viewbox="0 0 9 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M8.98672 9.30708L8.16749 4.09198C8.09044 3.60025 7.69079 3.24088 7.22303 3.24088H5.99215C6.13648 2.97292 6.21901 2.66251 6.21901 2.33195C6.21901 1.32185 5.44796 0.5 4.49984 0.5C3.55193 0.5 2.78067 1.32185 2.78067 2.33195C2.78067 2.66251 2.8632 2.97292 3.00753 3.24088H1.77665C1.30869 3.24088 0.909237 3.60068 0.832193 4.09241L0.0131621 9.30816C-0.0333899 9.60385 0.0448744 9.9082 0.226813 10.1369C0.408956 10.3659 0.676071 10.5 0.957822 10.5H8.04267C8.32442 10.5 8.59154 10.3659 8.77368 10.1369C8.95542 9.90776 9.03348 9.60298 8.98672 9.30708ZM4.50004 1.56728C4.89563 1.56728 5.21764 1.91041 5.21764 2.33216C5.21764 2.75392 4.89563 3.09683 4.50004 3.09683C4.10425 3.09683 3.78225 2.7537 3.78225 2.33195C3.78225 1.91019 4.10425 1.56728 4.50004 1.56728Z" fill="currentColor"></path>
+												</svg>
+												<span>1 200 грамів</span>
+											</div>
+											<div class="cart-item__info-text">1 200 грамів х 1 шт</div>
+										</div>
+										<button type="button" class="cart-item__delete">
+											<svg width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9 2H7V1.5C7 0.65 6.35 0 5.5 0H4.5C3.65 0 3 0.65 3 1.5V2H1C0.7 2 0.5 2.2 0.5 2.5C0.5 2.8 0.7 3 1 3H1.5V8.5C1.5 9.35 2.15 10 3 10H7C7.85 10 8.5 9.35 8.5 8.5V3H9C9.3 3 9.5 2.8 9.5 2.5C9.5 2.2 9.3 2 9 2ZM4 1.5C4 1.2 4.2 1 4.5 1H5.5C5.8 1 6 1.2 6 1.5V2H4V1.5ZM4.5 7.5C4.5 7.8 4.3 8 4 8C3.7 8 3.5 7.8 3.5 7.5V4.5C3.5 4.2 3.7 4 4 4C4.3 4 4.5 4.2 4.5 4.5V7.5ZM6.5 7.5C6.5 7.8 6.3 8 6 8C5.7 8 5.5 7.8 5.5 7.5V4.5C5.5 4.2 5.7 4 6 4C6.3 4 6.5 4.2 6.5 4.5V7.5Z" fill="currentColor"></path>
+											</svg>
+										</button>
+									</div>
 								</div>
 							</div>
-							<div class="blog__item">
-								<video class="blog__item-bg" src="./assets/video/main_32.mp4" preload="metadata" playsinline="playsinline" muted width="100%" height="100%" loop autoplay loading="lazy"></video>
-								<div class="blog__item-body">
-									<a href="#" class="blog__item-title">Новорічний корпоратив для IT-компанії</a>
-									<div class="blog__item-text">
-										Створити новорічний корпоратив - ця задача нам точно під силу! Наша команда підходить до
-                        корпоративів креативно. Смачні закуски, музика, команда професіоналів обслуговування та смачні
-                        коктейлі - опис класичного корпоративу. А що як додати трохи дива?
+							<div class="checkout-block__inner">
+								<div class="checkout-block__inner-title">Ваші дані</div>
+								<div class="checkout-block__inner-body">
+									<div class="checkout-block__form">
+										<div class="input-field">
+											<label class="input-field__label">Ваше ім’я</label>
+											<input autocomplete="off" type="text" name="name" placeholder="Ваше ім’я" class="input-field__input">
+											<div class="input-field__error">Помилка, перевірте дані</div>
+										</div>
+										<div class="input-field">
+											<label class="input-field__label">Ваше Прізвище</label>
+											<input autocomplete="off" type="text" name="name" placeholder="Ваше Прізвище" class="input-field__input">
+										</div>
+										<div class="input-field">
+											<label class="input-field__label">Телефон</label>
+											<input autocomplete="off" type="tel" name="phone" data-fls-input-mask="+38 (999) 999 - 99 - 99" placeholder="+38 (___) ___ - __ - __" class="input-field__input">
+										</div>
+										<div class="input-field input-field--long">
+											<label class="input-field__label">Адреса події</label>
+											<input autocomplete="off" type="text" name="name" placeholder="Адреса події" class="input-field__input">
+										</div>
+										<div class="input-field">
+											<label class="input-field__label">К-кість осіб</label>
+											<input autocomplete="off" type="text" name="name" placeholder="К-кість осіб" class="input-field__input">
+										</div>
+										<div class="input-field">
+											<label class="input-field__label">К-кість приборів</label>
+											<input autocomplete="off" type="text" name="name" placeholder="К-кість приборів" class="input-field__input">
+										</div>
+										<div class="input-field input-field--icon">
+											<label class="input-field__label">Оберіть дату доставки</label>
+											<input data-fls-datepicker="" autocomplete="off" type="text" name="date" placeholder="Оберіть дату доставки" class="input-field__input">
+											<div class="input-field__arrow">
+												<svg width="10" height="5" viewbox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M5 5L4.37114e-07 7.94466e-08L10 9.53674e-07L5 5Z" fill="currentColor"></path>
+												</svg>
+											</div>
+										</div>
+										<div data-sel-block="" class="sel-block">
+											<button type="button" class="sel-block__current sel-block__current--input">
+												<span class="input-field">
+													<label class="input-field__label">Оберіть час доставки</label>
+													<input autocomplete="off" type="text" name="time" placeholder="Оберіть час доставки" class="input-field__input">
+													<span class="sel-block__current-icon">
+														<svg width="10" height="5" viewbox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M5 5L4.37114e-07 7.94466e-08L10 9.53674e-07L5 5Z" fill="currentColor"></path>
+														</svg>
+													</span>
+												</span>
+											</button>
+											<div class="sel-block__dropdown">
+												<div class="sel-block__title">Час доставки</div>
+												<div class="sel-block__scroll-block">
+													<div class="sel-block__options">
+														<button data-sel-btn="" type="button" class="sel-block__option disabled">З 9:00 до 10:00</button>
+														<button data-sel-btn="" type="button" class="sel-block__option disabled">З 9:00 до 10:00</button>
+														<button data-sel-btn="" type="button" class="sel-block__option disabled">З 10:00 до 11:00</button>
+														<button data-sel-btn="" type="button" class="sel-block__option">З 11:00 до 12:00</button>
+														<button data-sel-btn="" type="button" class="sel-block__option">З 12:00 до 13:00</button>
+														<button data-sel-btn="" type="button" class="sel-block__option">З 13:00 до 14:00</button>
+														<button data-sel-btn="" type="button" class="sel-block__option">З 14:00 до 15:00</button>
+														<button data-sel-btn="" type="button" class="sel-block__option">З 15:00 до 16:00</button>
+														<button data-sel-btn="" type="button" class="sel-block__option">З 16:00 до 17:00</button>
+														<button data-sel-btn="" type="button" class="sel-block__option">З 17:00 до 18:00</button>
+														<button data-sel-btn="" type="button" class="sel-block__option">З 18:00 до 19:00</button>
+														<button data-sel-btn="" type="button" class="sel-block__option">З 19:00 до 20:00</button>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
-									<a href="#" class="blog__item-btn btn-white">
-										<span>Детальніше</span>
-										<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 2L9 9L1 16" stroke="currentColor" stroke-width="3"></path>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<div class="blog__item">
-								<img class="blog__item-bg" loading="lazy" alt="Image" src="./assets/img/about/image.webp">
-								<div class="blog__item-body">
-									<a href="#" class="blog__item-title">Новорічний корпоратив для IT-компанії</a>
-									<div class="blog__item-text">
-										Створити новорічний корпоратив - ця задача нам точно під силу! Наша команда підходить до
-                        корпоративів креативно. Смачні закуски, музика, команда професіоналів обслуговування та смачні
-                        коктейлі - опис класичного корпоративу. А що як додати трохи дива?
+									<div class="checkout-block__columns">
+										<div class="checkout-block__col">
+											<div class="checkout-block__subtitle">Спосіб оплати</div>
+											<div class="options">
+												<label class="options__item">
+													<input class="options__input" type="radio" value="1" name="payment">
+													<span class="options__radio"></span>
+													<span class="options__label">
+														<span class="options__text">Monopay</span>
+													</span>
+												</label>
+												<label class="options__item">
+													<input class="options__input" type="radio" value="2" name="payment">
+													<span class="options__radio"></span>
+													<span class="options__label">
+														<span class="options__text">Переказ на карту</span>
+													</span>
+												</label>
+												<label class="options__item">
+													<input class="options__input" type="radio" value="3" name="payment">
+													<span class="options__radio"></span>
+													<span class="options__label">
+														<span class="options__text">Банківський переказ ФОП без ПДВ</span>
+														<span class="options__text-info">(+10%)</span>
+													</span>
+												</label>
+												<label class="options__item">
+													<input class="options__input" type="radio" value="4" name="payment">
+													<span class="options__radio"></span>
+													<span class="options__label">
+														<span class="options__text">Банківський переказ з ПДВ</span>
+														<span class="options__text-info">(+20%)</span>
+													</span>
+												</label>
+											</div>
+										</div>
+										<div class="checkout-block__col">
+											<div class="checkout-block__subtitle">Спосіб доставки</div>
+											<div class="options">
+												<label class="options__item">
+													<input class="options__input" type="radio" value="1" name="delivery">
+													<span class="options__radio"></span>
+													<span class="options__label">
+														<span class="options__text">
+															Самовивіз
+															<span>“-10%”</span>
+														</span>
+														<span class="options__text-info">Будіндустрії 7 м. Київ, Україна 08130</span>
+													</span>
+												</label>
+												<label class="options__item">
+													<input class="options__input" type="radio" value="2" name="delivery">
+													<span class="options__radio"></span>
+													<span class="options__label">
+														<span class="options__text">Доставка на обрану дату</span>
+													</span>
+												</label>
+											</div>
+										</div>
 									</div>
-									<a href="#" class="blog__item-btn btn-white">
-										<span>Детальніше</span>
-										<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 2L9 9L1 16" stroke="currentColor" stroke-width="3"></path>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<div class="blog__item">
-								<img class="blog__item-bg" loading="lazy" alt="Image" src="./assets/img/image-4.webp">
-								<div class="blog__item-body">
-									<a href="#" class="blog__item-title">Новорічний корпоратив для IT-компанії</a>
-									<div class="blog__item-text">
-										Створити новорічний корпоратив - ця задача нам точно під силу! Наша команда підходить до
-                        корпоративів креативно. Смачні закуски, музика, команда професіоналів обслуговування та смачні
-                        коктейлі - опис класичного корпоративу. А що як додати трохи дива?
+									<div class="checkout-block__promocode">
+										<div class="checkout-block__subtitle">У мене є промокод</div>
+										<div class="checkout-block__promocode-body">
+											<div class="input-field">
+												<label class="input-field__label">Введіть промокод</label>
+												<input autocomplete="off" type="text" name="name" placeholder="Введіть промокод" class="input-field__input">
+											</div>
+											<button type="button" class="checkout-block__btn btn" disabled>Застосувати</button>
+										</div>
 									</div>
-									<a href="#" class="blog__item-btn btn-white">
-										<span>Детальніше</span>
-										<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 2L9 9L1 16" stroke="currentColor" stroke-width="3"></path>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<div class="blog__item">
-								<img class="blog__item-bg" loading="lazy" alt="Image" src="./assets/img/about/image-2.webp">
-								<div class="blog__item-body">
-									<a href="#" class="blog__item-title">Новорічний корпоратив для IT-компанії</a>
-									<div class="blog__item-text">
-										Створити новорічний корпоратив - ця задача нам точно під силу! Наша команда підходить до
-                        корпоративів креативно. Смачні закуски, музика, команда професіоналів обслуговування та смачні
-                        коктейлі - опис класичного корпоративу. А що як додати трохи дива?
-									</div>
-									<a href="#" class="blog__item-btn btn-white">
-										<span>Детальніше</span>
-										<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 2L9 9L1 16" stroke="currentColor" stroke-width="3"></path>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<div class="blog__item">
-								<img class="blog__item-bg" loading="lazy" alt="Image" src="./assets/img/about/image.webp">
-								<div class="blog__item-body">
-									<a href="#" class="blog__item-title">Новорічний корпоратив для IT-компанії</a>
-									<div class="blog__item-text">
-										Створити новорічний корпоратив - ця задача нам точно під силу! Наша команда підходить до
-                        корпоративів креативно. Смачні закуски, музика, команда професіоналів обслуговування та смачні
-                        коктейлі - опис класичного корпоративу. А що як додати трохи дива?
-									</div>
-									<a href="#" class="blog__item-btn btn-white">
-										<span>Детальніше</span>
-										<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 2L9 9L1 16" stroke="currentColor" stroke-width="3"></path>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<div class="blog__item">
-								<img class="blog__item-bg" loading="lazy" alt="Image" src="./assets/img/about/image.webp">
-								<div class="blog__item-body">
-									<a href="#" class="blog__item-title">Новорічний корпоратив для IT-компанії</a>
-									<div class="blog__item-text">
-										Створити новорічний корпоратив - ця задача нам точно під силу! Наша команда підходить до
-                        корпоративів креативно. Смачні закуски, музика, команда професіоналів обслуговування та смачні
-                        коктейлі - опис класичного корпоративу. А що як додати трохи дива?
-									</div>
-									<a href="#" class="blog__item-btn btn-white">
-										<span>Детальніше</span>
-										<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 2L9 9L1 16" stroke="currentColor" stroke-width="3"></path>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<div class="blog__item">
-								<img class="blog__item-bg" loading="lazy" alt="Image" src="./assets/img/about/image.webp">
-								<div class="blog__item-body">
-									<a href="#" class="blog__item-title">Новорічний корпоратив для IT-компанії</a>
-									<div class="blog__item-text">
-										Створити новорічний корпоратив - ця задача нам точно під силу! Наша команда підходить до
-                        корпоративів креативно. Смачні закуски, музика, команда професіоналів обслуговування та смачні
-                        коктейлі - опис класичного корпоративу. А що як додати трохи дива?
-									</div>
-									<a href="#" class="blog__item-btn btn-white">
-										<span>Детальніше</span>
-										<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 2L9 9L1 16" stroke="currentColor" stroke-width="3"></path>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<div class="blog__item">
-								<img class="blog__item-bg" loading="lazy" alt="Image" src="./assets/img/about/image.webp">
-								<div class="blog__item-body">
-									<a href="#" class="blog__item-title">Новорічний корпоратив для IT-компанії</a>
-									<div class="blog__item-text">
-										Створити новорічний корпоратив - ця задача нам точно під силу! Наша команда підходить до
-                        корпоративів креативно. Смачні закуски, музика, команда професіоналів обслуговування та смачні
-                        коктейлі - опис класичного корпоративу. А що як додати трохи дива?
-									</div>
-									<a href="#" class="blog__item-btn btn-white">
-										<span>Детальніше</span>
-										<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 2L9 9L1 16" stroke="currentColor" stroke-width="3"></path>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<div class="blog__item blog__item--long">
-								<img class="blog__item-bg" loading="lazy" alt="Image" src="./assets/img/about/image.webp">
-								<div class="blog__item-body">
-									<a href="#" class="blog__item-title">Новорічний корпоратив для IT-компанії</a>
-									<div class="blog__item-text">
-										Створити новорічний корпоратив - ця задача нам точно під силу! Наша команда підходить до
-                        корпоративів креативно. Смачні закуски, музика, команда професіоналів обслуговування та смачні
-                        коктейлі - опис класичного корпоративу. А що як додати трохи дива?
-									</div>
-									<a href="#" class="blog__item-btn btn-white">
-										<span>Детальніше</span>
-										<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 2L9 9L1 16" stroke="currentColor" stroke-width="3"></path>
-										</svg>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="pagination">
-							<a href="#" class="pagination__arrow disabled">
-								<svg width="17" height="28" viewbox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M15 2L3 14L15 26" stroke="currentColor" stroke-width="4"></path>
-								</svg>
-							</a>
-							<ul class="pagination__list">
-								<li class="pagination__item">
-									<a href="#" class="pagination__link is-active">01</a>
-								</li>
-								<li class="pagination__item">
-									<a href="#" class="pagination__link">02</a>
-								</li>
-								<li class="pagination__item">
-									<span class="pagination__link">...</span>
-								</li>
-								<li class="pagination__item">
-									<a href="#" class="pagination__link">11</a>
-								</li>
-							</ul>
-							<a href="#" class="pagination__arrow">
-								<svg width="17" height="28" viewbox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M2 2L14 14L2 26" stroke="currentColor" stroke-width="4"></path>
-								</svg>
-							</a>
-						</div>
-					</div>
-				</section>
-				<section class="contacts contacts--accent">
-					<div class="contacts__container">
-						<div class="contacts__body">
-							<div class="contacts__title title-dark">
-								<span>Замовити</span>
-								консультацію
-							</div>
-							<form action="#" class="contacts__form">
-								<div class="contacts__inputs">
-									<div class="input-field">
-										<label class="input-field__label">Ваше ім’я</label>
-										<input autocomplete="off" type="text" name="name" placeholder="Ваше ім’я" class="input-field__input">
-									</div>
-									<div class="input-field">
-										<label class="input-field__label">Телефон</label>
-										<input autocomplete="off" type="tel" name="phone" data-fls-input-mask="+38 (999) 999 - 99 - 99" placeholder="+38 (___) ___ - __ - __" class="input-field__input">
+									<div class="checkout-block__comment">
+										<div class="input-field">
+											<label class="input-field__label">Додати коментар</label>
+											<textarea class="input-field__input" name="review" placeholder="Додати коментар"></textarea>
+										</div>
 									</div>
 								</div>
-								<button type="button" class="contacts__btn btn-2">
-									<svg width="17" height="19" viewbox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M15.096 13.0283C13.9941 12.0982 12.8758 11.5349 11.7874 12.4635L11.1375 13.0248C10.662 13.4322 9.77792 15.3358 6.35972 11.4555C2.94224 7.58008 4.97593 6.97668 5.45214 6.57277L6.1056 6.01081C7.18829 5.08007 6.7797 3.90838 5.99883 2.70228L5.5276 1.97173C4.74316 0.768437 3.88897 -0.0218169 2.80344 0.907522L2.21689 1.41329C1.73712 1.75819 0.396037 2.87929 0.0707324 5.00912C-0.320772 7.56463 0.914247 10.491 3.74376 13.7019C6.56971 16.9142 9.33658 18.5277 11.9575 18.4996C14.1357 18.4765 15.4512 17.323 15.8626 16.9037L16.4513 16.3972C17.534 15.4686 16.8613 14.5231 15.7587 13.5909L15.096 13.0283Z" fill="currentColor"></path>
+							</div>
+							<div class="checkout-block__inner">
+								<div class="total-checkout">
+									<div class="total-checkout__items">
+										<div class="total-checkout__item">
+											<div class="total-checkout__item-label">Підсумок</div>
+											<div class="total-checkout__item-value">348 000 грн</div>
+										</div>
+										<div class="total-checkout__item">
+											<div class="total-checkout__item-label">Доставка</div>
+											<div class="total-checkout__item-value">150 грн</div>
+										</div>
+										<div class="total-checkout__item">
+											<div class="total-checkout__item-label">Промокод</div>
+											<div class="total-checkout__item-value">-2000 грн</div>
+										</div>
+									</div>
+									<div class="total-checkout__order-info">
+										<div class="total-checkout__order-item">Ви замовляєте</div>
+										<div class="total-checkout__order-item">
+											<div class="total-checkout__order-icon">
+												<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M11.9823 10.5685L10.89 4.31037C10.7873 3.7203 10.2544 3.28906 9.63071 3.28906H7.98953C8.18197 2.96751 8.29202 2.59501 8.29202 2.19834C8.29202 0.986223 7.26394 0 5.99979 0C4.7359 0 3.70756 0.986223 3.70756 2.19834C3.70756 2.59501 3.8176 2.96751 4.01004 3.28906H2.36887C1.74492 3.28906 1.21232 3.72082 1.10959 4.31089L0.0175495 10.5698C-0.0445198 10.9246 0.0598326 11.2898 0.302418 11.5643C0.545274 11.8391 0.901428 12 1.2771 12H10.7236C11.0992 12 11.4554 11.8391 11.6982 11.5643C11.9406 11.2893 12.0446 10.9236 11.9823 10.5685ZM6.00006 1.28074C6.52751 1.28074 6.95685 1.69249 6.95685 2.1986C6.95685 2.7047 6.52751 3.11619 6.00006 3.11619C5.47233 3.11619 5.043 2.70444 5.043 2.19834C5.043 1.69223 5.47233 1.28074 6.00006 1.28074Z" fill="currentColor"></path>
+												</svg>
+											</div>
+											<div class="total-checkout__order-text">
+												13 000 грамів
+												<span>смакоти</span>
+											</div>
+										</div>
+									</div>
+									<div class="total-checkout__bottom">
+										<div class="total-checkout__title">До сплати</div>
+										<div class="total-checkout__total">348 000 грн</div>
+									</div>
+								</div>
+							</div>
+							<div class="checkout-block__btns">
+								<a href="#" class="checkout-block__btn btn-white">Повернутись</a>
+								<button type="button" class="checkout-block__btn btn">
+									<svg width="24" height="19" viewbox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M23.2969 15.2422H0.703125C0.314812 15.2422 0 15.557 0 15.9453C0 17.628 1.36411 18.9922 3.04688 18.9922H20.9531C22.6358 18.9922 24 17.6281 24 15.9453C24 15.557 23.6852 15.2422 23.2969 15.2422Z" fill="currentColor"></path>
+										<path d="M13.875 2.25725V1.88281C13.875 0.847297 13.0355 0.0078125 12 0.0078125C10.9645 0.0078125 10.125 0.847297 10.125 1.88281V2.25725C10.7401 2.16467 11.3664 2.11719 12 2.11719C12.6336 2.11719 13.2599 2.16467 13.875 2.25725Z" fill="currentColor"></path>
+										<path d="M19.7892 6.74984C17.7086 4.66925 14.9424 3.52344 12 3.52344C9.05761 3.52344 6.29138 4.66925 4.21078 6.74984C2.29683 8.6638 1.17469 11.1582 1.00711 13.8359H22.9928C22.8253 11.1582 21.7032 8.6638 19.7892 6.74984Z" fill="currentColor"></path>
 									</svg>
-									<span>Залишити заявку</span>
+									<span>Оформити замовлення</span>
 								</button>
-							</form>
-							<div data-fls-mouse="" class="contacts__decor-1">
-								<img loading="lazy" alt="Image" src="./assets/img/decors/decor-5.webp">
-							</div>
-							<div data-fls-mouse="" class="contacts__decor-2">
-								<img loading="lazy" alt="Image" src="./assets/img/decors/decor-7.webp">
 							</div>
 						</div>
 					</div>
@@ -1152,37 +1444,6 @@
 					</div>
 				</div>
 			</footer>
-		</div>
-		<div data-fls-popup="popup-sale" aria-hidden="true" class="popup popup--sale">
-			<div data-fls-popup-wrapper="" class="popup__wrapper">
-				<div data-fls-popup-body="" class="popup__body popup__body--bottom">
-					<button data-fls-popup-close="" type="button" class="popup__close">
-						<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M16 13.1087L10.8245 7.93321L15.9398 2.81792L13.1821 0.0602478L8.06679 5.17554L2.89125 0L0 2.89125L5.17554 8.06679L0.0733304 13.169L2.831 15.9267L7.93321 10.8245L13.1087 16L16 13.1087Z" fill="currentColor"></path>
-						</svg>
-					</button>
-					<div data-fls-popup-content="" class="popup__sale">
-						<a href="#" class="popup__sale-img">
-							<picture>
-								<source srcset="./assets/img/image-sale-mob.webp" media="(max-width: 479.98px)">
-								<img loading="lazy" alt="image" src="./assets/img/image-sale.webp">
-							</picture>
-						</a>
-						<div class="popup__sale-body">
-							<div class="popup__sale-content">
-								<a href="#" class="popup__sale-title">Акція! 1+1=3</a>
-								<div class="popup__sale-text">Замовляйте 3 товари та отримайте знижку 100% на найдешевшу позицію в кошику</div>
-							</div>
-							<a href="#" class="popup__sale-link btn">
-								<span>Див. пропозицію</span>
-								<svg width="12" height="17" viewbox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M1 1.16895L9 8.16894L1 15.1689" stroke="currentColor" stroke-width="3"></path>
-								</svg>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
 		<button type="button" data-menu="consultation" data-menu-click="" class="support-btn">
 			<svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">

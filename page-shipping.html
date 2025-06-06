@@ -8,16 +8,10 @@
 		<link rel="preload" href="./assets/fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="preload" href="./assets/fonts/Inter-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
-		<title>Наші статті та новини</title>
+		<title>Доставка та оплата</title>
 		<script type="module" crossorigin="" src="./js/app.min.js?v=1749222546765"></script>
-		<script type="module" crossorigin="" src="./js/popup.min.js?v=1749222546765"></script>
-		<script type="module" crossorigin="" src="./js/mouse.min.js?v=1749222546765"></script>
 		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1749222546765">
-		<link rel="stylesheet" crossorigin="" href="./css/popup.min.css?v=1749222546765">
-		<link rel="stylesheet" crossorigin="" href="./css/blog.min.css?v=1749222546765">
-		<link rel="stylesheet" crossorigin="" href="./css/page-404.min.css?v=1749222546765">
-		<link rel="stylesheet" crossorigin="" href="./css/pagination.min.css?v=1749222546765">
-		<link rel="stylesheet" crossorigin="" href="./css/contacts.min.css?v=1749222546765">
+		<link rel="stylesheet" crossorigin="" href="./css/page-shipping.min.css?v=1749222546765">
 		<link rel="stylesheet" crossorigin="" href="./css/footer.min.css?v=1749222546765">
 	</head>
 	<body>
@@ -762,10 +756,11 @@
 					</div>
 				</div>
 			</header>
+			<!-- <script type="module" src="@components/pages/page-success/page-success.js?v=1749222546765"></script> -->
 			<main class="page">
-				<section class="blog">
-					<div class="blog__container">
-						<div class="blog__breadcrumbs breadcrumbs">
+				<section class="shipping-block">
+					<div class="shipping-block__container">
+						<div class="shipping-block__breadcrumbs breadcrumbs">
 							<a href="#" class="breadcrumbs__link">
 								<svg width="17" height="13" viewbox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M16.44 10.4321H0.981085C0.715398 10.4321 0.5 10.6477 0.5 10.9136C0.5 12.0659 1.43334 13 2.5847 13H14.8363C15.9877 13 16.9211 12.0659 16.9211 10.9136C16.9211 10.6477 16.7057 10.4321 16.44 10.4321Z" fill="currentColor"></path>
@@ -773,244 +768,70 @@
 									<path d="M14.04 4.61677C12.6164 3.19203 10.7237 2.40741 8.71053 2.40741C6.69731 2.40741 4.80462 3.19203 3.38106 4.61677C2.07151 5.92739 1.30373 7.63546 1.18907 9.46914H16.2319C16.1173 7.63546 15.3495 5.92739 14.04 4.61677Z" fill="currentColor"></path>
 								</svg>
 							</a>
-							<span class="breadcrumbs__link is-active">Новини</span>
+							<span class="breadcrumbs__link is-active">Доставка та оплата</span>
 						</div>
-						<h1 class="blog__title title">
-							Наші
-							<span>статті та новини</span>
-						</h1>
-						<div class="blog__items">
-							<div class="blog__item blog__item--long">
-								<img class="blog__item-bg" loading="lazy" alt="Image" src="./assets/img/about/image.webp">
-								<div class="blog__item-body">
-									<a href="#" class="blog__item-title">Новорічний корпоратив для IT-компанії</a>
-									<div class="blog__item-text">
-										Створити новорічний корпоратив - ця задача нам точно під силу! Наша команда підходить до
-                        корпоративів креативно. Смачні закуски, музика, команда професіоналів обслуговування та смачні
-                        коктейлі - опис класичного корпоративу. А що як додати трохи дива?
-									</div>
-									<a href="#" class="blog__item-btn btn-white">
-										<span>Детальніше</span>
-										<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 2L9 9L1 16" stroke="currentColor" stroke-width="3"></path>
-										</svg>
-									</a>
+						<h1 class="shipping-block__title title">Доставка та оплата</h1>
+						<div class="shipping-block__body">
+							<div class="shipping-block__item" style="background-image: url('./assets/img/decors/man.svg');">
+								<div class="shipping-block__item-title">Мінімальна сума замовлення для доставки по Києву та області</div>
+								<div class="shipping-block__item-badges">
+									<div class="shipping-block__item-badge">не далі 15км від Києва</div>
+								</div>
+								<div class="shipping-block__item-text top-auto">
+									<b>становить 8000 грн</b>
 								</div>
 							</div>
-							<div class="blog__item">
-								<video class="blog__item-bg" src="./assets/video/main_32.mp4" preload="metadata" playsinline="playsinline" muted width="100%" height="100%" loop autoplay loading="lazy"></video>
-								<div class="blog__item-body">
-									<a href="#" class="blog__item-title">Новорічний корпоратив для IT-компанії</a>
-									<div class="blog__item-text">
-										Створити новорічний корпоратив - ця задача нам точно під силу! Наша команда підходить до
-                        корпоративів креативно. Смачні закуски, музика, команда професіоналів обслуговування та смачні
-                        коктейлі - опис класичного корпоративу. А що як додати трохи дива?
+							<div class="shipping-block__item shipping-block__item--accent" d="" style="background-image: url('./assets/img/decors/calc.svg');">
+								<div class="shipping-block__item-title">Вартість доставки</div>
+								<div class="shipping-block__item-badges top-auto">
+									<div class="shipping-block__item-badge">
+										Доставка по Києву
+										<b>безкоштовна.</b>
 									</div>
-									<a href="#" class="blog__item-btn btn-white">
-										<span>Детальніше</span>
-										<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 2L9 9L1 16" stroke="currentColor" stroke-width="3"></path>
-										</svg>
-									</a>
+									<div class="shipping-block__item-badge">
+										Доставка в межах
+										<b>Київської області</b>
+										розраховується
+										<b>індивідуально</b>
+										менеджером.
+									</div>
+									<div class="shipping-block__item-badge">
+										Якщо ви
+										<b>забираєте самостійно</b>
+										отримуєте
+										<b>знижку 10%</b>
+										на замовлення.
+									</div>
 								</div>
 							</div>
-							<div class="blog__item">
-								<img class="blog__item-bg" loading="lazy" alt="Image" src="./assets/img/about/image.webp">
-								<div class="blog__item-body">
-									<a href="#" class="blog__item-title">Новорічний корпоратив для IT-компанії</a>
-									<div class="blog__item-text">
-										Створити новорічний корпоратив - ця задача нам точно під силу! Наша команда підходить до
-                        корпоративів креативно. Смачні закуски, музика, команда професіоналів обслуговування та смачні
-                        коктейлі - опис класичного корпоративу. А що як додати трохи дива?
-									</div>
-									<a href="#" class="blog__item-btn btn-white">
-										<span>Детальніше</span>
-										<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 2L9 9L1 16" stroke="currentColor" stroke-width="3"></path>
-										</svg>
-									</a>
+							<div class="shipping-block__item shipping-block__item--dark" style="background-image: url('./assets/img/decors/clock.svg');">
+								<div class="shipping-block__item-title">Нам потрібно</div>
+								<div class="shipping-block__item-badges">
+									<div class="shipping-block__item-badge">мінімум 24 години</div>
 								</div>
+								<div class="shipping-block__item-text">на виконання вашого замовлення, а також передплата у розмірі 50%.</div>
 							</div>
-							<div class="blog__item">
-								<img class="blog__item-bg" loading="lazy" alt="Image" src="./assets/img/image-4.webp">
-								<div class="blog__item-body">
-									<a href="#" class="blog__item-title">Новорічний корпоратив для IT-компанії</a>
-									<div class="blog__item-text">
-										Створити новорічний корпоратив - ця задача нам точно під силу! Наша команда підходить до
-                        корпоративів креативно. Смачні закуски, музика, команда професіоналів обслуговування та смачні
-                        коктейлі - опис класичного корпоративу. А що як додати трохи дива?
-									</div>
-									<a href="#" class="blog__item-btn btn-white">
-										<span>Детальніше</span>
-										<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 2L9 9L1 16" stroke="currentColor" stroke-width="3"></path>
-										</svg>
-									</a>
+							<div class="shipping-block__item" style="background-image: url('./assets/img/decors/wallet.svg');">
+								<div class="shipping-block__item-title">
+									Оплата
+									<br>
+									здійснюється
 								</div>
+								<div class="shipping-block__item-badges top-auto">
+									<div class="shipping-block__item-badge">через сайт</div>
+									<div class="shipping-block__item-badge">за реквізитами або кур'єру</div>
+								</div>
+								<div class="shipping-block__item-text">Можлива оплата з ПДВ.</div>
 							</div>
-							<div class="blog__item">
-								<img class="blog__item-bg" loading="lazy" alt="Image" src="./assets/img/about/image-2.webp">
-								<div class="blog__item-body">
-									<a href="#" class="blog__item-title">Новорічний корпоратив для IT-компанії</a>
-									<div class="blog__item-text">
-										Створити новорічний корпоратив - ця задача нам точно під силу! Наша команда підходить до
-                        корпоративів креативно. Смачні закуски, музика, команда професіоналів обслуговування та смачні
-                        коктейлі - опис класичного корпоративу. А що як додати трохи дива?
-									</div>
-									<a href="#" class="blog__item-btn btn-white">
-										<span>Детальніше</span>
-										<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 2L9 9L1 16" stroke="currentColor" stroke-width="3"></path>
-										</svg>
-									</a>
+							<div class="shipping-block__item" style="background-image: url('./assets/img/decors/fire-3.svg');">
+								<div class="shipping-block__item-title">У разі скасування замовлення</div>
+								<div class="shipping-block__item-badges">
+									<div class="shipping-block__item-badge">менше ніж за 12годин</div>
 								</div>
-							</div>
-							<div class="blog__item">
-								<img class="blog__item-bg" loading="lazy" alt="Image" src="./assets/img/about/image.webp">
-								<div class="blog__item-body">
-									<a href="#" class="blog__item-title">Новорічний корпоратив для IT-компанії</a>
-									<div class="blog__item-text">
-										Створити новорічний корпоратив - ця задача нам точно під силу! Наша команда підходить до
-                        корпоративів креативно. Смачні закуски, музика, команда професіоналів обслуговування та смачні
-                        коктейлі - опис класичного корпоративу. А що як додати трохи дива?
-									</div>
-									<a href="#" class="blog__item-btn btn-white">
-										<span>Детальніше</span>
-										<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 2L9 9L1 16" stroke="currentColor" stroke-width="3"></path>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<div class="blog__item">
-								<img class="blog__item-bg" loading="lazy" alt="Image" src="./assets/img/about/image.webp">
-								<div class="blog__item-body">
-									<a href="#" class="blog__item-title">Новорічний корпоратив для IT-компанії</a>
-									<div class="blog__item-text">
-										Створити новорічний корпоратив - ця задача нам точно під силу! Наша команда підходить до
-                        корпоративів креативно. Смачні закуски, музика, команда професіоналів обслуговування та смачні
-                        коктейлі - опис класичного корпоративу. А що як додати трохи дива?
-									</div>
-									<a href="#" class="blog__item-btn btn-white">
-										<span>Детальніше</span>
-										<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 2L9 9L1 16" stroke="currentColor" stroke-width="3"></path>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<div class="blog__item">
-								<img class="blog__item-bg" loading="lazy" alt="Image" src="./assets/img/about/image.webp">
-								<div class="blog__item-body">
-									<a href="#" class="blog__item-title">Новорічний корпоратив для IT-компанії</a>
-									<div class="blog__item-text">
-										Створити новорічний корпоратив - ця задача нам точно під силу! Наша команда підходить до
-                        корпоративів креативно. Смачні закуски, музика, команда професіоналів обслуговування та смачні
-                        коктейлі - опис класичного корпоративу. А що як додати трохи дива?
-									</div>
-									<a href="#" class="blog__item-btn btn-white">
-										<span>Детальніше</span>
-										<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 2L9 9L1 16" stroke="currentColor" stroke-width="3"></path>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<div class="blog__item">
-								<img class="blog__item-bg" loading="lazy" alt="Image" src="./assets/img/about/image.webp">
-								<div class="blog__item-body">
-									<a href="#" class="blog__item-title">Новорічний корпоратив для IT-компанії</a>
-									<div class="blog__item-text">
-										Створити новорічний корпоратив - ця задача нам точно під силу! Наша команда підходить до
-                        корпоративів креативно. Смачні закуски, музика, команда професіоналів обслуговування та смачні
-                        коктейлі - опис класичного корпоративу. А що як додати трохи дива?
-									</div>
-									<a href="#" class="blog__item-btn btn-white">
-										<span>Детальніше</span>
-										<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 2L9 9L1 16" stroke="currentColor" stroke-width="3"></path>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<div class="blog__item blog__item--long">
-								<img class="blog__item-bg" loading="lazy" alt="Image" src="./assets/img/about/image.webp">
-								<div class="blog__item-body">
-									<a href="#" class="blog__item-title">Новорічний корпоратив для IT-компанії</a>
-									<div class="blog__item-text">
-										Створити новорічний корпоратив - ця задача нам точно під силу! Наша команда підходить до
-                        корпоративів креативно. Смачні закуски, музика, команда професіоналів обслуговування та смачні
-                        коктейлі - опис класичного корпоративу. А що як додати трохи дива?
-									</div>
-									<a href="#" class="blog__item-btn btn-white">
-										<span>Детальніше</span>
-										<svg width="12" height="18" viewbox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M1 2L9 9L1 16" stroke="currentColor" stroke-width="3"></path>
-										</svg>
-									</a>
-								</div>
+								<div class="shipping-block__item-text top-auto">ми можемо утримати кошти за мінусом своїх прямих витрат.</div>
 							</div>
 						</div>
-						<div class="pagination">
-							<a href="#" class="pagination__arrow disabled">
-								<svg width="17" height="28" viewbox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M15 2L3 14L15 26" stroke="currentColor" stroke-width="4"></path>
-								</svg>
-							</a>
-							<ul class="pagination__list">
-								<li class="pagination__item">
-									<a href="#" class="pagination__link is-active">01</a>
-								</li>
-								<li class="pagination__item">
-									<a href="#" class="pagination__link">02</a>
-								</li>
-								<li class="pagination__item">
-									<span class="pagination__link">...</span>
-								</li>
-								<li class="pagination__item">
-									<a href="#" class="pagination__link">11</a>
-								</li>
-							</ul>
-							<a href="#" class="pagination__arrow">
-								<svg width="17" height="28" viewbox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M2 2L14 14L2 26" stroke="currentColor" stroke-width="4"></path>
-								</svg>
-							</a>
-						</div>
-					</div>
-				</section>
-				<section class="contacts contacts--accent">
-					<div class="contacts__container">
-						<div class="contacts__body">
-							<div class="contacts__title title-dark">
-								<span>Замовити</span>
-								консультацію
-							</div>
-							<form action="#" class="contacts__form">
-								<div class="contacts__inputs">
-									<div class="input-field">
-										<label class="input-field__label">Ваше ім’я</label>
-										<input autocomplete="off" type="text" name="name" placeholder="Ваше ім’я" class="input-field__input">
-									</div>
-									<div class="input-field">
-										<label class="input-field__label">Телефон</label>
-										<input autocomplete="off" type="tel" name="phone" data-fls-input-mask="+38 (999) 999 - 99 - 99" placeholder="+38 (___) ___ - __ - __" class="input-field__input">
-									</div>
-								</div>
-								<button type="button" class="contacts__btn btn-2">
-									<svg width="17" height="19" viewbox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M15.096 13.0283C13.9941 12.0982 12.8758 11.5349 11.7874 12.4635L11.1375 13.0248C10.662 13.4322 9.77792 15.3358 6.35972 11.4555C2.94224 7.58008 4.97593 6.97668 5.45214 6.57277L6.1056 6.01081C7.18829 5.08007 6.7797 3.90838 5.99883 2.70228L5.5276 1.97173C4.74316 0.768437 3.88897 -0.0218169 2.80344 0.907522L2.21689 1.41329C1.73712 1.75819 0.396037 2.87929 0.0707324 5.00912C-0.320772 7.56463 0.914247 10.491 3.74376 13.7019C6.56971 16.9142 9.33658 18.5277 11.9575 18.4996C14.1357 18.4765 15.4512 17.323 15.8626 16.9037L16.4513 16.3972C17.534 15.4686 16.8613 14.5231 15.7587 13.5909L15.096 13.0283Z" fill="currentColor"></path>
-									</svg>
-									<span>Залишити заявку</span>
-								</button>
-							</form>
-							<div data-fls-mouse="" class="contacts__decor-1">
-								<img loading="lazy" alt="Image" src="./assets/img/decors/decor-5.webp">
-							</div>
-							<div data-fls-mouse="" class="contacts__decor-2">
-								<img loading="lazy" alt="Image" src="./assets/img/decors/decor-7.webp">
-							</div>
-						</div>
+						<div class="shipping-block__info">*Ціни на сайті вказані без ПДВ</div>
 					</div>
 				</section>
 			</main>
@@ -1153,41 +974,5 @@
 				</div>
 			</footer>
 		</div>
-		<div data-fls-popup="popup-sale" aria-hidden="true" class="popup popup--sale">
-			<div data-fls-popup-wrapper="" class="popup__wrapper">
-				<div data-fls-popup-body="" class="popup__body popup__body--bottom">
-					<button data-fls-popup-close="" type="button" class="popup__close">
-						<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M16 13.1087L10.8245 7.93321L15.9398 2.81792L13.1821 0.0602478L8.06679 5.17554L2.89125 0L0 2.89125L5.17554 8.06679L0.0733304 13.169L2.831 15.9267L7.93321 10.8245L13.1087 16L16 13.1087Z" fill="currentColor"></path>
-						</svg>
-					</button>
-					<div data-fls-popup-content="" class="popup__sale">
-						<a href="#" class="popup__sale-img">
-							<picture>
-								<source srcset="./assets/img/image-sale-mob.webp" media="(max-width: 479.98px)">
-								<img loading="lazy" alt="image" src="./assets/img/image-sale.webp">
-							</picture>
-						</a>
-						<div class="popup__sale-body">
-							<div class="popup__sale-content">
-								<a href="#" class="popup__sale-title">Акція! 1+1=3</a>
-								<div class="popup__sale-text">Замовляйте 3 товари та отримайте знижку 100% на найдешевшу позицію в кошику</div>
-							</div>
-							<a href="#" class="popup__sale-link btn">
-								<span>Див. пропозицію</span>
-								<svg width="12" height="17" viewbox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M1 1.16895L9 8.16894L1 15.1689" stroke="currentColor" stroke-width="3"></path>
-								</svg>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<button type="button" data-menu="consultation" data-menu-click="" class="support-btn">
-			<svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M15.596 12.5283C14.4941 11.5982 13.3758 11.0349 12.2874 11.9635L11.6375 12.5248C11.162 12.9322 10.2779 14.8358 6.85972 10.9555C3.44224 7.08008 5.47593 6.47668 5.95214 6.07277L6.6056 5.51081C7.68829 4.58007 7.2797 3.40838 6.49883 2.20228L6.0276 1.47173C5.24316 0.268437 4.38897 -0.521817 3.30344 0.407522L2.71689 0.913285C2.23712 1.25819 0.896037 2.37929 0.570732 4.50912C0.179228 7.06463 1.41425 9.99102 4.24376 13.2019C7.06971 16.4142 9.83658 18.0277 12.4575 17.9996C14.6357 17.9765 15.9512 16.823 16.3626 16.4037L16.9513 15.8972C18.034 14.9686 17.3613 14.0231 16.2587 13.0909L15.596 12.5283Z" fill="currentColor"></path>
-			</svg>
-		</button>
 	</body>
 </html>
