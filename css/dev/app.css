@@ -291,6 +291,9 @@ body.out-of-stock {
   background-color: var(--white-color);
   color: var(--green-color);
 }
+.btn-white svg {
+  color: var(--green-color);
+}
 
 .btn-empty {
   border: 2px solid var(--light-gray);
@@ -573,6 +576,10 @@ body.out-of-stock {
   place-content: center;
   transition: transform 0.3s;
 }
+.sel-block__current-icon svg {
+  width: 100%;
+  height: auto;
+}
 .sel-block__current--input .sel-block__current-icon {
   position: absolute;
   top: 44px;
@@ -702,6 +709,32 @@ body.out-of-stock {
   font-size: 16px;
   line-height: 120%;
   color: var(--dark-60);
+  transition: color 0.3s;
+}
+
+.socials-block {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.socials-block__link {
+  max-width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  border-radius: 36px;
+  padding: 16px 20px;
+  background-color: var(--light-gray);
+  transition: background 0.3s, color 0.3s;
+}
+.socials-block__link svg,
+.socials-block__link img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  color: var(--dark-gray);
   transition: color 0.3s;
 }.header {
   padding-top: 36px;
@@ -2073,6 +2106,17 @@ textarea.input {
     font-size: 16px;
     padding: 10px 20px;
     min-height: 51px;
+  }
+  .btn svg,
+  .btn-2 svg,
+  .btn-small svg,
+  .btn-gray svg,
+  .btn-gray-2 svg,
+  .btn-accent svg,
+  .btn-white svg,
+  .btn-empty svg {
+    width: auto;
+    height: 14px;
   }}
 @media (max-width: 40.62375em) {
   .input-field textarea.input-field__input {
@@ -2138,6 +2182,16 @@ textarea.input {
   }
   .breadcrumbs__link svg {
     width: 14px;
+  }
+  .socials-block__link {
+    flex: 1 1 auto;
+    max-width: none;
+    padding: 16px;
+  }
+  .socials-block__link svg,
+  .socials-block__link img {
+    width: 18px;
+    height: 18px;
   }
   .menu__head {
     gap: 10px;
@@ -2370,6 +2424,9 @@ textarea.input {
     background-color: #a1aa00;
     color: var(--white-color);
   }
+  .btn-white:hover svg {
+    color: var(--white-color);
+  }
   .btn-empty:hover {
     background-color: var(--light-gray);
   }
@@ -2399,6 +2456,12 @@ textarea.input {
   }
   .ocf-checkbox:hover .ocf-checkbox__text {
     color: var(--main-color);
+  }
+  .socials-block__link:hover {
+    background-color: #d4d4d4;
+  }
+  .socials-block__link:hover svg {
+    color: #515151;
   }
   .header__btn:hover {
     border-color: var(--accent);

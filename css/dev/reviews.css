@@ -397,6 +397,7 @@
   z-index: 1;
   width: 100%;
   height: 110%;
+  pointer-events: none;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.6) 85%);
 }
 .out-of-stock .hero-product::before {
@@ -1308,6 +1309,9 @@
   }
 }
 @media (max-width: 29.99875em) {
+  .hero-product video.hero-product__bg {
+    width: auto;
+  }
   .hero-product__sale {
     font-size: 16px;
   }

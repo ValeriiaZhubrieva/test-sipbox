@@ -298,11 +298,13 @@
   font-weight: 500;
   font-size: 16px;
 }
+.aside-block__reset svg {
+  height: 9px;
+}
 .aside-block__filters-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   gap: 12px;
 }
 .aside-block__filters-head:not(:last-child) {
@@ -320,6 +322,9 @@
   min-height: 30px;
   padding: 8px 10px;
   gap: 4px;
+}
+.aside-block__filters-reset svg {
+  height: 9px;
 }
 .aside-block__filters-body {
   display: flex;
@@ -387,6 +392,9 @@
   padding: 12px 20px;
   font-size: 16px;
   gap: 6px;
+}
+.nearest-date__btn svg {
+  height: 17px;
 }
 .nearest-date__btn.is-active {
   background-color: var(--green-color);
