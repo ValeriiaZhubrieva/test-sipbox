@@ -215,6 +215,9 @@ body::after {
     max-width: 100%;
     padding: 0 20px 40px 20px;
   }
+  .popup__body--bottom {
+    padding: 20px;
+  }
   .popup__title {
     margin-bottom: 8px;
   }
@@ -222,7 +225,6 @@ body::after {
 @media (max-width: 47.99875em) {
   .popup__body--bottom {
     border-radius: 24px 24px 0 0;
-    padding: 20px;
   }
   .popup__body--bottom .popup__close {
     top: -24px;

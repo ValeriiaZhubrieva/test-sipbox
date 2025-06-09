@@ -1991,7 +1991,8 @@ textarea.input {
   }
   .consultation__link {
     font-size: 16px;
-  }
+  }}
+@media (max-height: 57.49875em) and (min-width: 61.99875em) {
   .cart__body {
     padding: 20px 48px;
     gap: 20px;
