@@ -3041,8 +3041,11 @@ if (inputFields.length) {
 if (document.querySelector("[data-fls-popup='popup-sale']")) {
   window.addEventListener("load", () => {
     setTimeout(() => {
-      window.flsPopup.open("popup-sale");
-    }, 3e3);
+      const anyPopupOpen = document.querySelector("[data-fls-popup-open]");
+      if (!anyPopupOpen) {
+        window.flsPopup.open("popup-sale");
+      }
+    }, 5e3);
   });
 }
 function addActiveBtnSClass(buttonsClass, activeClass) {

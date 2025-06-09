@@ -81,6 +81,14 @@ body::after {
 .popup--sale .popup__wrapper {
   justify-content: stretch;
 }
+.popup__body.is-success {
+  background-color: var(--accent);
+}
+.popup__body.is-success .popup__success {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
 .popup__body--bottom {
   transform-origin: center bottom;
   margin-top: auto;
@@ -140,6 +148,9 @@ body::after {
   font-size: 20px;
   line-height: 120%;
 }
+.popup__inner {
+  position: relative;
+}
 .popup__title {
   margin-bottom: 30px;
 }
@@ -161,8 +172,37 @@ body::after {
 .popup__inputs .input-field--long {
   width: 100%;
 }
+.popup__success {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent);
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.popup__success .popup__title {
+  margin-bottom: 0;
+}
+.popup__text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+}
 @media (max-width: 61.99875em) {
   [data-fls-popup] {
+    transition: visibility 0.3s ease 0s;
+  }
+  [data-fls-popup]:not(.popup--sale) {
     padding: 0;
     background-color: var(--white-color);
   }
@@ -182,6 +222,7 @@ body::after {
 @media (max-width: 47.99875em) {
   .popup__body--bottom {
     border-radius: 24px 24px 0 0;
+    padding: 20px;
   }
   .popup__body--bottom .popup__close {
     top: -24px;
@@ -209,6 +250,9 @@ body::after {
     font-size: 24px;
   }
   .popup__sale-text {
+    font-size: 16px;
+  }
+  .popup__text {
     font-size: 16px;
   }
 }

@@ -309,9 +309,6 @@ body.white-bg {
   flex-direction: column;
   position: relative;
 }
-.input-field.is-filled .input-field__label, .input-field.is-focused .input-field__label {
-  opacity: 1;
-}
 .input-field.is-focused .input-field__arrow {
   transform: rotate(-180deg);
 }
@@ -330,8 +327,6 @@ body.white-bg {
   margin: 0 24px -16px 24px;
   position: relative;
   z-index: 3;
-  opacity: 0;
-  transition: opacity 0.3s;
 }
 .input-field__input {
   border: 2px solid var(--light-gray);
@@ -369,7 +364,7 @@ body.white-bg {
   top: 100%;
   left: 18px;
   right: 18px;
-  z-index: 3;
+  z-index: 4;
   background-color: var(--white-color);
   padding: 4px 6px;
   font-weight: 600;
@@ -1718,6 +1713,22 @@ textarea.input {
   }
   .phones-btn:not(.--dynamic),
   .fav-btn:not(.--dynamic) {
+    display: none;
+  }
+  .phones-btn:not([data-fls-dynamic]),
+  .fav-btn:not([data-fls-dynamic]) {
+    display: flex;
+    background-color: var(--bg-light);
+    border-radius: 18px;
+    min-width: 48px;
+    min-height: 48px;
+    padding: 10px;
+  }
+  .phones-btn:not([data-fls-dynamic]) svg,
+  .fav-btn:not([data-fls-dynamic]) svg {
+    color: var(--green-color);
+  }
+  .cart-btn--mob-hide {
     display: none;
   }
   .cart-btn__icons {

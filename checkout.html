@@ -9,12 +9,12 @@
 		<link rel="preload" href="./assets/fonts/Inter-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Оформити замовлення</title>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1749222994803"></script>
-		<script type="module" crossorigin="" src="./js/datepicker.min.js?v=1749222994803"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1749222994803">
-		<link rel="stylesheet" crossorigin="" href="./css/datepicker.min.css?v=1749222994803">
-		<link rel="stylesheet" crossorigin="" href="./css/checkout.min.css?v=1749222994803">
-		<link rel="stylesheet" crossorigin="" href="./css/footer.min.css?v=1749222994803">
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1749459728943"></script>
+		<script type="module" crossorigin="" src="./js/datepicker.min.js?v=1749459728943"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1749459728943">
+		<link rel="stylesheet" crossorigin="" href="./css/datepicker.min.css?v=1749459728943">
+		<link rel="stylesheet" crossorigin="" href="./css/checkout.min.css?v=1749459728943">
+		<link rel="stylesheet" crossorigin="" href="./css/footer.min.css?v=1749459728943">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -39,7 +39,7 @@
 							<img src="./assets/img/logo.svg" alt="logo">
 						</a>
 						<div class="header__right">
-							<button type="button" data-fls-dynamic=".nav-menu__bottom, 767.98" data-menu="consultation" class="header__btn phones-btn">
+							<button type="button" data-menu="consultation" class="header__btn phones-btn">
 								<svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M15.596 12.5283C14.4941 11.5982 13.3758 11.0349 12.2874 11.9635L11.6375 12.5248C11.162 12.9322 10.2779 14.8358 6.85972 10.9555C3.44224 7.08008 5.47593 6.47668 5.95214 6.07277L6.6056 5.51081C7.68829 4.58007 7.2797 3.40838 6.49883 2.20228L6.0276 1.47173C5.24316 0.268437 4.38897 -0.521817 3.30344 0.407522L2.71689 0.913285C2.23712 1.25819 0.896037 2.37929 0.570732 4.50912C0.179228 7.06463 1.41425 9.99102 4.24376 13.2019C7.06971 16.4142 9.83658 18.0277 12.4575 17.9996C14.6357 17.9765 15.9512 16.823 16.3626 16.4037L16.9513 15.8972C18.034 14.9686 17.3613 14.0231 16.2587 13.0909L15.596 12.5283Z" fill="currentColor"></path>
 								</svg>
@@ -49,7 +49,7 @@
 									<path d="M17.4795 1C18.782 1.00005 20.0332 1.47674 21.0332 2.35938L21.2295 2.54102C22.2894 3.56873 22.9274 5.00348 22.9941 6.51465L23 6.81738C22.9921 8.01655 22.5251 9.3805 21.4951 10.8857L21.2812 11.1885C20.4845 12.2868 19.4036 13.4429 18.0498 14.6289L17.4531 15.1387C15.007 17.1787 12.5924 18.6131 11.999 18.9561C11.444 18.6375 9.30565 17.3766 7.03613 15.5625L6.5166 15.1387C5.07965 13.9446 3.91738 12.7769 3.04199 11.6631L2.68457 11.1885C1.58309 9.66451 1.05921 8.28231 1.00488 7.06348L1 6.82227C1.00965 5.35475 1.52081 3.98158 2.43457 2.91602L2.62207 2.70703C3.66887 1.59891 5.05095 1.00008 6.52051 1C8.39797 1 10.1381 2.01369 11.1484 3.65527L12 5.03906L12.8516 3.65527C13.8619 2.01371 15.602 1 17.4795 1Z" stroke="currentColor" stroke-width="2"></path>
 								</svg>
 							</button>
-							<button type="button" class="header__btn cart-btn not-empty" data-menu="cart">
+							<button type="button" class="header__btn cart-btn not-empty cart-btn--mob-hide" data-menu="cart">
 								<div class="cart-btn__icons">
 									<svg class="cart-btn__icon-1" width="24" height="20" viewbox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M23.2969 15.7422H0.703125C0.314812 15.7422 0 16.057 0 16.4453C0 18.128 1.36411 19.4922 3.04688 19.4922H20.9531C22.6358 19.4922 24 18.1281 24 16.4453C24 16.057 23.6852 15.7422 23.2969 15.7422Z" fill="currentColor"></path>
@@ -758,7 +758,7 @@
 					</div>
 				</div>
 			</header>
-			<!-- <script type="module" src="@components/pages/404/page-404.js?v=1749222994803"></script> -->
+			<!-- <script type="module" src="@components/pages/404/page-404.js?v=1749459728943"></script> -->
 			<main class="page">
 				<section class="checkout-block">
 					<div class="checkout-block__container">
@@ -1137,7 +1137,7 @@
 										</div>
 										<div class="input-field input-field--icon">
 											<label class="input-field__label">Оберіть дату доставки</label>
-											<input data-fls-datepicker="" autocomplete="off" type="text" name="date" placeholder="Оберіть дату доставки" class="input-field__input">
+											<input data-fls-datepicker="" autocomplete="off" type="text" name="date" placeholder="Оберіть дату доставки" class="input-field__input" readonly>
 											<div class="input-field__arrow">
 												<svg width="10" height="5" viewbox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
 													<path d="M5 5L4.37114e-07 7.94466e-08L10 9.53674e-07L5 5Z" fill="currentColor"></path>
@@ -1148,7 +1148,7 @@
 											<button type="button" class="sel-block__current sel-block__current--input">
 												<span class="input-field">
 													<label class="input-field__label">Оберіть час доставки</label>
-													<input autocomplete="off" type="text" name="time" placeholder="Оберіть час доставки" class="input-field__input">
+													<input autocomplete="off" type="text" name="time" placeholder="Оберіть час доставки" class="input-field__input" readonly>
 													<span class="sel-block__current-icon">
 														<svg width="10" height="5" viewbox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
 															<path d="M5 5L4.37114e-07 7.94466e-08L10 9.53674e-07L5 5Z" fill="currentColor"></path>
